@@ -14,7 +14,7 @@ Rails.application.routes.draw do
 
   resources :posts, :fileuploads
   
-  root 'pages#home'
+  root 'posts#home'
   
 end
 
