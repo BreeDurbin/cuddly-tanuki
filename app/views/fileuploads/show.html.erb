@@ -1,14 +1,30 @@
 
-<div><%= @fileupload.section %></div>
+<div class="container">
+	<div class="col-md-4 text-box">
 
-<h1><%= @fileupload.title %></h1>
+		<div><%= @fileupload.section %></div>
 
-<div><%= @fileupload.description %></div>
+		<br><br>
 
-<div><%= @fileupload.source %></div>
+		<h1><%= @fileupload.title %></h1>
 
-<div><%= @fileupload.bin %></div>
+		<br><br>
 
-<%= link_to "Edit file", edit_fileupload_path(@fileupload) %>
+		<div><%= @fileupload.description %></div>
 
-<%= link_to "Delete", fileupload_path(@fileupload), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"} %>
+		<br><br>
+
+		<div><%= @fileupload.source %></div>
+
+		<br><br>
+
+		<div><%= @fileupload.bin %></div>
+
+		<br><br>
+
+		<%= link_to "Edit file", edit_fileupload_path(@fileupload) %>
+
+		<%= link_to "Delete", fileupload_path(@fileupload), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"} %>
+		
+	</div>
+</div>
