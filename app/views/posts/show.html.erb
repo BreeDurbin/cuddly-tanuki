@@ -1,8 +1,11 @@
+<div class="text-box">
 
 <h1><%= @post.title %></h1>
 <p> <%= @post.created_at.strftime('%A, %B, %d') %></p>
 
 <div><%= @post.body %></div>
+
+</div>
 
 <%= link_to "Edit Post", edit_post_path(@post) %>
 
