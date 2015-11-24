@@ -24,9 +24,6 @@ class PostsController < ApplicationController
   def show
   end
 
-  def edit
-  end
-
   def update
   	if @post.update(post_params)
   		redirect_to @post
@@ -37,7 +34,7 @@ class PostsController < ApplicationController
 
   def destroy
   	@post.destroy
-  	redirect_to root_path
+  	redirect_to posts_path
   end
 
 

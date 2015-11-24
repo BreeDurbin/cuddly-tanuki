@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
-  get 'file_uploads/new'
+  get 'fileuploads/new'
 
-  get 'file_uploads/show'
+  get 'fileuploads/show'
 
-  get 'file_uploads/index'
+  get 'fileuploads/index'
 
-  get 'file_uploads/edit'
+  get 'fileuploads/edit'
 
-  get 'file_uploads/_form'
+  get 'fileuploads/_form'
 
   get 'pages/home'
 
