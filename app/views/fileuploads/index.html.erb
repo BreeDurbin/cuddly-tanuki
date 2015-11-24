@@ -1,8 +1,41 @@
 
 <% @fileuploads.each do |fileupload| %>
-	<h2> <%= fileupload.title %> </h2>
-	<div><%= truncate(fileupload.description, :length => 256) %></div>
-	<br>
-	<%= link_to "Show file", fileupload %>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-4 text-box">
+			<br><br>
+			<div><%= fileupload.section %></div>
+
+			<br><br>
+
+			<h1><%= fileupload.title %></h1>
+
+			<br><br>
+
+			<div><%= fileupload.description %></div>
+
+			<br><br>
+
+			<div><%= fileupload.source %></div>
+
+			<br><br>
+
+			<div><%= fileupload.bin %></div>
+
+			<br><br>
+
+			<%= link_to "Edit file", edit_fileupload_path(fileupload) %>
+
+			<%= link_to "Delete", fileupload_path(fileupload), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"} %>
+		</div>
+	</div>
+</div>
+
+
+
 
 <% end %>
+
+		
