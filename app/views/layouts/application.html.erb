@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+
+	<meta charset="utf-8">
+	<title>Non-linear Logic</title>
+	<meta name="from zero to space this website is space" content="from zero to space this website is space">
+
+	
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<!-- font awesome glyphicons -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+
+
+</head>
+<body>
+
+<header>
+		<nav class="navbar navbar-default navbar-fixed-top">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="nav" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <a class="navbar-brand">NL</a>
+		      </button>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="nav-dropdown">
+		      <ul class="nav navbar-nav">
+		      <li class="divider"></li>
+				<li><%= link_to "Home", pages_home_path %> </li>
+				<li class="divider"></li>
+				<li><%= link_to "File Archive", pages_fileArchive_path %> </li>
+				<li class="divider"></li>
+				<li><%= link_to "About me", pages_aboutMe_path %> </li>
+				<li class="divider"></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+</header>	
+
+<div id='content'>
+
+<%= yield %>
+
+</div>
+ 
+
+<div class="container">
+	<div class="row text-box">
+		<div class="col-sm-6">
+			<h5>A website by Brian Durbin: an IT Technician, Programmer and Student at UCCS </h5>
+		</div>
+		
+		<div class="col-sm-3">
+			<h5><a href="https://www.facebook.com/brian.durbin.921">Find me</a> On facebook</h5>
+		</div>
+		<div class="col-sm-3">
+			<h5><a href="https://www.linkedin.com/profile/preview?vpa=pub&locale=en_US">Contact me </a> On Linkedin</h5>
+		</div>
+	</div>
+</div> <!-- end container -->
+		
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

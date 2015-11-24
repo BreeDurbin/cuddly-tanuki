@@ -1,0 +1,178 @@
+$fore: #ffb02d;
+$hover: #2d7eff;
+$background: #000000;
+$border: #ffb02d;
+
+
+
+header {
+  background-color: $background;
+}
+
+body {
+  background-color: $background;
+}
+
+/* navbar */
+.nav {
+  background-color: $background;
+}
+
+.navbar-default {
+  background-color: $background;
+  font-family: space;
+  border: none;
+  width: 100%;
+}
+
+.container-fluid {
+  background: {
+    image: url(image_path('banner.jpg'));
+    width: 100%;
+    color: $background;
+  };
+}
+
+/* title */
+.navbar-default .navbar-brand {
+  color: $fore;
+  background-color: none;
+  font-size: 175%;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: $fore;
+  background-color: $hover;
+}
+
+/* link */
+.navbar-default .navbar-nav > li > a {
+  color: $fore;
+  background-color: none;
+  font-size: 18px;
+  text-shadow: none;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: $fore;
+  background-color: $hover;
+}
+
+// dropdown
+
+.dropdown:focus {
+  background: $hover;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus .dropdown-menu {
+  display: block;
+  list-style: none;
+  color: $fore;
+  background: $background;
+  font-size: 16px;
+
+  li a {
+    color: $fore;
+  }
+
+  li a:hover {
+    color: $fore;
+    background: $hover;
+  }
+}
+
+//changes the color of the a tag text on focus
+
+//changes the color of the dropdown menu and dropdown text when not on focus
+
+/* caret */
+li .dropdown .open > ul .dropdown-menu > li > a:hover {
+  background-color: $hover;
+}
+
+/* mobile version */
+.navbar-default .navbar-toggle {
+  border-color: $fore;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: $hover;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: $fore;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: $fore;
+  }
+}
+
+
+//---------------------------------------------------------------------
+
+.btn-warning {
+  background: $hover;
+  border: none;
+  text-decoration: none;
+
+  li {
+    a:hover {
+    color: $background;
+    }
+  }
+}
+
+// text boxes
+
+.on-top {
+  position: absolute;
+  top: 30vh;
+  left: 8vw;
+  font-size: 3vw;
+  color: $fore;
+  font-family: space;
+}
+
+
+
+//images
+img {
+  float: right;
+}
+
+.image-1 {
+  border: 5px;
+  border-color: $fore;
+  height: 70vh;
+  width: 60vh;
+  top: 15vh;
+}
+
+//
+
+// parralax
+
+#content {
+  position: relative;
+  width: 100%;
+  top: 50px;
+  background: #000000;
+}
+
+.text-box {
+  color: $fore;
+  border-width: 2px;
+  border-color: $fore;
+  padding: 10px 10px 10px 10px;
+}
+
+.text-box-2 {
+  color: $hover;
+}
