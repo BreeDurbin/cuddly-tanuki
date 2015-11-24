@@ -6,7 +6,7 @@ class FileuploadsController < ApplicationController
   end
 
   def index
-    @fileuploads=Fileupload.all.order("created_at desc").paginate(page: params[:page], per_page: 2)
+    @fileuploads=Fileupload.all.order('section, created_at desc').paginate(page: params[:page], per_page: 15)
   end
 
   def new
