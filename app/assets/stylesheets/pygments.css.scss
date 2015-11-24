@@ -1,17 +1,22 @@
+$fore: #ffb02d;
+$hover: #2d7eff;
+$background: #000000;
+$border: #ffb02d;
+
 /* 
    Some simple Github-like styles, with syntax highlighting CSS via Pygments.
 */
 body{
 	font-family: helvetica, arial, freesans, clean, sans-serif;
 	color: #333;
-	background-color: #fff;
+	background-color: $background;
 	border: none;
 	line-height: 1.5;
 	margin: 2em 3em;
 	text-align:left;
 }
 pre{
-	background-color: #eee;
+	background-color: $background;
 	padding: 10px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -19,7 +24,7 @@ pre{
 	overflow: auto;
 }
 code{
-	background-color: #eee;
+	background-color: $background;
 	padding: 1px 3px;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
@@ -51,12 +56,6 @@ h2{
 }
 h3{
 	color: #666;
-}
-.shadow{
-	-webkit-box-shadow:0 5px 15px #000;
-	-moz-box-shadow:0 5px 15px #000;
-	box-shadow:0 5px 15px #000;		
-}
 
 
 .hll { background-color: #ffffcc }
