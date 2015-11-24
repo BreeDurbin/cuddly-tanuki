@@ -6,6 +6,7 @@ class FileuploadsController < ApplicationController
   end
 
   def index
+    @fileuploads=Fileupload.all
   end
 
   def new

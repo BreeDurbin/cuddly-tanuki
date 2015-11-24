@@ -1,10 +1,8 @@
-<h1>FileUpload#index</h1>
-<p>Find me in app/views/file_uploads/index.html.erb</p>
 
-<% @fileUploads.each do |fileUpload| %>
-	<h2> <%= fileUpload.title %> </h2>
-	<div><%= truncate(fileUpload.body, :length => 256) %></div>
+<% @fileuploads.each do |fileupload| %>
+	<h2> <%= fileupload.title %> </h2>
+	<div><%= truncate(fileupload.description, :length => 256) %></div>
 	<br>
-	<%= link_to "Show file", fileUpload %>
+	<%= link_to "Show file", fileupload %>
 
 <% end %>

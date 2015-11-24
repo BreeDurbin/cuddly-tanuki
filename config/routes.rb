@@ -1,13 +1,4 @@
 Rails.application.routes.draw do
-  get 'fileuploads/new'
-
-  get 'fileuploads/show'
-
-  get 'fileuploads/index'
-
-  get 'fileuploads/edit'
-
-  get 'fileuploads/_form'
 
   get 'pages/home'
 
@@ -17,7 +8,7 @@ Rails.application.routes.draw do
 
   get 'pages/fileArchive'
 
-  resources :posts, :file_uploads
+  resources :posts, :fileuploads
   
   root 'pages#home'
   

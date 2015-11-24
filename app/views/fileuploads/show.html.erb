@@ -1,5 +1,3 @@
-<h1>FileUpload#show</h1>
-<p>Find me in app/views/file_uploads/show.html.erb</p>
 
 <div><%= @fileupload.section %></div>
 
@@ -11,6 +9,6 @@
 
 <div><%= @fileupload.bin %></div>
 
-<%= link_to "Edit file", edit_fileUpload_path(@fileupload) %>
+<%= link_to "Edit file", edit_fileupload_path(@fileupload) %>
 
 <%= link_to "Delete", fileupload_path(@fileupload), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"} %>

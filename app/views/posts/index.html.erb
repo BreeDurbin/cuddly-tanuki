@@ -1,0 +1,8 @@
+<div class="text-box">
+	<% @posts.each do |post| %>
+		<h2> <%= post.title %> </h2>
+		<div><%= truncate(post.body, :length => 256) %></div>
+		<br>
+		<%= link_to "View full post.", post %>
+	<% end %>
+</div>
