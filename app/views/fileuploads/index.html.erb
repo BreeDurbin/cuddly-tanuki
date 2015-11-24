@@ -1,41 +1,37 @@
+<div class="container">	
+	<% @fileuploads.each_slice(3) do |slice| -%>
+		<div class="row">
+			<% slice.each do |fileupload| -%>
+				
+				<div class="col-md-4 text-box">
+					<br><br>
+					<h3><%= fileupload.section %></h3>
 
-<% @fileuploads.each do |fileupload| %>
+					<br><br>
 
+					<div><%= fileupload.title %></div>
 
-<div class="container">
-	<div class="row">
-		<div class="col-md-4 text-box">
-			<br><br>
-			<h3><%= fileupload.section %></h3>
+					<br><br>
 
-			<br><br>
+					<div><%= fileupload.description %></div>
 
-			<div><%= fileupload.title %></div>
+					<br><br>
 
-			<br><br>
+					<div><%= fileupload.source %></div>
 
-			<div><%= fileupload.description %></div>
+					<br><br>
 
-			<br><br>
+					<div><%= fileupload.bin %></div>
 
-			<div><%= fileupload.source %></div>
+					<br><br>
 
-			<br><br>
+					<%= link_to "Edit file", edit_fileupload_path(fileupload) %>
 
-			<div><%= fileupload.bin %></div>
+					<%= link_to "Delete", fileupload_path(fileupload), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"} %>
+				</div>
 
-			<br><br>
-
-			<%= link_to "Edit file", edit_fileupload_path(fileupload) %>
-
-			<%= link_to "Delete", fileupload_path(fileupload), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"} %>
+			<% end -%>
 		</div>
-	</div>
+	<% end -%>
 </div>
-
-
-
-
-<% end %>
-
 		
