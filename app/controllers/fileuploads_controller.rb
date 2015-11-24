@@ -42,11 +42,11 @@ class FileuploadsController < ApplicationController
   private
 
     def find_fileupload
-      @fileupload = Fileupload.find(params[:id])
+      @fileupload = Fileupload.friendly.find(params[:id])
     end
 
     def fileupload_params
-      params.require(:fileupload).permit(:section, :title, :description, :source, :bin)
+      params.require(:fileupload).permit(:section, :title, :description, :source, :bin, :slug)
     end
 
 end
