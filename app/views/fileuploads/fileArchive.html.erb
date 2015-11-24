@@ -1,4 +1,3 @@
-
 <div class="container">	
 	<% @fileuploads.each_slice(3) do |slice| %>
 		<div class="row">
@@ -12,19 +11,19 @@
 
 					<div><%= fileupload.title %></div>
 
-					<br><br>
+					<br>
 
 					<div><%= fileupload.description %></div>
 
-					<br><br>
+					<br>
 
 					<div class="btn btn-warning"><%= fileupload.source %></div>
 
-					<br><br>
+					<br>
 
 					<div><%= fileupload.bin %></div>
 
-					<br><br>
+					<br>
 
 					<%= link_to "Edit file", edit_fileupload_path(fileupload) %>
 

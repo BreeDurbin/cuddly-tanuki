@@ -1,12 +1,10 @@
 Rails.application.routes.draw do
 
-  get 'pages/home'
+  get 'posts/home'
 
   get 'pages/aboutMe'
 
-  get 'pages/codeExamples'
-
-  get 'pages/fileArchive'
+  get 'fileuploads/fileArchive'
 
   get 'fileuploads/index'
 

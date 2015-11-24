@@ -29,14 +29,18 @@
 			</div>
 			<div class="col-lg-9 text-box">
 				<!--blog here -->
+
+				<% @posts.each do |post| %>
+					<h2> <%= post.title %> </h2>
+					<p> <%= post.created_at.strftime('%A, %B, %d') %></p>
+					<div><%= truncate(post.body, :length => 1024) %></div>
+					<br>
+					<%= link_to "View full post.", post %>
+				<% end %>
+
+				<%= will_paginate @posts %>
 			</div>
 		</div>
 			
 	</div>
 </div>
-		
-
-
-
-
-	
