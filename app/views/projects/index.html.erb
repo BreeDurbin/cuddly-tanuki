@@ -1,0 +1,22 @@
+<h1> My Projects </h1>
+
+<% @projects.each do |project| %>
+		<div><%= project.section %></div>
+		<br>
+		<h2> <%= project.title %> </h2>
+		<p> <%= project.created_at.strftime('%A, %B, %d') %></p>
+		<br><br>
+		<div><%= project.description %></div>
+		<br>
+		<div><%= project.source %></div>
+		<br>
+		<div><%= project.bin %></div>
+		<br>
+		<%= link_to "View full post.", post %>
+<% end %>
+
+<%= link_to "Edit file", edit_project_path(@project) %>
+
+<%= link_to "Delete", project_path(@project), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"} %>
+
+<%= will_paginate @projects %>
