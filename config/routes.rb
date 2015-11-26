@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   get 'posts/index'
 
   resources :posts, :fileuploads, :projects
+  resources :contacts, only: [:new, :create]
+
   
   root 'posts#home'
   

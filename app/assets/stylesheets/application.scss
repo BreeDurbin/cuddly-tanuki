@@ -123,15 +123,11 @@ li .dropdown .open > ul .dropdown-menu > li > a:hover {
   color: $white;
   border: none;
   text-decoration: none;
-
-  li {
-    a {
-      color: $white;
-      :hover {
-    color: $background;
-      }
+  border-radius: 0;
+  :hover {
+    color: $white;
+    text-decoration: none;
     }
-  }
 }
 
 // text boxes
@@ -180,6 +176,23 @@ img {
 
 .text-box-2 {
   color: $hover;
+}
+
+.wrapper-text-fields {
+  color: $fore;
+  width: 75%;
+  border-width: 2px;
+  border-color: $fore;
+  padding: 10px 10px 10px 10px;
+}
+
+.wrapper-text-area {
+  color: $fore;
+  width: 75%;
+  height: 300px;
+  border-width: 2px;
+  border-color: $fore;
+  padding: 10px 10px 10px 10px;
 }
 
 @import 'pygments';

@@ -1,0 +1,10 @@
+<% @posts.each do |post| %>
+	<h2> <%= post.title %> </h2>
+	<br>
+	<p> <%= post.created_at.strftime('%A, %B, %d') %></p>
+	<br>
+	<%= markdown post.body %>
+	<br>
+	<%= link_to "View full post.", post %>
+	<br><br>
+<% end %>

@@ -19,13 +19,7 @@
 				<h1 class="text-box" align="center" style="color:#2d7eff">Programming, Mathematics, Science and other nerdery.</h1> <h3 align="right" style="color:#2d7eff"> by Brian Durbin</h2>
 				<!--blog here -->
 
-				<% @posts.each do |post| %>
-					<h2> <%= post.title %> </h2>
-					<p> <%= post.created_at.strftime('%A, %B, %d') %></p>
-					<div><%= truncate(post.body, :length => 1024) %></div>
-					<br>
-					<%= link_to "View full post.", post %>
-				<% end %>
+				<%= render 'displayall' %>
 
 				<%= will_paginate @posts %>
 			</div>
