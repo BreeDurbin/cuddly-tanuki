@@ -40,7 +40,7 @@ class FileuploadsController < ApplicationController
 
   def destroy
     @fileupload.destroy
-    redirect_to fileupload_path
+    redirect_to fileupload_fileArchive_path
   end
 
   private
