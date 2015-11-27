@@ -1,7 +1,8 @@
 <div class="container">	
-	<% @fileuploads.each_slice(3) do |slice| -%>
+	<div class="container">	
+	<% @fileuploads.each_slice(3) do |slice| %>
 		<div class="row">
-			<% slice.each do |fileupload| -%>
+			<% slice.each do |fileupload| %>
 				
 				<div class="col-md-4 text-box">
 					<br><br>
@@ -11,19 +12,15 @@
 
 					<div><%= fileupload.title %></div>
 
-					<br><br>
+					<br>
 
 					<div><%= fileupload.description %></div>
 
-					<br><br>
+					<br>
 
-					<div class="btn btn-warning"><%= fileupload.source %></div>
+					<%= link_to "View source", fileupload.source_url, class: "btn btn-warning" %>
 
-					<br><br>
-
-					<div><%= fileupload.bin %></div>
-
-					<br><br>
+					<br>
 
 					<%= link_to "Edit file", edit_fileupload_path(fileupload) %>
 
@@ -33,7 +30,8 @@
 			<% end -%>
 		</div>
 	<% end -%>
-
 	<%= will_paginate @fileuploads %>
 </div>
-		
+
+
+
