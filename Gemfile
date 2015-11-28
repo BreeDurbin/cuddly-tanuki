@@ -30,6 +30,7 @@ gem 'will_paginate', '~>3.0.7'
 gem 'carrierwave'
 gem 'carrierwave-dropbox'
 gem 'mail_form', '~>1.5.1'
+gem 'rails_12factor'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
