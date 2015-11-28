@@ -13,11 +13,11 @@ Rails.application.routes.draw do
 
   get 'posts/index'
 
-  resources :posts, :fileuploads, :projects
-  resources :contacts, only: [:new, :create]
+  resources :posts, :fileuploads, :projects]
 
-  
   root 'posts#home'
+
+  get "*path" => redirect('/')
   
 end
 

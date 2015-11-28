@@ -39,12 +39,21 @@
 		</nav>
 </header>	
 
+<% if_user_signed_in? %>
+	<%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+<% else %>
+	<%= link_to 'Login', new_user_session_path)  %>  
+<% end -%>
+
 <div id='content'>
 
 
 <!-- /.notices from "devises" gem. See readme file. -->
+<% if alert %>
 <p class="notice"><%= notice %></p>
+<% elseif %>
 <p class="alert"><%= alert %></p>
+<% end %>
 
 <%= yield %>
 
