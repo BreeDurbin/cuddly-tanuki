@@ -428,8 +428,8 @@ img {
   $flex-box-border-color: $light-gray;
   $flex-box-border: 1px solid $flex-box-border-color;
   $flex-box-background: lighten($light-gray, 10%);
-  $flex-box-gutter: 0.4em;
-  $flex-box-width: 18em;
+  $flex-box-gutter: 1em;
+  $flex-box-width: 15em;
   $flex-box-color: transparentize($base-font-color, 0.3);
   $flex-box-top-colors: 
     tomato, 
