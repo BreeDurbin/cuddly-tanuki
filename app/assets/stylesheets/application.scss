@@ -16,7 +16,7 @@ header {
 }
 
 body {
-  background-color: none;
+  background-color: 'background.jpg';
 }
 
 /* navbar */
@@ -175,7 +175,7 @@ img {
   position: relative;
   width: 100%;
   top: 50px;
-  background: 'background.jpg';
+  background: none;
 }
 
 .text-box {
