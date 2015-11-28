@@ -233,7 +233,7 @@ img {
 
 .footer-2 {
   $base-spacing: 1.5em !default;
-  $action-color: #477DCA !default;
+  $action-color: $hover !default;
   $medium-screen: em(640) !default;
   $large-screen: em(860) !default;
   $footer-background: desaturate(darken($action-color, 20%), 30%);
@@ -350,7 +350,7 @@ img {
   $accordion-menu-color: $base-font-color;
   $accordion-menu-border: 1px solid $accordion-menu-border-color;
   $accordion-menu-background: lighten($accordion-menu-border-color, 10%);
-  $accordion-menu-hover: lighten($accordion-menu-background, 2%);
+  $accordion-menu-hover: darken($accordion-menu-background, 2%);
   $accordion-menu-sub-background: darken($accordion-menu-background, 5%);
   $accordion-menu-sub-inset: darken($accordion-menu-sub-background, 6%);
   $accordion-menu-sub-hover: lighten($accordion-menu-sub-background, 2%);
