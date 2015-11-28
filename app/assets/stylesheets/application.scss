@@ -16,7 +16,7 @@ header {
 }
 
 body {
-  background-color: $background;
+  background-image: 'background.jpg'
 }
 
 /* navbar */
@@ -33,7 +33,7 @@ body {
 
 .container-fluid {
   background: {
-    image: url(image_path('banner.jpg'));
+    black;
     width: 100%;
     color: $background;
   };
