@@ -5,26 +5,24 @@
           
 					<h3 class="flex-title"><%= fileupload.section %></h3>
 
-					<br>
 
 					<%= fileupload.title %>
 
-					<br>
 
 					<%= fileupload.description %>
 
-					<br>
 
 					<%= link_to "View source", fileupload.source_url.to_s, class: "btn btn-warning" %>
 
-					<br>
+          <% if user_signed_in? %>
+            <%= link_to "Edit file", edit_fileupload_path(fileupload) %>
+            <%= link_to "Delete", fileupload_path(fileupload), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"} %>
+          <% end %>
+
           </a>
 
 
-					<% if user_signed_in? %>
-						<%= link_to "Edit file", edit_fileupload_path(fileupload) %>
-						<%= link_to "Delete", fileupload_path(fileupload), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"} %>
-					<% end %>
+					
 
 
 	<% end -%>
