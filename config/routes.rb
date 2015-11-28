@@ -15,8 +15,6 @@ Rails.application.routes.draw do
   get 'posts/index'
 
   resources :posts, :fileuploads, :projects
-
-  get "*path" => redirect('posts#home')
   
   root 'posts#home'
 
