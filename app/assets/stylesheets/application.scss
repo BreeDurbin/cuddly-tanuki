@@ -513,13 +513,13 @@ img {
   $grid-items-background: black;
   $grid-item-background: desaturate($action-color, 30%);
   $grid-item-colors: 
-    desaturate($action-color, 30%), 
-    #3581A5, 
-    #5FBEBE,
-    #98C79A,
-    #A7A891, 
-    #BDCC97,
-    #979EA0;
+    $action-color, 
+    $action-color, 
+    $action-color,
+    $action-color,
+    $action-color, 
+    $action-color,
+    $action-color;
   $grid-item-border-size: 9px;
   $grid-item-columns: 4;
   $grid-item-big-columns: 8;
