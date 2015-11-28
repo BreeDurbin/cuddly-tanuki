@@ -237,11 +237,11 @@ img {
   $medium-screen: em(640) !default;
   $large-screen: em(860) !default;
   $footer-background: desaturate(darken($action-color, 20%), 30%);
-  $footer-color: white;
-  $footer-link-color: transparentize($footer-color, 0.6);
-  $footer-disclaimer-color: transparentize($footer-color, 0.6);
+  $footer-color: $fore;
+  $footer-link-color: transparentize($fore, 0.6);
+  $footer-disclaimer-color: transparentize($fore, 0.6);
 
-  background: $footer-background;
+  background: $hover;
   padding: $base-spacing;
   width: 100%;
   display: inline-block;
@@ -355,8 +355,8 @@ img {
   $accordion-menu-sub-hover: lighten($accordion-menu-sub-background, 2%);
   $accordion-menu-list-padding: ($base-spacing / 2) $gutter;
   
-  background-color: $accordion-menu-background;
-  border: $accordion-menu-border;
+  background-color: $hover;
+  border: $fore;
   margin: 0 0 $base-spacing 0;
   padding: 0;
 
@@ -370,7 +370,7 @@ img {
     list-style: none;
 
     > a {
-      color: $accordion-menu-color;
+      color: $fore;
       display: block;
       padding: $accordion-menu-list-padding;
       text-decoration: none;
@@ -382,7 +382,7 @@ img {
 
     &:focus,
     &:hover {
-      background-color: $accordion-menu-hover;
+      background-color: $hover;
     }
   }
 
