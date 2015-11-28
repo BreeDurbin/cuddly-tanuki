@@ -1,6 +1,7 @@
 <div class="grid-items">
 	<% @fileuploads.each do |fileupload| %>			
-					<a href="javascript:void(0)" class="grid-item">
+					<div class="grid-item">
+          <a href="javascript:void(0)" >
           <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2_dark.png" alt="">
           
 					<h3 class="flex-title"><%= fileupload.section %></h3>
@@ -20,8 +21,8 @@
           <% end %>
 
           </img>
-
           </a>
+          </div>
 	<% end -%>
 	<%= will_paginate @fileuploads %>
 </div>
