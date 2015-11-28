@@ -2,25 +2,17 @@
 	<% @fileuploads.each do |fileupload| %>			
 					<div class="grid-item">
           <a href="javascript:void(0)" >
-          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2_dark.png" alt="">
           
 					<h3 class="flex-title"><%= fileupload.section %></h3>
-
-
 					<%= fileupload.title %>
-
-
 					<%= fileupload.description %>
-
+          <br>
 
 					<%= link_to "View source", fileupload.source_url.to_s, class: "btn btn-warning" %>
-
           <% if user_signed_in? %>
-            <%= link_to "Edit file", edit_fileupload_path(fileupload) %>
-            <%= link_to "Delete", fileupload_path(fileupload), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"} %>
+            <%= link_to "Edit file", edit_fileupload_path(fileupload), class: "btn btn-warning" %>
+            <%= link_to "Delete", fileupload_path(fileupload), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"}, class: "btn btn-warning" %>
           <% end %>
-
-          </img>
           </a>
           </div>
 	<% end -%>
