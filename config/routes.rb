@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   devise_for :users
+
   get 'posts/home'
 
   get 'pages/aboutMe'
@@ -15,9 +16,11 @@ Rails.application.routes.draw do
 
   resources :posts, :fileuploads, :projects
 
+  get "*path" => redirect('posts#home')
+  
   root 'posts#home'
 
-  get "*path" => redirect('/')
+
   
 end
 
