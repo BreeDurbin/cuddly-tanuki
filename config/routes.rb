@@ -13,7 +13,7 @@ Rails.application.routes.draw do
 
   get 'posts/index'
 
-  resources :posts, :fileuploads, :projects]
+  resources :posts, :fileuploads, :projects
 
   root 'posts#home'
 
