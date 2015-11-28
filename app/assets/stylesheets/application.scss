@@ -16,7 +16,7 @@ header {
 }
 
 body {
-  background-image: 'background.jpg'
+  background-image: 'images/background.jpg'
 }
 
 /* navbar */
@@ -35,6 +35,7 @@ body {
   background: {
     width: 100%;
     color: $background;
+    position: fixed;
   };
 }
 
