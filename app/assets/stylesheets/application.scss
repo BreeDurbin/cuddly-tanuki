@@ -50,6 +50,7 @@ body {
 .navbar-default .navbar-brand:focus {
   color: $fore;
   background-color: $hover;
+  @include transition (all 0.2s ease-in-out);
 }
 
 /* link */
@@ -64,12 +65,14 @@ body {
 .navbar-default .navbar-nav > li > a:focus {
   color: $fore;
   background-color: $hover;
+  @include transition (all 0.2s ease-in-out);
 }
 
 // dropdown
 
 .dropdown:focus {
   background: $hover;
+  @include transition (all 0.2s ease-in-out);
 }
 
 .dropdown:hover .dropdown-menu,
@@ -87,6 +90,7 @@ body {
   li a:hover {
     color: $fore;
     background: $hover;
+    @include transition (all 0.2s ease-in-out);
   }
 }
 
@@ -107,6 +111,7 @@ li .dropdown .open > ul .dropdown-menu > li > a:hover {
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
   background-color: $hover;
+  @include transition (all 0.2s ease-in-out);
 }
 
 @media (max-width: 767px) {
@@ -132,6 +137,7 @@ li .dropdown .open > ul .dropdown-menu > li > a:hover {
   :hover {
     color: $white;
     text-decoration: none;
+    @include transition (all 0.2s ease-in-out);
     }
 }
 
