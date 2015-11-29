@@ -608,13 +608,12 @@ header.navigation {
     margin: $flex-box-gutter;
     padding: 2em 2em 3em 2em;
     text-decoration: none;
-    @include clearfix;
 
     @for $i from 1 to 7 { 
 // assign colors from $flex-box-top-colors list
       &:nth-child(#{$i}) {
         $color-from-list: nth($flex-box-top-colors, $i);
-        border-top: 6px solid $color-from-list;
+        border: 10px 1px 1px 1px solid $color-from-list;
         
  //       &:focus,
  //       &:hover {
