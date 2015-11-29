@@ -4,20 +4,17 @@
 <% @posts.each do |post| %>
 	
 	<a href="javascript:void(0)" class="flex-box flex-box-big">
-    <h1 class="flex-title"><%= post.title %></h1>
-    
-  	
-	<br>
+    <h2><%= post.title %></h1>
 	<p> <%= post.created_at.strftime('%A, %B, %d') %></p>
 	<br>
 	<%= markdown post.body %>
 	<br>
-	<%= link_to "View full post.", post %>
+	<%= link_to "View full post.", post, class: "btn btn-warning" %>
 	<br>
 
 	<% if user_signed_in? %>
-		<%= link_to "Edit Post", edit_post_path(post) %>
-		<%= link_to "Delete", post_path(post), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"} %>
+		<%= link_to "Edit Post", edit_post_path(post), class: "btn btn-warning" %>
+		<%= link_to "Delete", post_path(post), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"}, class: "btn btn-warning" %>
 	<% end %>
 
 	</a>
