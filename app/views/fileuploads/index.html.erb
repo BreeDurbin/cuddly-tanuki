@@ -1,14 +1,13 @@
 <div class="grid-items">
 	<% @fileuploads.each do |fileupload| %>			
 					<div class="grid-item btn btn-warning">
-          <a href="<%= link_to "View source", fileupload.source_url.to_s %>">
+          <a href="<%= link_to fileupload.source_url.to_s %>", "View Source">
           
 					<h3 class="flex-title"><%= fileupload.section %></h3>
 					<%= fileupload.title %>
 					<%= fileupload.description %>
           <br>
-          <br>
-					<%= link_to "View source", fileupload.source_url.to_s, class: "btn btn-warning" %>
+          
           </a>
           
 
