@@ -329,7 +329,7 @@ img {
 //accordion---------------------------------------------------------------------------------------
 
 .accordion {  
-  $base-border-color: $fore !default;
+  $base-border-color: $background !default;
   $base-line-height: 1.5em !default;
   $base-spacing: 1.5em !default;
   $dark-gray: #333 !default;
@@ -493,7 +493,7 @@ img {
   $medium-screen: em(640) !default;
   $large-screen: em(860) !default;
   $grid-items-background: none;
-  $grid-item-background: desaturate($action-color, 30%);
+  $grid-item-background: $background;
   $grid-item-colors: 
     $action-color, 
     $action-color, 
@@ -522,7 +522,7 @@ img {
     height: $grid-item-height;
     overflow: hidden;
     outline: none;
-    padding: 2em;
+    padding: 1em;
     text-align: center;
     text-decoration: none;
     width: 100%;
