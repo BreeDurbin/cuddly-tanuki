@@ -659,7 +659,7 @@ header.navigation {
   $base-background-color: black !default;
   $medium-screen: em(640) !default;
   $large-screen: em(860) !default;
-  $grid-items-background: $background;
+  $grid-items-background: transparentize($background, 100%);
   $grid-item-background: $background;
   $grid-item-colors:
     $hover, 
@@ -669,7 +669,7 @@ header.navigation {
     $hover,
     $hover,
     $hover;
-  $grid-item-border-size: 20px;
+  $grid-item-border-size: 1em;
   $grid-item-columns: 4;
   $grid-item-big-columns: 8;
   $grid-item-color: $white;
