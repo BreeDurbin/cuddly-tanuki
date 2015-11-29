@@ -1,7 +1,7 @@
 <div class="grid-items">
 	<% @fileuploads.each do |fileupload| %>			
-					<div class="grid-item">
-          <a href="javascript:void(0)" >
+					<div class="grid-item btn btn-warning">
+          <a href="<%= link_to "View source", fileupload.source_url.to_s %>">
           
 					<h3 class="flex-title"><%= fileupload.section %></h3>
 					<%= fileupload.title %>
