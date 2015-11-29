@@ -675,6 +675,10 @@ header.navigation {
   $grid-item-color: $white;
   $grid-item-height: 15em;
 
+  -moz-background-clip: padding;     /* Firefox 3.6 */
+  -webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
+  background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+  
   @include clearfix;
     
   .grid-item {
