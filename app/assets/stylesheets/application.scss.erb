@@ -357,68 +357,6 @@ header.navigation {
       float: right;
     }
   }
-
-  // Search bar
-
-  .search-bar {
-    $search-bar-border-color: $base-border-color;
-    $search-bar-border: 1px solid $search-bar-border-color;
-    $search-bar-background: lighten($search-bar-border-color, 10%);
-
-    float: left;
-    padding: 0.85em 0.85em 0.7em 0.6em;
-    width: 60%;
-
-    form {
-      position: relative;
-
-      input[type=search] {
-        @include box-sizing(border-box);
-        background: $navigation-search-background;
-        border-radius: $base-border-radius * 2;
-        border: $navigation-search-border;
-        color: $navigation-color;
-        font-size: 0.9em;
-        font-style: italic;
-        margin: 0;
-        padding: 0.5em 0.8em;
-        width: 100%;
-
-        @include media($horizontal-bar-mode) {
-          width: 100%;
-        }
-      }
-
-      button[type=submit] {
-        background: $navigation-search-background;
-        border: none;
-        bottom: 0.3em;
-        left: auto;
-        outline: none;
-        padding: 0 9px;
-        position: absolute;
-        right: 0.3em;
-        top: 0.3em;
-
-        img {
-          height: 12px;
-          opacity: 0.7;
-          padding: 1px;
-        }
-      }
-    }
-
-    @include media($horizontal-bar-mode) {
-      display: inline-block;
-      position: relative;
-      width: 16em;
-
-      input {
-        @include box-sizing(border-box);
-        display: block;
-      }
-    }
-  }
 }
 
 
@@ -711,8 +649,7 @@ header.navigation {
 
 //-------------------------------------------------------------------------------------------------------------
 
-//------------------------------------------------GRID ITEMS--------------------------------------------------------------
-
+//------------------------------------------------GRID BOXES---------------------------------------------------
 @mixin grid-item-columns($columns) {
   width: (100% / 12) * $columns;
 }
@@ -722,7 +659,7 @@ header.navigation {
   $base-background-color: black !default;
   $medium-screen: em(640) !default;
   $large-screen: em(860) !default;
-  $grid-items-background: none;
+  $grid-items-background: $background;
   $grid-item-background: $background;
   $grid-item-colors:
     $hover, 
@@ -752,11 +689,11 @@ header.navigation {
     height: $grid-item-height;
     overflow: hidden;
     outline: none;
-    padding: 1em 1em 1em 1em;
+    padding: 0;
     text-align: center;
     text-decoration: none;
     width: 100%;
-    margin: 0 1em 1em 0;
+    margin: 0 2em 2em 0;
 
     @include media($large-screen) {
       @include grid-item-columns($grid-item-columns);
@@ -767,11 +704,11 @@ header.navigation {
       &:nth-child(#{$i}) {
         $background-from-list: nth($grid-item-colors, $i);
         background-color: $background-from-list;
-        box-shadow: inset 0px 0px 1px 2px darken($background-from-list, 10%);
+        //box-shadow: inset 0px 0px 1px 2px darken($background-from-list, 10%);
 
         &:focus,
         &:hover {
-          background-color: darken($background-from-list, 20%);
+          background-color: darken($background-from-list, 30%);
           background-repeat: no-repeat;
           background-position: top;
           background-size: cover;
