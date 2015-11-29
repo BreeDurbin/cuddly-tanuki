@@ -164,10 +164,11 @@ img {
 #content {
   width: 100%;
   top: 50px;
-  background:
+  background:{
     position: right;
     repeat: no-repeat;
     image: $background-image;
+  }
   height: 2000px;
 }
 
