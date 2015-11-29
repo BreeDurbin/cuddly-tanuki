@@ -570,7 +570,7 @@ header.navigation {
 
 //FLEX BOXES ----------------------------------------------------------------------------------------------------
 .flex-boxes {
-  $base-border-radius: 3px !default;
+  $base-border-radius: 0 !default;
   $base-background-color: $background !default;
   $dark-gray: #333 !default;
   $light-gray: #DDD !default;
@@ -613,10 +613,7 @@ header.navigation {
 // assign colors from $flex-box-top-colors list
       &:nth-child(#{$i}) {
         $color-from-list: nth($flex-box-top-colors, $i);
-        border-top: 15px solid $color-from-list;
-        border-left: 1px solid transparentize($color-from-list, .6);
-        border-bottom: 1px solid transparentize($color-from-list, .6);
-        border-right: 1px solid transparentize($color-from-list, .6);
+        border-top: 6px solid $color-from-list;
         
  //       &:focus,
  //       &:hover {
