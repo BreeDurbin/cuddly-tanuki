@@ -1,7 +1,7 @@
 <div class="grid-items">
 	<% @fileuploads.each do |fileupload| %>			
 					<div class="grid-item">
-          <%= link_to fileupload.source_url.to_s, "View Source", class: "btn btn-warning" %>
+          <%= link_to "View Source", fileupload.source_url.to_s, class: "btn btn-warning" %>
           
 					<h3 class="flex-title"><%= fileupload.section %></h3>
 					<%= fileupload.title %>
