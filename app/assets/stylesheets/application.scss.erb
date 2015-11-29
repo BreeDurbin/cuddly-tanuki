@@ -571,15 +571,15 @@ header.navigation {
 //FLEX BOXES ----------------------------------------------------------------------------------------------------
 .flex-boxes {
   $base-border-radius: 3px !default;
-  $base-background-color: black !default;
+  $base-background-color: $background !default;
   $dark-gray: #333 !default;
   $light-gray: #DDD !default;
   $base-font-color: $fore !default;
-  $flex-box-border-color: black;
-  $flex-box-border: 1px solid $flex-box-border-color;
-  $flex-box-background: lighten(black, 10%);
+  $flex-box-border-color: $background;
+  $flex-box-border: 2px solid $flex-box-border-color;
+  $flex-box-background: $background;
   $flex-box-gutter: 1em;
-  $flex-box-width: 15em;
+  $flex-box-width: 100%;
   $flex-box-color: transparentize($base-font-color, 0.3);
   $flex-box-top-colors: 
     tomato, 
