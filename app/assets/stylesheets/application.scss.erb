@@ -591,7 +591,7 @@ header.navigation {
 
     @include clearfix;
     @include display(flex);
-    @include justify-content(left);
+    @include justify-content(flex-start);
     @include align-items(stretch);
     @include flex-wrap(wrap);
     clear: both;
@@ -616,10 +616,10 @@ header.navigation {
         $color-from-list: nth($flex-box-top-colors, $i);
         border-top: 6px solid $color-from-list;
         
-        &:focus,
-        &:hover {
-          background-color: transparentize($color-from-list, 0.9);
-        }
+ //       &:focus,
+ //       &:hover {
+ //         background-color: transparentize($color-from-list, 0.9);
+  //      }
       }
     }
 
