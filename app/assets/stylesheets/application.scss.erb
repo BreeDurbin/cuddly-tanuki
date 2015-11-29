@@ -579,7 +579,7 @@ header.navigation {
   $flex-box-border: 2px solid $flex-box-border-color;
   $flex-box-background: $background;
   $flex-box-gutter: 1em;
-  $flex-box-width: 100%;
+  $flex-box-width: 20em;
   $flex-box-color: transparentize($base-font-color, 0.3);
   $flex-box-top-colors: 
     tomato, 
@@ -591,7 +591,7 @@ header.navigation {
 
     @include clearfix;
     @include display(flex);
-    @include justify-content(center);
+    @include justify-content(left);
     @include align-items(stretch);
     @include flex-wrap(wrap);
     clear: both;
@@ -608,6 +608,7 @@ header.navigation {
     margin: $flex-box-gutter;
     padding: 2em 2em 3em 2em;
     text-decoration: none;
+    @include clearfix;
 
     @for $i from 1 to 7 { 
 // assign colors from $flex-box-top-colors list
