@@ -8,9 +8,7 @@ $hover: #2d7eff;
 $background: #000000;
 $border: #ffb02d;
 $white: #FFFFFF;
-
-$webkit-backgrounds: 'background.jpg';
-$spec-backgrounds: 'background.jpg';
+$background-image: 'background.jpg'
 
 /* navbar */
 .nav {
@@ -167,6 +165,7 @@ img {
   width: 100%;
   top: 50px;
   background: 'background.jpg';
+  height: 2000px;
 }
 
 .text-box {
