@@ -166,7 +166,7 @@ img {
   background:{
     image: url(<%= image_path('background.jpg') %>);
     repeat: no-repeat;
-    position: relative;
+    position: fixed;
     size: cover;
   }
 }
@@ -492,7 +492,7 @@ img {
   $base-background-color: black !default;
   $medium-screen: em(640) !default;
   $large-screen: em(860) !default;
-  $grid-items-background: black;
+  $grid-items-background: none;
   $grid-item-background: desaturate($action-color, 30%);
   $grid-item-colors: 
     $action-color, 
