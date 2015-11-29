@@ -95,17 +95,17 @@ header.navigation {
   $large-screen: em(860) !default;
   $navigation-padding: 1em;
   $navigation-background: $background;
-  $navigation-color: transparentize(white, 0.3);
+  $navigation-color: $fore;                                                                //transparentize(white, 0.3);
   $navigation-color-hover: $hover;
   $navigation-height: 60px;
   $navigation-nav-button-background: $background;
   $navigation-nav-button-background-hover: $hover;                                         //lighten($navigation-background, 10%);
-  $navigation-nav-button-border: 1px solid lighten($navigation-nav-button-background, 20%);
-  //$navigation-search-background: lighten($navigation-background, 5);
-  //$navigation-search-border: 1px solid darken($navigation-background, 5);
+  $navigation-nav-button-border: 0;                                                        // solid lighten($navigation-nav-button-background, 20%);
+  $navigation-search-background: lighten($navigation-background, 5);
+  $navigation-search-border: 1px solid darken($navigation-background, 5);
   $navigation-active-link-color: transparentize(white, 0.5);
-  //$navigation-submenu-padding: 1em;
-  //$navigation-submenu-width: 12em;
+  $navigation-submenu-padding: 1em;
+  $navigation-submenu-width: 12em;
   $horizontal-bar-mode: $large-screen;
 
   background-color: $navigation-background;
