@@ -1,15 +1,12 @@
 <div class="grid-items">
 	<% @fileuploads.each do |fileupload| %>			
-					<div class="grid-item btn btn-warning">
-          <a href="<%= link_to fileupload.source_url.to_s %>", "View Source">
+					<div class="grid-item">
+          <%= link_to fileupload.source_url.to_s, "View Source", class: "btn btn-warning" %>
           
 					<h3 class="flex-title"><%= fileupload.section %></h3>
 					<%= fileupload.title %>
 					<%= fileupload.description %>
           <br>
-          
-          </a>
-          
 
           <% if user_signed_in? %>
             <%= link_to "Edit file", edit_fileupload_path(fileupload), class: "btn btn-warning" %>
