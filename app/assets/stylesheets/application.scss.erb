@@ -575,21 +575,21 @@ header.navigation {
   $dark-gray: #333 !default;
   $light-gray: #DDD !default;
   $base-font-color: $fore !default;
-  $flex-box-border-color: $background;
+  $flex-box-border-color: $hover;
   $flex-box-border: 2px solid $flex-box-border-color;
   $flex-box-background: $background;
   $flex-box-gutter: 1em;
   $flex-box-width: 20em;
-  $flex-box-color: transparentize($base-font-color, 0.3);
+  $flex-box-color: $base-font-color;
   $flex-box-top-colors: 
-    tomato, 
-    #72BFBF, 
-    #92B1E3, 
-    #E3D743,
-    #CCC,
-    #F6C05C;
+    $fore, 
+    $hover, 
+    $fore, 
+    $hover, 
+    $fore, 
+    $hover, 
+    $fore;
 
-    @include clearfix;
     @include display(flex);
     @include justify-content(flex-start);
     @include align-items(stretch);
