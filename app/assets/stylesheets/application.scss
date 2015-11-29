@@ -9,29 +9,16 @@ $background: #000000;
 $border: #ffb02d;
 $white: #FFFFFF;
 
-.container {
-  background-color: none;
-}
-
-html{
-  background-color: 'background.jpg';
-}
-
-header {
-  background-color: none;
-}
-
-body {
-  background-color: 'background.jpg';
-}
+$webkit-backgrounds: 'background.jpg'
+$spec-backgrounds: 'background.jpg'
 
 /* navbar */
 .nav {
-  background-color: 'background.jpg';
+  background-color: $background;
 }
 
 .navbar-default {
-  background-color: 'background.jpg';
+  background-color: $background;
   font-family: space;
   border: none;
   width: 100%;
@@ -40,7 +27,7 @@ body {
 .container-fluid {
   background: {
     width: 100%;
-    color: 'background.jpg';
+    color: $background;
     position: fixed;
   };
 }
@@ -48,7 +35,7 @@ body {
 /* title */
 .navbar-default .navbar-brand {
   color: $fore;
-  background-color: 'background.jpg';
+  background-color: $background;
   font-size: 175%;
 }
 
@@ -62,7 +49,7 @@ body {
 /* link */
 .navbar-default .navbar-nav > li > a {
   color: $fore;
-  background-color: 'background.jpg';
+  background-color: $background;
   font-size: 18px;
   text-shadow: none;
 }
