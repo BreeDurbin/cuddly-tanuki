@@ -613,7 +613,10 @@ header.navigation {
 // assign colors from $flex-box-top-colors list
       &:nth-child(#{$i}) {
         $color-from-list: nth($flex-box-top-colors, $i);
-        border: 10px 1px 1px 1px solid $color-from-list;
+        border-top: 8px solid $color-from-list;
+        border-left: 1px solid $color-from-list;
+        border-bottom: 1px solid $color-from-list;
+        border-right: 1px solid $color-from-list;
         
  //       &:focus,
  //       &:hover {
