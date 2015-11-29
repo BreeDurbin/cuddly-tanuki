@@ -164,7 +164,7 @@ img {
 #content {
   width: 100%;
   top: 50px;
-  background-image: $background-image;
+  background: right no-repeat url('$background-image');
   height: 2000px;
 }
 
