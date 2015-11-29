@@ -10,7 +10,7 @@ $border: #ffb02d;
 $white: #FFFFFF;
 
 .container {
-  background-color:'background.jpg';
+  background-color: none;
 }
 
 header {
@@ -18,16 +18,16 @@ header {
 }
 
 body {
-  background-color: 'background.jpg';
+  background-color: none;
 }
 
 /* navbar */
 .nav {
-  background-color: $background;
+  background-color: 'background.jpg';
 }
 
 .navbar-default {
-  background-color: $background;
+  background-color: 'background.jpg';
   font-family: space;
   border: none;
   width: 100%;
@@ -44,7 +44,7 @@ body {
 /* title */
 .navbar-default .navbar-brand {
   color: $fore;
-  background-color: none;
+  background-color: 'background.jpg';
   font-size: 175%;
 }
 
@@ -58,7 +58,7 @@ body {
 /* link */
 .navbar-default .navbar-nav > li > a {
   color: $fore;
-  background-color: none;
+  background-color: 'background.jpg';
   font-size: 18px;
   text-shadow: none;
 }
@@ -151,7 +151,6 @@ li .dropdown .open > ul .dropdown-menu > li > a:hover {
   left: 8vw;
   font-size: 3vw;
   color: $fore;
-  font-family: space;
 }
 
 
@@ -174,10 +173,10 @@ img {
 // parralax
 
 #content {
-  position: relative;
+  position: fixed;
   width: 100%;
   top: 50px;
-  background: none;
+  background: 'background.jpg';
 }
 
 .text-box {
