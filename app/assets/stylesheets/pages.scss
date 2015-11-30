@@ -4,3 +4,85 @@
 
 
 
+//FLEX BOXES ----------------------------------------------------------------------------------------------------
+.flex-boxes {
+  $base-border-radius: 0 !default;
+  $base-background-color: $background !default;
+  $dark-gray: #333 !default;
+  $light-gray: #DDD !default;
+  $base-font-color: $fore !default;
+  $flex-box-border-color: $hover;
+  $flex-box-border: 2px solid $flex-box-border-color;
+  $flex-box-background: $background;
+  $flex-box-gutter: 1em;
+  $flex-box-width: 20em;
+  $flex-box-color: $base-font-color;
+  $flex-box-top-colors: 
+    $fore, 
+    $hover, 
+    $fore, 
+    $hover, 
+    $fore, 
+    $hover, 
+    $fore;
+
+    @include display(flex);
+    @include justify-content(space-between);
+    @include align-items(stretch);
+    @include flex-wrap(wrap);
+    clear: both;
+    text-align: center;
+
+  .flex-box {
+    @include transition (all 0.2s ease-in-out);
+    @include flex(2 2 15em);
+    @include align-self(stretch);
+    background: $flex-box-background;
+    border-radius: $base-border-radius;
+    box-shadow: none;                                //inset 0 0 1px $flex-box-border-color, 0 2px 4px darken($base-background-color, 10%);
+    display: block;
+    margin: $flex-box-gutter;
+    padding: 2em 2em 3em 2em;
+    text-decoration: none;
+    text-align: justify;
+
+    @for $i from 1 to 7 { 
+// assign colors from $flex-box-top-colors list
+      &:nth-child(#{$i}) {
+        $color-from-list: nth($flex-box-top-colors, $i);
+        border-top: 6px solid $color-from-list;
+        
+ //       &:focus,
+ //       &:hover {
+ //         background-color: transparentize($color-from-list, 0.9);
+  //      }
+      }
+    }
+
+    img {
+      display: block;
+      height: 7em;
+      margin: 0 auto 1em;
+      opacity: 0.4;
+    }
+
+    .flex-title {
+      color: $flex-box-color;
+      font-size: 1.2em;
+      margin-bottom: 0.5em;
+      text-decoration: none;
+    }
+
+    p {
+      color: $flex-box-color;
+      line-height: 1.5em;
+      margin: auto;
+    }
+  }
+
+  .flex-box-big {
+    @include flex(1 1 100%);
+  }
+}
+
+//-------------------------------------------------------------------------------------------------------------
