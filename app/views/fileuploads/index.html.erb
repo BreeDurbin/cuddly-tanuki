@@ -2,7 +2,7 @@
 
 <div class="flex-boxes">
 	<% @fileuploads.each do |fileupload| %>
-    <div class="flex-box">
+    <div class="container">
       <a href="<%= fileupload.source_url.to_s%>" class="flex-box">
       <h3 class="flex-title"><%= fileupload.section %></h3>
       <p><%= fileupload.title %></p>
