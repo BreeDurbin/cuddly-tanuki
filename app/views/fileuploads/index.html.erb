@@ -2,9 +2,9 @@
 
 <div class="flex-boxes">
 	<% @fileuploads.each do |fileupload| %>
-    <div class="flex-box">
+    
     <%= link_to fileupload.source_url.to_s do%>
-
+    <div class="flex-box">
       <h3 class="flex-title"><%= fileupload.section %></h3>
       <p><%= fileupload.title %></p>
       <p><%= fileupload.description %></p>
@@ -13,15 +13,20 @@
         <%= link_to "Delete", fileupload_path(fileupload), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"}, class: "btn btn-warning" %>
       <% end %>
       <br>
+      </div>
     <% end %>
-    </div>
+
 
 	<% end -%>
 
 	<%= will_paginate @fileuploads %>
 </div>
 
-
+<a href="javascript:void(0)" class="flex-box flex-box-big">
+    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2_dark.png" alt="">
+    <h1 class="flex-title">Another Wide Item</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quis ipsum, officia, aperiam tenetur dolor molestiae voluptate perferendis dolorem vel ex, unde fugit blanditiis sapiente.</p>
+  </a>
 
 
 <!--
