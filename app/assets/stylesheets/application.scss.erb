@@ -109,7 +109,7 @@ header.navigation {
   $horizontal-bar-mode: $large-screen;
 
   background-color: $navigation-background;
-  border-bottom: 1px solid darken($navigation-background, 10);
+  border-bottom: 0;
   min-height: $navigation-height;
   width: 100%;
   z-index: 999;
@@ -117,7 +117,7 @@ header.navigation {
   .navigation-wrapper {
     @include clearfix;
     @include outer-container;
-    position: relative;
+    position: fixed;
     z-index: 9999;
   }
 
@@ -158,7 +158,7 @@ header.navigation {
   // Nav menu
 
   nav {
-    float: none;
+    float: right;
     min-height: $navigation-height;
     z-index: 9999999;
 
@@ -299,7 +299,6 @@ header.navigation {
       left: -$navigation-submenu-padding;
       position: absolute;
       top: 1.5em;
-      float: right;
     }
 
     .submenu {
