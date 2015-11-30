@@ -3,7 +3,7 @@
 <div class="grid-items">
 	<% @fileuploads.each do |fileupload| %>
     
-    <%= link_to fileupload.source_url.to_s do class="grid-item" %>
+    <%= link_to fileupload.source_url.to_s, class: => "grid-item", do  %>
 
       <h3 class="flex-title"><%= fileupload.section %></h3>
       <p><%= fileupload.title %></p>
