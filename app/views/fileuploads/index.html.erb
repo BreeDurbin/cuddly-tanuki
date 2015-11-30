@@ -2,13 +2,14 @@
 
 <div class="flex-boxes">
 	<% @fileuploads.each do |fileupload| %>
-    <div href="<%= fileupload.source_url.to_s%>" class="flex-box">
-
+    <div class="flex-box">
+      <a href="<%= fileupload.source_url.to_s%>" class="flex-box">
       <h3 class="flex-title"><%= fileupload.section %></h3>
       <p><%= fileupload.title %></p>
       <p><%= fileupload.description %></p>
 
       <br>
+      </a>
     
     <% if user_signed_in? %>
         <%= link_to "Edit file", edit_fileupload_path(fileupload), class: "btn btn-warning" %>
