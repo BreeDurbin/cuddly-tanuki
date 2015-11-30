@@ -64,7 +64,7 @@ img {
   background:{
     image: url(<%= image_path('background.jpg') %>);
     repeat: no-repeat;
-    position: fixed;
+    position: ;
     size: cover;
   }
 }
@@ -504,17 +504,17 @@ header.navigation {
 .accordion {  
   $base-border-color: $background !default;
   $base-line-height: 1.5em !default;
-  $base-spacing: 1.5em !default;
+  $base-spacing: 4em !default;
   $dark-gray: #333 !default;
   $base-font-color: $fore !default;
   $accordion-menu-border-color: $base-border-color;
   $accordion-menu-color: $base-font-color;
   $accordion-menu-border: 1px solid $accordion-menu-border-color;
-  $accordion-menu-background: lighten($accordion-menu-border-color, 10%);
-  $accordion-menu-hover: darken($accordion-menu-background, 2%);
-  $accordion-menu-sub-background: darken($accordion-menu-background, 5%);
+  $accordion-menu-background: $accordion-menu-border-color;
+  $accordion-menu-hover: $hover;
+  $accordion-menu-sub-background: $accordion-menu-background;
   $accordion-menu-sub-inset: darken($accordion-menu-sub-background, 6%);
-  $accordion-menu-sub-hover: lighten($accordion-menu-sub-background, 2%);
+  $accordion-menu-sub-hover: $accordion-menu-sub-background;
   $accordion-menu-list-padding: ($base-spacing / 2) $gutter;
   
   background-color: $hover;
