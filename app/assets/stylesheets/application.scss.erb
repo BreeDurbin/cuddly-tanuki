@@ -791,13 +791,13 @@ header.navigation {
   $flex-box-width: 20em;
   $flex-box-color: $base-font-color;
   $flex-box-top-colors: 
-    $fore, 
+    $hover,
     $hover, 
-    $fore, 
+    $hover,
     $hover, 
-    $fore, 
     $hover, 
-    $fore;
+    $hover, 
+    $hover;
 
     @include display(flex);
     @include justify-content(space-between);
@@ -828,7 +828,7 @@ header.navigation {
         
         &:focus,
         &:hover {
-          background-color: darken($color-from-list, 10%);
+          background-color: darken($color-from-list, 15%);
         }
       }
     }
