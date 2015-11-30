@@ -1,32 +1,30 @@
 <h1 class="text-box" align="center" style="color:#2d7eff">Stuff I have made.</h1> <h3 align="right" style="color:#2d7eff"> by Brian Durbin</h2>
 
-<div class="flex-boxes">
-	<% @fileuploads.each do |fileupload| %>
-      <a href="<%= fileupload.source_url.to_s%>" class="flex-box">
+<% @fileuploads.each_slice(3) do |slice| -%>
+  <div class="flex-boxes row">
+    <% slice.each do |fileupload| -%>
+      <div class="col-lg-4">
+      <a href="<%= fileupload.source_url.to_s%>" class="flex-box col-lg-4">
       <h3 class="flex-title"><%= fileupload.section %></h3>
       <p><%= fileupload.title %></p>
       <p><%= fileupload.description %></p>
-
       <br>
       </a>
-    
-    <% if user_signed_in? %>
+      <% if user_signed_in? %>
         <%= link_to "Edit file", edit_fileupload_path(fileupload), class: "btn btn-warning" %>
         <%= link_to "Delete", fileupload_path(fileupload), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"}, class: "btn btn-warning" %>
       <% end %>
+      </div>
+    <% end -%>
+  </div>
+<% end -%>
+    
 
 
 
 	<% end -%>
 
 	<%= will_paginate @fileuploads %>
-</div>
-
-<a href="javascript:void(0)" class="flex-box flex-box-big">
-    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2_dark.png" alt="">
-    <h1 class="flex-title">Another Wide Item</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quis ipsum, officia, aperiam tenetur dolor molestiae voluptate perferendis dolorem vel ex, unde fugit blanditiis sapiente.</p>
-  </a>
 
 
 <!--
