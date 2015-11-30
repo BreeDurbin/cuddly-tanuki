@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 //FLEX BOXES ----------------------------------------------------------------------------------------------------
-.flex-boxes {
+.flex-boxes-2 {
   $base-border-radius: 0 !default;
   $base-background-color: $background !default;
   $dark-gray: #333 !default;
@@ -32,7 +32,7 @@
     clear: both;
     text-align: center;
 
-  .flex-box {
+  .flex-box-2 {
     @include transition (all 0.2s ease-in-out);
     @include flex(2 2 15em);
     @include align-self(stretch);
