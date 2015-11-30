@@ -1,22 +1,18 @@
 <h1 class="text-box" align="center" style="color:#2d7eff">Stuff I have made.</h1> <h3 align="right" style="color:#2d7eff"> by Brian Durbin</h2>
 
 <div class="grid-items">
-	<% @fileuploads.each do |fileupload| %>			
-					<div class="grid-item">
-          <%= link_to "View Source", fileupload.source_url.to_s, class: "btn btn-warning" %>
-          
-					<h3 class="flex-title"><%= fileupload.section %></h3>
-					<%= fileupload.title %>
-					<%= fileupload.description %>
-          <br>
+	<% @fileuploads.each do |fileupload| %>
+    <a href="<%fileupload.source_url.to_s%>" class="grid-item">
+	     <h3 class="flex-title"><%= fileupload.section %></h3>
+	     <p><%= fileupload.title %></p>
+	     <p><%= fileupload.description %></p>
+        <br>
 
-          <% if user_signed_in? %>
-            <%= link_to "Edit file", edit_fileupload_path(fileupload), class: "btn btn-warning" %>
-            <%= link_to "Delete", fileupload_path(fileupload), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"}, class: "btn btn-warning" %>
-          <% end %>
-
-          </div>
-
+      <% if user_signed_in? %>
+        <%= link_to "Edit file", edit_fileupload_path(fileupload), class: "btn btn-warning" %>
+        <%= link_to "Delete", fileupload_path(fileupload), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"}, class: "btn btn-warning" %>
+      <% end %>
+    </a>
 	<% end -%>
 	<%= will_paginate @fileuploads %>
 </div>
