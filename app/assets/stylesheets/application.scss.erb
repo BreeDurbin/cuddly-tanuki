@@ -786,8 +786,8 @@ header.navigation {
   $base-font-color: $fore !default;
   $flex-box-border-color: $hover;
   $flex-box-border: 0 solid $flex-box-border-color;
-  $flex-box-background: $hover;
-  $flex-box-gutter: 0;
+  $flex-box-background: $background;
+  $flex-box-gutter: 1em 0 1em 0;
   $flex-box-width: 20em;
   $flex-box-color: $base-font-color;
   $flex-box-top-colors: 
@@ -828,7 +828,7 @@ header.navigation {
         
         &:focus,
         &:hover {
-          background-color: darken($color-from-list, 15%);
+          background-color: darken($color-from-list, 20%);
         }
       }
     }
