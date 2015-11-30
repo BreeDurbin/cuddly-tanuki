@@ -397,10 +397,10 @@ header.navigation {
   $action-color: $hover !default;
   $medium-screen: em(640) !default;
   $large-screen: em(860) !default;
-  $footer-background: desaturate(darken($action-color, 20%), 30%);
-  $footer-color: $hover;
-  $footer-link-color: transparentize($fore, 0.6);
-  $footer-disclaimer-color: transparentize($fore, 0.6);
+  $footer-background: $action-color;
+  $footer-color: $fore
+  $footer-link-color: $fore;
+  $footer-disclaimer-color: $fore;
 
   background: $hover;
   padding: $base-spacing;
@@ -450,7 +450,7 @@ header.navigation {
 
     &:focus,
     &:hover {
-      color: transparentize($footer-color, 0);
+      color: $footer-color;
     }
   }
 
