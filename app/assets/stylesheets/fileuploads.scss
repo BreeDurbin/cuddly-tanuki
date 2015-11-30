@@ -53,7 +53,7 @@
         
         &:focus,
         &:hover {
-          background-color: darken($color-from-list, 0.1);
+          background-color: darken($color-from-list, 10%);
         }
       }
     }
