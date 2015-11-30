@@ -601,7 +601,7 @@ header.navigation {
   $grid-item-columns: 4;
   $grid-item-big-columns: 8;
   $grid-item-color: $white;
-  $grid-item-height: 15em;
+  $grid-item-height: 18em;
 
   @include clearfix;
     
@@ -610,7 +610,7 @@ header.navigation {
     background: $grid-item-background;
     border-bottom: $grid-item-border-size solid $grid-items-background;
     border-left: ($grid-item-border-size / 2) solid $grid-items-background;
-    border-right: ($grid-item-border-size / 2) solid transparent;
+    border-right: ($grid-item-border-size / 2) solid $grid-items-background;
     border-top: 0;
     cursor: pointer;
     float: left;
@@ -620,8 +620,8 @@ header.navigation {
     padding: 2em;
     text-align: center;
     text-decoration: none;
-    width: 100%;
-    margin: 0;
+    width: 99%;
+    margin: 0 .5vw 1vw .5vw;
 
     @include media($large-screen) {
       @include grid-item-columns($grid-item-columns);
