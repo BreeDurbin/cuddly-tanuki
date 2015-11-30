@@ -2,17 +2,19 @@
 
 <div class="grid-items">
 	<% @fileuploads.each do |fileupload| %>
-    <a href="<%fileupload.source_url.to_s%>" class="grid-item">
-	     <h3 class="flex-title"><%= fileupload.section %></h3>
-	     <p><%= fileupload.title %></p>
-	     <p><%= fileupload.description %></p>
-        <br>
+    
+    <%= link_to fileupload.source_url.to_s do class="grid-item" %>
 
-      <p><% if user_signed_in? %>
+      <h3 class="flex-title"><%= fileupload.section %></h3>
+      <p><%= fileupload.title %></p>
+      <p><%= fileupload.description %></p>
+      <% if user_signed_in? %>
         <%= link_to "Edit file", edit_fileupload_path(fileupload), class: "btn btn-warning" %>
         <%= link_to "Delete", fileupload_path(fileupload), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"}, class: "btn btn-warning" %>
-      <% end %></p>
-    </a>
+      <% end %>
+
+    <% end %>
+
 	<% end -%>
 	<%= will_paginate @fileuploads %>
 </div>
