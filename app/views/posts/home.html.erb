@@ -1,103 +1,80 @@
-<ul class="accordion">
-  <li>
-    <a href="javascript:void(0)" class="js-accordion-trigger">Accordion Item</a>
-    <ul class="submenu">
-      <li>
-        <a href="javascript:void(0)">Sub Item 1</a>
-      </li>
-      <li>
-        <a href="javascript:void(0)">Sub Item 2</a>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <a href="javascript:void(0)" class="js-accordion-trigger">Another Item</a>
-    <ul class="submenu">
-      <li>
-        <a href="javascript:void(0)">Sub Item 1</a>
-      </li>
-      <li>
-        <a href="javascript:void(0)">Sub Item 2</a>
-      </li>
-    </ul>
-  </li>
-</ul>
-		<div class="row">
-				<div class="col-lg-3">
 
-				<br><br><br>
-				<ul class="accordion">
-				  <li>
-				    <a href="javascript:void(0)" class="js-accordion-trigger">Webcomics</a>
-				    <ul class="submenu">
-				      <li>
-				        <a href="http://www.giantitp.com/Comics.html">Order of the Stick</a>
-				      </li>
-				      <li>
-				        <a href="http://www.smbc-comics.com/index.php?id=3940">Saturday Morning Breakfast Cereal</a>
-				      </li>
-				      <li>
-				        <a href="http://xkcd.com/">XKCD</a>
-				      </li>
-				      <li>
-				        <a href="http://abstrusegoose.com/12">Abstruse Goose</a>
-				      </li>
-				    </ul>
-				  </li>
-				  <li>
-				    <a href="javascript:void(0)" class="js-accordion-trigger">Mathematics</a>
-				    <ul class="submenu">
-				      <li>
-				        <a href="https://terrytao.wordpress.com/">Terrence Tao's Mathematics Blog</a>
-				      </li>
-				    </ul>
-				  </li>
-				  <li>
-				    <a href="javascript:void(0)" class="js-accordion-trigger">Science</a>
-				    <ul class="submenu">
-				      <li>
-				        <a href="http://arxiv.org/">arXiv</a>
-				      </li>
-				    </ul>
-				  </li>
-				  <li>
-				    <a href="javascript:void(0)" class="js-accordion-trigger">News & Politics</a>
-				    <ul class="submenu">
-				      <li>
-				        <a href="javascript:void(0)">Sub Item 1</a>
-				      </li>
-				      <li>
-				        <a href="javascript:void(0)">Sub Item 2</a>
-				      </li>
-				    </ul>
-				  </li>
-				  <li>
-				    <a href="javascript:void(0)" class="js-accordion-trigger">Social</a>
-				    <ul class="submenu">
-				      <li>
-				        <a href="javascript:void(0)">Sub Item 1</a>
-				      </li>
-				      <li>
-				        <a href="javascript:void(0)">Sub Item 2</a>
-				      </li>
-				    </ul>
-				  </li>
-				</ul>
-				</div>
+<div class="row">
+		<div class="col-lg-3">
+
+		<br><br><br>
+		<ul class="accordion">
+		  <li>
+		    <a href="javascript:void(0)" class="js-accordion-trigger">Webcomics</a>
+		    <ul class="submenu">
+		      <li>
+		        <a href="http://www.giantitp.com/Comics.html">Order of the Stick</a>
+		      </li>
+		      <li>
+		        <a href="http://www.smbc-comics.com/index.php?id=3940">Saturday Morning Breakfast Cereal</a>
+		      </li>
+		      <li>
+		        <a href="http://xkcd.com/">XKCD</a>
+		      </li>
+		      <li>
+		        <a href="http://abstrusegoose.com/12">Abstruse Goose</a>
+		      </li>
+		    </ul>
+		  </li>
+		  <li>
+		    <a href="javascript:void(0)" class="js-accordion-trigger">Mathematics</a>
+		    <ul class="submenu">
+		      <li>
+		        <a href="https://terrytao.wordpress.com/">Terrence Tao's Mathematics Blog</a>
+		      </li>
+		    </ul>
+		  </li>
+		  <li>
+		    <a href="javascript:void(0)" class="js-accordion-trigger">Science</a>
+		    <ul class="submenu">
+		      <li>
+		        <a href="http://arxiv.org/">arXiv</a>
+		      </li>
+		    </ul>
+		  </li>
+		  <li>
+		    <a href="javascript:void(0)" class="js-accordion-trigger">News & Politics</a>
+		    <ul class="submenu">
+		      <li>
+		        <a href="javascript:void(0)">Sub Item 1</a>
+		      </li>
+		      <li>
+		        <a href="javascript:void(0)">Sub Item 2</a>
+		      </li>
+		    </ul>
+		  </li>
+		  <li>
+		    <a href="javascript:void(0)" class="js-accordion-trigger">Social</a>
+		    <ul class="submenu">
+		      <li>
+		        <a href="javascript:void(0)">Sub Item 1</a>
+		      </li>
+		      <li>
+		        <a href="javascript:void(0)">Sub Item 2</a>
+		      </li>
+		    </ul>
+		  </li>
+		</ul>
+		</div>
+
+
 
 
 
 	
+	
+	<div class="col-lg-9">
+		<h1 align="center">Programming, Mathematics, Science and other nerdery.</h1> <h3 align="right"> by Brian Durbin</h3>
+		<!--blog here -->
 
-			
-			
-			<div class="col-lg-9">
-				<h1 align="center">Programming, Mathematics, Science and other nerdery.</h1> <h3 align="right"> by Brian Durbin</h3>
-				<!--blog here -->
+		<%= render 'displayall' %>
 
-				<%= render 'displayall' %>
-
-				<%= will_paginate @posts %>
-			</div>
-		</div>
+		<%= will_paginate @posts %>
+	</div>
+</div>
 	
