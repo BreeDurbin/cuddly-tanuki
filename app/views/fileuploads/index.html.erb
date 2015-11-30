@@ -6,13 +6,14 @@
       <h3 class="flex-title"><%= fileupload.section %></h3>
       <p><%= fileupload.title %></p>
       <p><%= fileupload.description %></p>
-      <p><% if user_signed_in? %>
+
+      <br>
+    
+    <% if user_signed_in? %>
         <%= link_to "Edit file", edit_fileupload_path(fileupload), class: "btn btn-warning" %>
         <%= link_to "Delete", fileupload_path(fileupload), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"}, class: "btn btn-warning" %>
       <% end %>
-      </p>
-      <br>
-    </a>
+      </a>
 
 
 	<% end -%>
