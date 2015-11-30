@@ -14,6 +14,7 @@ $white: #FFFFFF;
 body {
   margin: 0;
   padding: 0 3em 0 3em;
+  background-image: url(<%= image_path('background.jpg') %>) 
 }
 
 .btn-warning {
@@ -62,10 +63,11 @@ img {
   width: 100%;
   top: 50px;
   background:{
-    image: url(<%= image_path('background.jpg') %>);
+    image: none;
     repeat: no-repeat;
     position: fixed;
     size: cover;
+    color: none;
   }
 }
 
