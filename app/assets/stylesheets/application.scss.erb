@@ -509,8 +509,8 @@ header.navigation {
   $base-font-color: $fore !default;
   $accordion-menu-border-color: $base-border-color;
   $accordion-menu-color: $base-font-color;
-  $accordion-menu-border: 3px solid transparentize($accordion-menu-border-color, 1);
-  $accordion-menu-margin: 0 0 1em 3em;
+  $accordion-menu-border: 3px solid transparent;
+  //$accordion-menu-margin: 0 0 1em 3em;
   $accordion-menu-background: $accordion-menu-border-color;
   $accordion-menu-hover: $hover;
   $accordion-menu-sub-background: $accordion-menu-background;
@@ -529,9 +529,8 @@ header.navigation {
   }
 
   li {
-    margin: $accordion-menu-margin;
+    //margin: $accordion-menu-margin;
     list-style: none;
-    box-sizing: padding-box;
 
     > a {
       color: $accordion-menu-color;
