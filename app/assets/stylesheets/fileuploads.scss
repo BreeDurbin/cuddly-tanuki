@@ -10,8 +10,8 @@
   $light-gray: #DDD !default;
   $base-font-color: $fore !default;
   $flex-box-border-color: $hover;
-  $flex-box-border: 2px solid $flex-box-border-color;
-  $flex-box-background: $background;
+  $flex-box-border: 0 solid $flex-box-border-color;
+  $flex-box-background: $hover;
   $flex-box-gutter: 1em;
   $flex-box-width: 20em;
   $flex-box-color: $base-font-color;
