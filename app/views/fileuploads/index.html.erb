@@ -1,8 +1,8 @@
 <h1 class="text-box" align="center" style="color:#2d7eff">Stuff I have made.</h1> <h3 align="right" style="color:#2d7eff"> by Brian Durbin</h2>
 
-<div class="grid-items">
+<div class="flex-boxes">
 	<% @fileuploads.each do |fileupload| %>
-    <div class="grid-item">
+    <div class="flex-box">
     <%= link_to fileupload.source_url.to_s do%>
 
       <h3 class="flex-title"><%= fileupload.section %></h3>
