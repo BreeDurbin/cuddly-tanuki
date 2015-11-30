@@ -610,7 +610,7 @@ header.navigation {
     background: $grid-item-background;
     border-bottom: $grid-item-border-size solid $grid-items-background;
     border-left: ($grid-item-border-size / 2) solid $grid-items-background;
-    border-right: ($grid-item-border-size / 2) solid $grid-items-background;
+    border-right: ($grid-item-border-size / 2) solid transparent;
     border-top: 0;
     cursor: pointer;
     float: left;
@@ -622,10 +622,6 @@ header.navigation {
     text-decoration: none;
     width: 100%;
     margin: 0;
-
-    -moz-background-clip: padding;     /* Firefox 3.6 */
-    -webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
-    background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
 
     @include media($large-screen) {
       @include grid-item-columns($grid-item-columns);
@@ -640,7 +636,7 @@ header.navigation {
 
         &:focus,
         &:hover {
-          background-color: darken($background-from-list, 30%);
+          background-color: darken($background-from-list, 10%);
           background-repeat: no-repeat;
           background-position: top;
           background-size: cover;
@@ -662,7 +658,7 @@ header.navigation {
   }
 
   .grid-item p {
-    color: transparentize($grid-item-color, 0.3);
+    color: $grid-item-color;
     line-height: 1.5em;
     margin: auto;
     
