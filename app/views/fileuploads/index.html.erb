@@ -2,7 +2,8 @@
 
 <div class="flex-boxes">
 	<% @fileuploads.each do |fileupload| %>
-    <a href="<%= fileupload.source_url.to_s%>" class="flex-box">
+    <div class="flex-box">
+    <a href="<%= fileupload.source_url.to_s%>">
       <h3 class="flex-title"><%= fileupload.section %></h3>
       <p><%= fileupload.title %></p>
       <p><%= fileupload.description %></p>
@@ -14,6 +15,7 @@
         <%= link_to "Delete", fileupload_path(fileupload), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"}, class: "btn btn-warning" %>
       <% end %>
       </a>
+      </div>
 
 
 	<% end -%>
