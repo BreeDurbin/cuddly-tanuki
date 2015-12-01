@@ -30,7 +30,7 @@ gem 'will_paginate', '~>3.0.7'
 gem 'carrierwave'
 gem 'carrierwave-dropbox'
 gem 'mail_form', '~>1.5.1'
-gem 'rails_12factor'
+
 gem  'devise', '~>3.4.1'
 gem 'bourbon'
 gem 'bitters'
@@ -58,3 +58,4 @@ group :development do
   gem 'spring'
 end
 
+gem 'rails_12factor', group: :production
