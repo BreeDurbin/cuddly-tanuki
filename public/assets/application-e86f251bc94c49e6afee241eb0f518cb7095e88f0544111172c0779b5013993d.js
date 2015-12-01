@@ -11649,15 +11649,11 @@ return jQuery;
 
 }).call(this);
 (function() {
-
-
-}).call(this);
-(function() {
-
-
-}).call(this);
-(function() {
-
+  $('.js-accordion-trigger').bind('click', function(e) {
+    jQuery(this).parent().find('.submenu').slideToggle('fast');
+    jQuery(this).parent().toggleClass('is-expanded');
+    e.preventDefault();
+  });
 
 }).call(this);
 (function() {
@@ -11685,13 +11681,7 @@ return jQuery;
 //REFILLS------------------------------------------------------------------------------------
 
 
-//=============================ACCORDION===============================================
 
-$('.js-accordion-trigger').bind('click', function(e){
-  jQuery(this).parent().find('.submenu').slideToggle('fast');  // apply the toggle to the ul
-  jQuery(this).parent().toggleClass('is-expanded');
-  e.preventDefault();
-});
 
 //==========================++NAVBAR JS++===============================================
 
@@ -11710,8 +11700,8 @@ $(document).ready(function() {
 });
 
 
+
+
 //======================================================================================
 
-//test
-
-alert("hello");
+//alert("javascript up");
