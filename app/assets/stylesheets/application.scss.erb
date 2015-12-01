@@ -222,6 +222,7 @@ header.navigation {
 
       @include media ($horizontal-bar-mode) {
         padding-right: 1em;
+        padding-left: 1em;
       }
 
       &:focus,
@@ -400,10 +401,10 @@ header.navigation {
   $action-color: $hover !default;
   $medium-screen: em(640) !default;
   $large-screen: em(860) !default;
-  $footer-background: $action-color;
+  $footer-background: $background;
   $footer-color: $fore;
-  $footer-link-color: $fore;
-  $footer-disclaimer-color: $fore;
+  $footer-link-color: $hover;
+  $footer-disclaimer-color: $hover;
 
   background: $hover;
   padding: $base-spacing;
@@ -643,7 +644,7 @@ header.navigation {
   }
 
   ul.submenu {
-    display: block;
+    display: blocklma;
 
     li {
       background-color: $accordion-menu-sub-background;
@@ -667,5 +668,91 @@ header.navigation {
 }
 
 //=============================================================================================================
+
+
+//FLEX BOXES-2 ----------------------------------------------------------------------------------------------------
+.flex-boxes-2 {
+  $base-border-radius: 0 !default;
+  $base-background-color: $background !default;
+  $dark-gray: #333 !default;
+  $light-gray: #DDD !default;
+  $base-font-color: $fore !default;
+  $flex-box-border-color: $hover;
+  $flex-box-border: 0 solid $flex-box-border-color;
+  $flex-box-background: $background;
+  $flex-box-gutter: 0 0 1em 0;
+  $flex-box-width: 20em;
+  $flex-box-color: $base-font-color;
+  $flex-box-top-colors: 
+    $hover,
+    $hover, 
+    $hover,
+    $hover, 
+    $hover, 
+    $hover, 
+    $hover;
+
+    @include display(flex);
+    @include justify-content(center);
+    @include align-items(stretch);
+    @include flex-wrap(wrap);
+    //flex-direction: column; Does this work??
+    clear: both;
+    text-align: center;
+
+  .flex-box-2 {
+    @include transition (all 0.2s ease-in-out);
+    @include flex(2 2 15em);
+    @include align-self(stretch);
+    background: $flex-box-background;
+    border-radius: $base-border-radius;
+    box-shadow: none;                                //inset 0 0 1px $flex-box-border-color, 0 2px 4px darken($base-background-color, 10%);
+    display: block;
+    margin: $flex-box-gutter;
+    padding: 2em 2em 3em 2em;
+    text-decoration: none;
+    text-align: justify;
+
+    @for $i from 1 to 7 { 
+// assign colors from $flex-box-top-colors list
+      &:nth-child(#{$i}) {
+        $color-from-list: nth($flex-box-top-colors, $i);
+        //border-top: 6px solid $color-from-list;
+        
+        &:focus,
+        &:hover {
+          background-color: darken($color-from-list, 10%);
+        }
+      }
+    }
+
+    img {
+      display: block;
+      height: 7em;
+      margin: 0 auto 1em;
+      opacity: 0.4;
+    }
+
+    .flex-title {
+      color: $flex-box-color;
+      font-size: 1.2em;
+      margin-bottom: 0.5em;
+      text-decoration: none;
+    }
+
+    p {
+      color: $flex-box-color;
+      line-height: 1.5em;
+      margin: auto;
+    }
+  }
+
+  .flex-box-big {
+    @include flex(1 1 100%);
+  }
+}
+
+//-------------------------------------------------------------------------------------------------------------
+
 
 
