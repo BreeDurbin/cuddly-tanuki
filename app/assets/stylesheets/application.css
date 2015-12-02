@@ -14,12 +14,4 @@
  *= require_self
  */
 
-@import 'bourbon';
-@import 'neat';
 
-@import 'pygments';
- @import 'application.scss.erb';
- @import 'fileuploads.scss.erb';
- @import 'pages.scss.erb';
- @import 'posts.scss.erb';
- @import 'projects.scss.erb';
