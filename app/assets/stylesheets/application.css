@@ -17,8 +17,8 @@
  @import "bourbon";
  @import "neat";
  @import 'pygments';
- @include application.scss.erb;
- @include fileuploads.scss.erb;
- @include pages.scss.erb;
- @include posts.scss.erb;
- @include projects.scss.erb;
+ @import application.scss.erb;
+ @import fileuploads.scss.erb;
+ @import pages.scss.erb;
+ @import posts.scss.erb;
+ @import projects.scss.erb;
