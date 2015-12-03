@@ -33,10 +33,11 @@ gem 'carrierwave'
 gem 'carrierwave-dropbox'
 gem 'mail_form', '~>1.5.1'
 
-gem  'devise', '~>3.4.1'
+gem 'devise', '~>3.4.1'
 gem 'bourbon'
 gem 'bitters'
 gem 'neat'
+gem 'jquery-rails'
 
 gem 'rails_serve_static_assets'
 
