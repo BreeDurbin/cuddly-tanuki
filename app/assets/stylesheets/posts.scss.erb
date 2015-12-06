@@ -24,7 +24,7 @@ $white: #FFFFFF;
   $accordion-menu-background: $background;
   $accordion-menu-hover: $hover;
   $accordion-menu-sub-background: none;
-  $accordion-menu-sub-inset: darken($accordion-menu-sub-background, 6%);
+  //$accordion-menu-sub-inset: darken($accordion-menu-sub-background, 6%);
   $accordion-menu-sub-hover: $hover;
   $accordion-menu-list-padding: ($base-spacing / 2) $gutter;
   
@@ -32,7 +32,7 @@ $white: #FFFFFF;
   border: $accordion-menu-border;
   margin: 0 0 $base-spacing 0;
   padding: 0;
-  background-clip: border;
+  background-clip: content-box;
 
   ul {
     margin: 0;
@@ -74,7 +74,7 @@ $white: #FFFFFF;
       &:focus,
       &:hover {
         background-color: $accordion-menu-sub-hover;
-        
+
       }
     }
   }
