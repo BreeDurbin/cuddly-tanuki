@@ -482,53 +482,55 @@ h3 {
 /* line 15, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
 .accordion {
   background-color: #000000;
-  border: 3px solid #ffb02d;
+  border: 0.4em solid rgba(255, 176, 45, 0.5);
   margin: 0 0 1.5em 0;
   padding: 0;
+  background-clip: padding-box;
 }
-/* line 36, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
+/* line 37, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
 .accordion ul {
   margin: 0;
   padding: 0;
 }
-/* line 41, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
+/* line 42, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
 .accordion li {
-  border-bottom: 3px solid #ffb02d;
+  border-bottom: 0.4em solid rgba(255, 176, 45, 0.5);
   list-style: none;
 }
-/* line 45, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
+/* line 46, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
 .accordion li > a {
   color: #FFFFFF;
   display: block;
   padding: 0.75em 1.618em;
   text-decoration: none;
 }
-/* line 52, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
+/* line 53, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
 .accordion li:last-child {
   border: none;
 }
-/* line 56, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
+/* line 57, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
 .accordion li:focus, .accordion li:hover {
   background-color: #2d7eff;
 }
-/* line 62, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
+/* line 63, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
 .accordion ul.submenu {
   display: none;
+  background-clip: padding-box;
 }
-/* line 65, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
+/* line 67, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
 .accordion ul.submenu li {
-  background-color: #262626;
+  background-color: none;
 }
-/* line 68, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
+/* line 70, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
 .accordion ul.submenu li:first-child {
-  border-top: 3px solid #ffb02d;
-  box-shadow: inset 0 1px 1px #171717;
+  border-top: 0.4em solid rgba(255, 176, 45, 0.5);
+  box-shadow: none;
 }
-/* line 73, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
+/* line 75, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
 .accordion ul.submenu li:focus, .accordion ul.submenu li:hover {
   background-color: #2d7eff;
 }
-/* line 80, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
+/* line 83, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
 .accordion .is-expanded {
   display: block;
   padding-bottom: 0;
