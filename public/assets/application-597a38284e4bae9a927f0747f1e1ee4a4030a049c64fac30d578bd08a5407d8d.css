@@ -479,6 +479,61 @@ h3 {
 }
 
 /* Literal.Number.Integer.Long */
+/* line 15, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
+.accordion {
+  background-color: #000000;
+  border: 1.5px 0 1.5px 0 solid #ffb02d;
+  margin: 0 0 1.5em 0;
+  padding: 0;
+}
+/* line 36, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
+.accordion ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 41, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
+.accordion li {
+  border-bottom: 1.5px 0 1.5px 0 solid #ffb02d;
+  list-style: none;
+}
+/* line 45, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
+.accordion li > a {
+  color: #FFFFFF;
+  display: block;
+  padding: 0.75em 1.618em;
+  text-decoration: none;
+}
+/* line 52, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
+.accordion li:last-child {
+  border: none;
+}
+/* line 56, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
+.accordion li:focus, .accordion li:hover {
+  background-color: #2d7eff;
+}
+/* line 62, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
+.accordion ul.submenu {
+  display: none;
+}
+/* line 65, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
+.accordion ul.submenu li {
+  background-color: #262626;
+}
+/* line 68, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
+.accordion ul.submenu li:first-child {
+  border-top: 1.5px 0 1.5px 0 solid #ffb02d;
+  box-shadow: inset 0 1px 1px #171717;
+}
+/* line 73, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
+.accordion ul.submenu li:focus, .accordion ul.submenu li:hover {
+  background-color: #2d7eff;
+}
+/* line 80, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
+.accordion .is-expanded {
+  display: block;
+  padding-bottom: 0;
+}
+
 /* line 13, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/projects.scss.erb */
 .flex-boxes {
   display: -webkit-box;
@@ -1176,61 +1231,7 @@ header.navigation .navigation-tools {
   flex: 1 1 100%;
 }
 
-/* line 602, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
-.accordion {
-  background-color: #2d7eff;
-  border: #ffb02d;
-  margin: 0 1.5em 0;
-  padding: 0;
-}
-/* line 624, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
-.accordion ul {
-  margin: 0;
-  padding: 0;
-}
-/* line 629, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
-.accordion li {
-  list-style: none;
-}
-/* line 633, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
-.accordion li > a {
-  color: #ffb02d;
-  display: block;
-  padding: 0.75em 1.618em;
-  text-decoration: none;
-}
-/* line 640, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
-.accordion li:last-child {
-  border: none;
-}
-/* line 644, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
-.accordion li:focus, .accordion li:hover {
-  background-color: #2d7eff;
-}
-/* line 650, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
-.accordion ul.submenu {
-  display: none;
-}
-/* line 653, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
-.accordion ul.submenu li {
-  background-color: #000000;
-}
-/* line 656, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
-.accordion ul.submenu li:first-child {
-  border-top: 3px solid transparent;
-  box-shadow: inset 0 1px 1px black;
-}
-/* line 661, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
-.accordion ul.submenu li:focus, .accordion ul.submenu li:hover {
-  background-color: #2d7eff;
-}
-/* line 668, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
-.accordion .is-expanded {
-  display: block;
-  padding-bottom: 0;
-}
-
-/* line 678, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
+/* line 606, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
 .flex-boxes-2 {
   display: -webkit-box;
   display: -moz-box;
@@ -1267,7 +1268,7 @@ header.navigation .navigation-tools {
   clear: both;
   text-align: center;
 }
-/* line 707, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
+/* line 635, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
 .flex-boxes-2 .flex-box-2 {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -1292,51 +1293,51 @@ header.navigation .navigation-tools {
   text-decoration: none;
   text-align: justify;
 }
-/* line 726, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
+/* line 654, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
 .flex-boxes-2 .flex-box-2:nth-child(1):focus, .flex-boxes-2 .flex-box-2:nth-child(1):hover {
   background-color: #0060f9;
 }
-/* line 726, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
+/* line 654, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
 .flex-boxes-2 .flex-box-2:nth-child(2):focus, .flex-boxes-2 .flex-box-2:nth-child(2):hover {
   background-color: #0060f9;
 }
-/* line 726, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
+/* line 654, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
 .flex-boxes-2 .flex-box-2:nth-child(3):focus, .flex-boxes-2 .flex-box-2:nth-child(3):hover {
   background-color: #0060f9;
 }
-/* line 726, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
+/* line 654, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
 .flex-boxes-2 .flex-box-2:nth-child(4):focus, .flex-boxes-2 .flex-box-2:nth-child(4):hover {
   background-color: #0060f9;
 }
-/* line 726, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
+/* line 654, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
 .flex-boxes-2 .flex-box-2:nth-child(5):focus, .flex-boxes-2 .flex-box-2:nth-child(5):hover {
   background-color: #0060f9;
 }
-/* line 726, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
+/* line 654, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
 .flex-boxes-2 .flex-box-2:nth-child(6):focus, .flex-boxes-2 .flex-box-2:nth-child(6):hover {
   background-color: #0060f9;
 }
-/* line 733, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
+/* line 661, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
 .flex-boxes-2 .flex-box-2 img {
   display: block;
   height: 7em;
   margin: 0 auto 1em;
   opacity: 0.4;
 }
-/* line 740, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
+/* line 668, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
 .flex-boxes-2 .flex-box-2 .flex-title {
   color: #ffb02d;
   font-size: 1.2em;
   margin-bottom: 0.5em;
   text-decoration: none;
 }
-/* line 747, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
+/* line 675, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
 .flex-boxes-2 .flex-box-2 p {
   color: #ffb02d;
   line-height: 1.5em;
   margin: auto;
 }
-/* line 754, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
+/* line 682, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
 .flex-boxes-2 .flex-box-big {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
