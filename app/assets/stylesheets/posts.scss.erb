@@ -20,16 +20,16 @@ $white: #FFFFFF;
   $base-font-color: $white !default;
   $accordion-menu-border-color: $base-border-color;
   $accordion-menu-color: $base-font-color;
-  $accordion-menu-border: .4em  solid transparentize($accordion-menu-border-color, .9);
+  $accordion-menu-border: .4em  solid $accordion-menu-border-color;
   $accordion-menu-background: $background;
   $accordion-menu-hover: $hover;
-  $accordion-menu-sub-background: $fore;
+  $accordion-menu-sub-background: none;
   $accordion-menu-sub-inset: darken($accordion-menu-sub-background, 6%);
   $accordion-menu-sub-hover: $hover;
   $accordion-menu-list-padding: ($base-spacing / 2) $gutter;
   
   background-color: $accordion-menu-background;
-  border: $accordion-menu-border 0 $accordion-menu-border 0;
+  border: $accordion-menu-border;
   margin: 0 0 $base-spacing 0;
   padding: 0;
   background-clip: border;
@@ -74,6 +74,7 @@ $white: #FFFFFF;
       &:focus,
       &:hover {
         background-color: $accordion-menu-sub-hover;
+        
       }
     }
   }
