@@ -1222,7 +1222,7 @@ header.navigation .navigation-tools {
 }
 /* line 661, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
 .accordion ul.submenu li:focus, .accordion ul.submenu li:hover {
-  background-color: #000000;
+  background-color: #2d7eff;
 }
 /* line 668, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/application.scss.erb */
 .accordion .is-expanded {
