@@ -15,7 +15,7 @@ $white: #FFFFFF;
 .accordion {  
   $base-border-color: gainsboro !default;
   $base-line-height: 1.5em !default;
-  $base-spacing: 5em !default;
+  $base-spacing: 1.5em !default;
   $dark-gray: #333 !default;
   $base-font-color: $fore !default;
   $accordion-menu-border-color: $base-border-color;
@@ -23,13 +23,12 @@ $white: #FFFFFF;
   $accordion-menu-border: 0 solid $accordion-menu-border-color;
   $accordion-menu-background: $background;
   $accordion-menu-hover: $hover;
-  $accordion-menu-sub-background: transparentize($accordion-menu-background, .4);
+  $accordion-menu-sub-background: transparentize($background, .4);
   //$accordion-menu-sub-inset: darken($accordion-menu-sub-background, 6%);
   $accordion-menu-sub-hover: transparentize($hover, .4);
   $accordion-menu-list-padding: ($base-spacing / 2) $gutter;
   
   background-color: $accordion-menu-background;
-  background-clip: padding-box;
   border: $accordion-menu-border;
   margin: 0 0 $base-spacing 0;
   padding: 0;
