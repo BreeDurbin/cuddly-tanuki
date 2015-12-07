@@ -29,6 +29,7 @@ $white: #FFFFFF;
   $accordion-menu-list-padding: ($base-spacing / 2) $gutter;
   
   background-color: $accordion-menu-background;
+  background-clip: border-box;
   border: $accordion-menu-border;
   margin: 0 0 $base-spacing 0;
   padding: 0;
@@ -57,6 +58,7 @@ $white: #FFFFFF;
     &:focus,
     &:hover {
       background-color: $accordion-menu-hover;
+      background-clip: border-box;
     }
   }
 
@@ -65,6 +67,7 @@ $white: #FFFFFF;
 
     li {
       background-color: $accordion-menu-sub-background;
+      background-clip: border-box;
 
       &:first-child {
         border-top: $accordion-menu-border;
@@ -74,6 +77,7 @@ $white: #FFFFFF;
       &:focus,
       &:hover {
         background-color: $accordion-menu-sub-hover;
+        background-clip: border-box;
       }
     }
   }
@@ -81,6 +85,9 @@ $white: #FFFFFF;
   .is-expanded {
     display: block;
     padding-bottom: 0;
+    background-clip: border-box;
     margin: 0 0 1em 0;
   }
 }
+
+background-clip: border-box;
