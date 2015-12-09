@@ -35,6 +35,7 @@ pre {
 
 /* line 26, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 code {
+  color: #2d7eff;
   background-color: #000000;
   padding: 1px 3px;
   -webkit-border-radius: 2px;
@@ -42,91 +43,91 @@ code {
   border-radius: 2px;
 }
 
-/* line 33, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 34, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 li p {
   margin: 0.3em;
 }
 
-/* line 36, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 37, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 li {
   list-style-type: disc;
 }
 
-/* line 39, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 40, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 a:link, a:visited {
   color: #ffb02d;
   text-decoration: none;
 }
 
-/* line 43, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 44, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 a:hover {
   color: #2d7eff;
   text-decoration: none;
 }
 
-/* line 47, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 48, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 h1 {
   color: #ffb02d;
   font-weight: bold;
 }
 
-/* line 51, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 52, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 h2 {
   border-bottom: 1px dotted #aaa;
   margin-bottom: 1em;
   color: #ffb02d;
 }
 
-/* line 56, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 57, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 h3 {
   color: #ffb02d;
 }
 
-/* line 61, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 62, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .hll {
   background-color: #ffffcc;
 }
 
-/* line 62, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 63, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .c {
   color: #888888;
 }
 
 /* Comment */
-/* line 63, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 64, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .err {
   color: #a61717;
   background-color: #e3d2d2;
 }
 
 /* Error */
-/* line 64, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 65, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .k {
   color: #008800;
   font-weight: bold;
 }
 
 /* Keyword */
-/* line 65, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 66, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .cm {
   color: #888888;
 }
 
 /* Comment.Multiline */
-/* line 66, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 67, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .cp {
   color: #cc0000;
   font-weight: bold;
 }
 
 /* Comment.Preproc */
-/* line 67, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 68, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .c1 {
   color: #888888;
 }
 
 /* Comment.Single */
-/* line 68, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 69, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .cs {
   color: #cc0000;
   font-weight: bold;
@@ -134,345 +135,345 @@ h3 {
 }
 
 /* Comment.Special */
-/* line 69, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 70, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .gd {
   color: #000000;
   background-color: #ffdddd;
 }
 
 /* Generic.Deleted */
-/* line 70, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 71, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .ge {
   font-style: italic;
 }
 
 /* Generic.Emph */
-/* line 71, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 72, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .gr {
   color: #aa0000;
 }
 
 /* Generic.Error */
-/* line 72, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 73, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .gh {
   color: #303030;
 }
 
 /* Generic.Heading */
-/* line 73, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 74, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .gi {
   color: #000000;
   background-color: #ddffdd;
 }
 
 /* Generic.Inserted */
-/* line 74, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 75, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .go {
   color: #888888;
 }
 
 /* Generic.Output */
-/* line 75, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 76, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .gp {
   color: #555555;
 }
 
 /* Generic.Prompt */
-/* line 76, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 77, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .gs {
   font-weight: bold;
 }
 
 /* Generic.Strong */
-/* line 77, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 78, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .gu {
   color: #606060;
 }
 
 /* Generic.Subheading */
-/* line 78, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 79, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .gt {
   color: #aa0000;
 }
 
 /* Generic.Traceback */
-/* line 79, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 80, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .kc {
   color: #008800;
   font-weight: bold;
 }
 
 /* Keyword.Constant */
-/* line 80, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 81, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .kd {
   color: #008800;
   font-weight: bold;
 }
 
 /* Keyword.Declaration */
-/* line 81, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 82, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .kn {
   color: #008800;
   font-weight: bold;
 }
 
 /* Keyword.Namespace */
-/* line 82, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 83, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .kp {
   color: #008800;
 }
 
 /* Keyword.Pseudo */
-/* line 83, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 84, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .kr {
   color: #008800;
   font-weight: bold;
 }
 
 /* Keyword.Reserved */
-/* line 84, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 85, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .kt {
   color: #888888;
   font-weight: bold;
 }
 
 /* Keyword.Type */
-/* line 85, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 86, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .m {
   color: #0000DD;
   font-weight: bold;
 }
 
 /* Literal.Number */
-/* line 86, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 87, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .s {
   color: #dd2200;
   background-color: #fff0f0;
 }
 
 /* Literal.String */
-/* line 87, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 88, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .na {
   color: #336699;
 }
 
 /* Name.Attribute */
-/* line 88, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 89, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .nb {
   color: #003388;
 }
 
 /* Name.Builtin */
-/* line 89, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 90, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .nc {
   color: #bb0066;
   font-weight: bold;
 }
 
 /* Name.Class */
-/* line 90, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 91, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .no {
   color: #003366;
   font-weight: bold;
 }
 
 /* Name.Constant */
-/* line 91, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 92, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .nd {
   color: #555555;
 }
 
 /* Name.Decorator */
-/* line 92, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 93, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .ne {
   color: #bb0066;
   font-weight: bold;
 }
 
 /* Name.Exception */
-/* line 93, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 94, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .nf {
   color: #0066bb;
   font-weight: bold;
 }
 
 /* Name.Function */
-/* line 94, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 95, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .nl {
   color: #336699;
   font-style: italic;
 }
 
 /* Name.Label */
-/* line 95, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 96, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .nn {
   color: #bb0066;
   font-weight: bold;
 }
 
 /* Name.Namespace */
-/* line 96, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 97, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .py {
   color: #336699;
   font-weight: bold;
 }
 
 /* Name.Property */
-/* line 97, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 98, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .nt {
   color: #bb0066;
   font-weight: bold;
 }
 
 /* Name.Tag */
-/* line 98, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 99, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .nv {
   color: #336699;
 }
 
 /* Name.Variable */
-/* line 99, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 100, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .ow {
   color: #008800;
 }
 
 /* Operator.Word */
-/* line 100, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 101, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .w {
   color: #bbbbbb;
 }
 
 /* Text.Whitespace */
-/* line 101, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 102, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .mf {
   color: #0000DD;
   font-weight: bold;
 }
 
 /* Literal.Number.Float */
-/* line 102, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 103, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .mh {
   color: #0000DD;
   font-weight: bold;
 }
 
 /* Literal.Number.Hex */
-/* line 103, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 104, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .mi {
   color: #0000DD;
   font-weight: bold;
 }
 
 /* Literal.Number.Integer */
-/* line 104, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 105, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .mo {
   color: #0000DD;
   font-weight: bold;
 }
 
 /* Literal.Number.Oct */
-/* line 105, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 106, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .sb {
   color: #dd2200;
   background-color: #fff0f0;
 }
 
 /* Literal.String.Backtick */
-/* line 106, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 107, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .sc {
   color: #dd2200;
   background-color: #fff0f0;
 }
 
 /* Literal.String.Char */
-/* line 107, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 108, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .sd {
   color: #dd2200;
   background-color: #fff0f0;
 }
 
 /* Literal.String.Doc */
-/* line 108, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 109, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .s2 {
   color: #dd2200;
   background-color: #fff0f0;
 }
 
 /* Literal.String.Double */
-/* line 109, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 110, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .se {
   color: #0044dd;
   background-color: #fff0f0;
 }
 
 /* Literal.String.Escape */
-/* line 110, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 111, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .sh {
   color: #dd2200;
   background-color: #fff0f0;
 }
 
 /* Literal.String.Heredoc */
-/* line 111, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 112, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .si {
   color: #3333bb;
   background-color: #fff0f0;
 }
 
 /* Literal.String.Interpol */
-/* line 112, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 113, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .sx {
   color: #22bb22;
   background-color: #f0fff0;
 }
 
 /* Literal.String.Other */
-/* line 113, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 114, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .sr {
   color: #008800;
   background-color: #fff0ff;
 }
 
 /* Literal.String.Regex */
-/* line 114, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 115, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .s1 {
   color: #dd2200;
   background-color: #fff0f0;
 }
 
 /* Literal.String.Single */
-/* line 115, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 116, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .ss {
   color: #aa6600;
   background-color: #fff0f0;
 }
 
 /* Literal.String.Symbol */
-/* line 116, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 117, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .bp {
   color: #003388;
 }
 
 /* Name.Builtin.Pseudo */
-/* line 117, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 118, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .vc {
   color: #336699;
 }
 
 /* Name.Variable.Class */
-/* line 118, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 119, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .vg {
   color: #dd7700;
 }
 
 /* Name.Variable.Global */
-/* line 119, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 120, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .vi {
   color: #3333bb;
 }
 
 /* Name.Variable.Instance */
-/* line 120, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
+/* line 121, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/pygments.css.scss */
 .il {
   color: #0000DD;
   font-weight: bold;
@@ -481,49 +482,54 @@ h3 {
 /* Literal.Number.Integer.Long */
 /* line 15, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
 .accordion {
-  background-color: #000000;
-  border: 0 solid gainsboro;
+  background-color: #f6f6f6;
+  border: 1px solid gainsboro;
   margin: 0 0 1.5em 0;
   padding: 0;
 }
 /* line 36, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
 .accordion ul {
+  margin: 0;
   padding: 0;
 }
 /* line 41, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
 .accordion li {
-  border-bottom: 0 solid gainsboro;
+  border-bottom: 1px solid gainsboro;
   list-style: none;
 }
-/* line 46, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
+/* line 45, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
 .accordion li > a {
-  color: #ffb02d;
+  color: #333;
   display: block;
   padding: 0.75em 1.618em;
   text-decoration: none;
 }
-/* line 53, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
+/* line 52, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
 .accordion li:last-child {
   border: none;
 }
-/* line 57, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
+/* line 56, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
 .accordion li:focus, .accordion li:hover {
-  background-color: #2d7eff;
+  background-color: #fbfbfb;
 }
-/* line 64, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
+/* line 62, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
 .accordion ul.submenu {
   display: none;
-  background: none;
+}
+/* line 65, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
+.accordion ul.submenu li {
+  background-color: #e9e9e9;
 }
 /* line 68, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
-.accordion ul.submenu li {
-  background-color: none;
+.accordion ul.submenu li:first-child {
+  border-top: 1px solid gainsboro;
+  box-shadow: inset 0 1px 1px #d9d9d9;
 }
-/* line 77, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
+/* line 73, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
 .accordion ul.submenu li:focus, .accordion ul.submenu li:hover {
-  background-color: rgba(45, 126, 255, 0.6);
+  background-color: #eeeeee;
 }
-/* line 85, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
+/* line 80, /home/kits/Desktop/brianNonRoot/rails/nonLinearLogic/app/assets/stylesheets/posts.scss.erb */
 .accordion .is-expanded {
   display: block;
   padding-bottom: 0;
