@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   get 'pages/aboutMe'
 
+  get 'pages/angular'
+
   get 'fileuploads/fileArchive'
 
   get 'fileuploads/index'
