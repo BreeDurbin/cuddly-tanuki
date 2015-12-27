@@ -28,8 +28,8 @@ class ProjectsController < ApplicationController
 	end
 
 	def update
-		if @fileupload.update(fileupload_params)
-			redirect_to @fileupload
+		if @project.update(project_params)
+			redirect_to @project
 		else
 			render 'edit'
 		end
@@ -50,7 +50,7 @@ class ProjectsController < ApplicationController
 	end
 
 	def project_params
-		params.require(:fileupload).permit(:section, :title, :description, :source, :bin, :slug)
+		params.require(:project).permit(:section, :title, :description, :source, :bin, :slug)
 	end
 	
 end
