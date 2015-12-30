@@ -1,5 +1,8 @@
 <div class="flex-boxes">
   
+<% if user_signed_in? %>
+	<%= link_to "New Upload", new_fileupload_path(@fileupload), class: "btn btn-warning" %>
+<% end %>
 
 <% @posts.each do |post| %>
 	
