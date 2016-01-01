@@ -10,20 +10,18 @@
 	</ul>
 	<% end %>
 	<%= f.label :section %><br>
-	<%= f.text_field :section %><br>
+	<%= f.text_field :section, :class => 'form-box' %><br>
 	<br>
 	<%= f.label :title %><br>
-	<%= f.text_field :title %><br>
+	<%= f.text_field :title, :class => 'form-box' %><br>
 	<br>
 	<%= f.label :description %><br>
-	<%= f.text_area :description %><br>
+	<%= f.text_area :description, :class => 'form-description-box' %><br>
 	<br>
 	<%= f.label :source %><br>
-	<%= f.file_field :source %><br>
+	<%= f.file_field :source, :class => 'form-box' %><br>
 	<br>
-	<%= f.label :bin %><br>
-	<%= f.file_field :bin %><br>
-	<br>
+
 	<%= f.submit 'Upload', class: "btn btn-warning" %>
 	</div>
 <% end %>

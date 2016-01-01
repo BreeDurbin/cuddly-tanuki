@@ -50,4 +50,6 @@ class FileuploadsController < ApplicationController
       params.require(:fileupload).permit(:section, :title, :description, :source, :bin, :slug)
     end
 
+    
+
 end
