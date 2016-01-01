@@ -665,8 +665,8 @@ body {
   border: none;
   text-decoration: none;
   border-radius: 0;
-  display: block;
-  margin: 0 auto 1em auto;
+  display: inline-block;
+  margin: 1em auto 1em auto;
 }
 /* line 31, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .btn-warning :hover {
@@ -691,37 +691,42 @@ body {
   padding: 5px 15px 5px 15px;
   background-color: #000000;
   color: #ffb02d;
+  text-align: center;
   margin: 5px auto 5px auto;
-  display: block;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
 }
 
-/* line 57, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 65, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .form-box {
-  width: 50%;
+  width: 75%;
   align: center;
   color: #ffb02d;
   border-color: #ffb02d;
   margin: 5px auto 5px auto;
-  display: block;
+  display: inline-block;
 }
 
-/* line 66, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 74, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .form-description-box {
-  width: 100%;
+  width: 75%;
   height: 40vh;
   align: center;
   color: #ffb02d;
   border-color: #ffb02d;
   margin: 5px auto 5px auto;
-  display: block;
+  display: inline-block;
 }
 
-/* line 77, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 85, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 img {
   float: right;
 }
 
-/* line 81, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 89, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .image-1 {
   border: 5px;
   border-color: #ffb02d;
@@ -730,7 +735,7 @@ img {
   top: 15vh;
 }
 
-/* line 93, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 101, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 #content {
   width: 100%;
   top: 50px;
@@ -740,7 +745,7 @@ img {
   background-size: cover;
 }
 
-/* line 104, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 112, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .wrapper-text-fields {
   color: #ffb02d;
   width: 75%;
@@ -749,7 +754,7 @@ img {
   padding: 10px 10px 10px 10px;
 }
 
-/* line 112, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 120, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .wrapper-text-area {
   color: #ffb02d;
   width: 75%;
@@ -759,7 +764,7 @@ img {
   padding: 10px 10px 10px 10px;
 }
 
-/* line 127, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 135, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 header.navigation {
   background-color: #000000;
   border-bottom: 0;
@@ -767,7 +772,7 @@ header.navigation {
   width: 100%;
   z-index: 999;
 }
-/* line 154, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 162, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 header.navigation .navigation-wrapper {
   max-width: 68em;
   margin-left: auto;
@@ -787,19 +792,19 @@ header.navigation .navigation-wrapper::after {
   content: "";
   display: table;
 }
-/* line 161, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 169, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 header.navigation .logo {
   float: left;
   max-height: 50px;
   padding-left: 1em;
   padding-right: 2em;
 }
-/* line 167, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 175, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 header.navigation .logo img {
   max-height: 50px;
   padding: 0.8em 0;
 }
-/* line 175, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 183, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 header.navigation .navigation-menu-button {
   color: #ffb02d;
   display: block;
@@ -812,28 +817,28 @@ header.navigation .navigation-menu-button {
   text-transform: uppercase;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 175, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+  /* line 183, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
   header.navigation .navigation-menu-button {
     display: none;
   }
 }
-/* line 190, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 198, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 header.navigation .navigation-menu-button:focus, header.navigation .navigation-menu-button:hover {
   background: #2d7eff;
 }
-/* line 198, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 206, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 header.navigation nav {
   float: none;
   min-height: 50px;
   z-index: 9999999;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 198, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+  /* line 206, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
   header.navigation nav {
     float: right;
   }
 }
-/* line 208, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 216, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 header.navigation ul.navigation-menu {
   clear: both;
   display: none;
@@ -843,19 +848,19 @@ header.navigation ul.navigation-menu {
   width: 100%;
   z-index: 9999;
 }
-/* line 217, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 225, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 header.navigation ul.navigation-menu.show {
   display: block;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 208, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+  /* line 216, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
   header.navigation ul.navigation-menu {
     display: inline;
     margin: 0;
     padding: 0 1em 0 1em;
   }
 }
-/* line 230, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 238, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 header.navigation ul li.nav-link {
   background: #000000;
   display: block;
@@ -866,7 +871,7 @@ header.navigation ul li.nav-link {
   z-index: 9999;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 230, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+  /* line 238, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
   header.navigation ul li.nav-link {
     background: transparent;
     display: inline;
@@ -875,51 +880,51 @@ header.navigation ul li.nav-link {
     width: auto;
   }
 }
-/* line 248, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 256, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 header.navigation ul li.nav-link a {
   color: #ffb02d;
   display: inline-block;
   text-decoration: none;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 248, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+  /* line 256, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
   header.navigation ul li.nav-link a {
     padding-right: 1em;
     padding-left: 1em;
   }
 }
-/* line 258, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 266, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 header.navigation ul li.nav-link a:focus, header.navigation ul li.nav-link a:hover {
   background: #2d7eff;
 }
-/* line 265, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 273, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 header.navigation .active-nav-item a {
   border-bottom: 1px solid #000000;
   padding-bottom: 3px;
 }
-/* line 272, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 280, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 header.navigation li.more.nav-link {
   padding-right: 0;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 272, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+  /* line 280, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
   header.navigation li.more.nav-link {
     padding-right: 1em;
   }
 }
-/* line 279, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 287, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 header.navigation li.more.nav-link > ul > li:first-child a {
   padding-top: 1em;
 }
-/* line 283, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 291, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 header.navigation li.more.nav-link a {
   margin-right: 1em;
 }
-/* line 287, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 295, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 header.navigation li.more.nav-link > a {
   padding-right: 0.6em;
 }
-/* line 291, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 299, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 header.navigation li.more.nav-link > a:after {
   position: absolute;
   top: auto;
@@ -929,51 +934,51 @@ header.navigation li.more.nav-link > a:after {
   content: '\25BE';
   color: #ffb02d;
 }
-/* line 298, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 306, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 header.navigation li.more {
   overflow: visible;
   padding-right: 0;
 }
-/* line 302, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 310, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 header.navigation li.more a {
   padding-right: 0.8em;
 }
-/* line 306, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 314, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 header.navigation li.more > a {
   padding-right: 1.6em;
   position: relative;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 306, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+  /* line 314, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
   header.navigation li.more > a {
     margin-right: 1em;
   }
 }
-/* line 314, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 322, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 header.navigation li.more > a:after {
   content: '›';
   font-size: 1.2em;
   position: absolute;
   right: 0.5em;
 }
-/* line 322, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 330, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 header.navigation li.more:focus > .submenu, header.navigation li.more:hover > .submenu {
   display: block;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 298, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+  /* line 306, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
   header.navigation li.more {
     padding-right: 0.8em;
     position: relative;
   }
 }
-/* line 333, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 341, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 header.navigation ul.submenu {
   display: none;
   padding-left: 0;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 333, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+  /* line 341, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
   header.navigation ul.submenu {
     left: -1em;
     position: absolute;
@@ -981,35 +986,35 @@ header.navigation ul.submenu {
   }
 }
 @media screen and (min-width: 53.75em) {
-  /* line 343, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+  /* line 351, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
   header.navigation ul.submenu .submenu {
     left: 11.8em;
     top: 0;
   }
 }
-/* line 350, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 358, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 header.navigation ul.submenu li {
   display: block;
   padding-right: 0;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 350, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+  /* line 358, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
   header.navigation ul.submenu li {
     line-height: 38.46154px;
   }
-  /* line 357, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+  /* line 365, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
   header.navigation ul.submenu li:first-child > a {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
   }
-  /* line 362, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+  /* line 370, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
   header.navigation ul.submenu li:last-child > a {
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     padding-bottom: 0.7em;
   }
 }
-/* line 369, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 377, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 header.navigation ul.submenu li a {
   background-color: black;
   display: inline-block;
@@ -1017,7 +1022,7 @@ header.navigation ul.submenu li a {
   width: 100%;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 369, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+  /* line 377, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
   header.navigation ul.submenu li a {
     background-color: #000000;
     padding-left: 1em;
@@ -1025,7 +1030,7 @@ header.navigation ul.submenu li a {
     width: 12em;
   }
 }
-/* line 387, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 395, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 header.navigation .navigation-tools {
   background: #505050;
   clear: both;
@@ -1033,7 +1038,7 @@ header.navigation .navigation-tools {
   height: 50px;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 387, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+  /* line 395, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
   header.navigation .navigation-tools {
     background: transparent;
     clear: none;
@@ -1041,37 +1046,37 @@ header.navigation .navigation-tools {
   }
 }
 
-/* line 429, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 437, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .footer-2 {
   background: #2d7eff;
   padding: 1.5em;
   width: 100%;
   display: inline-block;
 }
-/* line 444, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 452, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .footer-2 .footer-logo {
   margin-right: 1em;
   margin-bottom: 1em;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 444, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+  /* line 452, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
   .footer-2 .footer-logo {
     float: left;
     margin-bottom: 0;
   }
 }
-/* line 454, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 462, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .footer-2 .footer-logo img {
   height: 1.6em;
 }
-/* line 458, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 466, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .footer-2 ul {
   line-height: 1.5em;
   margin: 0 0 1em 0;
   padding: 0;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 458, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+  /* line 466, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
   .footer-2 ul {
     float: left;
     line-height: 1.8em;
@@ -1079,49 +1084,49 @@ header.navigation .navigation-tools {
     margin-bottom: 0;
   }
 }
-/* line 471, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 479, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .footer-2 ul li {
   list-style: none;
   padding-right: 1em;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 471, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+  /* line 479, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
   .footer-2 ul li {
     display: inline;
     text-align: left;
   }
 }
-/* line 481, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 489, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .footer-2 ul li a {
   color: #2d7eff;
   text-decoration: none;
 }
-/* line 485, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 493, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .footer-2 ul li a:focus, .footer-2 ul li a:hover {
   color: #ffb02d;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 491, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+  /* line 499, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
   .footer-2 .footer-secondary-links {
     float: right;
   }
 }
-/* line 496, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 504, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .footer-2 .footer-secondary-links li {
   font-size: 0.8em;
 }
-/* line 500, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 508, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .footer-2 .footer-secondary-links ul.footer-social {
   margin: 1em 0 0 0;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 500, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+  /* line 508, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
   .footer-2 .footer-secondary-links ul.footer-social {
     float: right;
     margin-top: 0;
   }
 }
-/* line 508, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 516, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .footer-2 .footer-secondary-links ul.footer-social li {
   font-size: 1em;
   float: left;
@@ -1130,22 +1135,22 @@ header.navigation .navigation-tools {
   padding-right: 0.7em;
   text-decoration: none;
 }
-/* line 516, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 524, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .footer-2 .footer-secondary-links ul.footer-social li:last-child {
   padding-right: 0;
 }
-/* line 521, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 529, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .footer-2 .footer-secondary-links ul.footer-social img {
   height: 1.6em;
   opacity: 0.7;
   padding: 1px;
 }
-/* line 526, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 534, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .footer-2 .footer-secondary-links ul.footer-social img:focus, .footer-2 .footer-secondary-links ul.footer-social img:hover {
   opacity: 1;
 }
 
-/* line 543, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 551, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .flex-boxes {
   display: -webkit-box;
   display: -moz-box;
@@ -1182,7 +1187,7 @@ header.navigation .navigation-tools {
   clear: both;
   text-align: center;
 }
-/* line 572, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 580, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .flex-boxes .flex-box {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -1207,51 +1212,51 @@ header.navigation .navigation-tools {
   text-decoration: none;
   text-align: justify;
 }
-/* line 587, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 595, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .flex-boxes .flex-box:nth-child(1) {
   border-top: 6px solid #ffb02d;
 }
-/* line 587, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 595, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .flex-boxes .flex-box:nth-child(2) {
   border-top: 6px solid #2d7eff;
 }
-/* line 587, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 595, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .flex-boxes .flex-box:nth-child(3) {
   border-top: 6px solid #ffb02d;
 }
-/* line 587, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 595, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .flex-boxes .flex-box:nth-child(4) {
   border-top: 6px solid #2d7eff;
 }
-/* line 587, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 595, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .flex-boxes .flex-box:nth-child(5) {
   border-top: 6px solid #ffb02d;
 }
-/* line 587, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 595, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .flex-boxes .flex-box:nth-child(6) {
   border-top: 6px solid #2d7eff;
 }
-/* line 598, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 606, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .flex-boxes .flex-box img {
   display: block;
   height: 7em;
   margin: 0 auto 1em;
   opacity: 0.4;
 }
-/* line 605, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 613, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .flex-boxes .flex-box .flex-title {
   color: #ffb02d;
   font-size: 1.2em;
   margin-bottom: 0.5em;
   text-decoration: none;
 }
-/* line 612, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 620, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .flex-boxes .flex-box p {
   color: #ffb02d;
   line-height: 1.5em;
   margin: auto;
 }
-/* line 619, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 627, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .flex-boxes .flex-box-big {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
@@ -1262,7 +1267,7 @@ header.navigation .navigation-tools {
   flex: 1 1 100%;
 }
 
-/* line 632, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 640, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .flex-boxes-2 {
   display: -webkit-box;
   display: -moz-box;
@@ -1299,7 +1304,7 @@ header.navigation .navigation-tools {
   clear: both;
   text-align: center;
 }
-/* line 661, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 669, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .flex-boxes-2 .flex-box-2 {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -1324,51 +1329,51 @@ header.navigation .navigation-tools {
   text-decoration: none;
   text-align: justify;
 }
-/* line 680, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 688, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .flex-boxes-2 .flex-box-2:nth-child(1):focus, .flex-boxes-2 .flex-box-2:nth-child(1):hover {
   background-color: #0060f9;
 }
-/* line 680, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 688, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .flex-boxes-2 .flex-box-2:nth-child(2):focus, .flex-boxes-2 .flex-box-2:nth-child(2):hover {
   background-color: #0060f9;
 }
-/* line 680, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 688, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .flex-boxes-2 .flex-box-2:nth-child(3):focus, .flex-boxes-2 .flex-box-2:nth-child(3):hover {
   background-color: #0060f9;
 }
-/* line 680, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 688, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .flex-boxes-2 .flex-box-2:nth-child(4):focus, .flex-boxes-2 .flex-box-2:nth-child(4):hover {
   background-color: #0060f9;
 }
-/* line 680, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 688, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .flex-boxes-2 .flex-box-2:nth-child(5):focus, .flex-boxes-2 .flex-box-2:nth-child(5):hover {
   background-color: #0060f9;
 }
-/* line 680, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 688, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .flex-boxes-2 .flex-box-2:nth-child(6):focus, .flex-boxes-2 .flex-box-2:nth-child(6):hover {
   background-color: #0060f9;
 }
-/* line 687, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 695, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .flex-boxes-2 .flex-box-2 img {
   display: block;
   height: 7em;
   margin: 0 auto 1em;
   opacity: 0.4;
 }
-/* line 694, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 702, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .flex-boxes-2 .flex-box-2 .flex-title {
   color: #ffb02d;
   font-size: 1.2em;
   margin-bottom: 0.5em;
   text-decoration: none;
 }
-/* line 701, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 709, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .flex-boxes-2 .flex-box-2 p {
   color: #ffb02d;
   line-height: 1.5em;
   margin: auto;
 }
-/* line 708, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
+/* line 716, /home/kits/Desktop/brianNonRoot/rails/cuddly-tanuki/app/assets/stylesheets/application.scss.erb */
 .flex-boxes-2 .flex-box-big {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
