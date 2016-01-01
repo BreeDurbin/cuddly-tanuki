@@ -7,7 +7,7 @@
 <% @fileuploads.each_slice(3) do |slice| -%>
   <div class="flex-boxes-2 row">
     <% slice.each do |fileupload| -%>
-      <div class="col-lg-4">
+      <div class="col-md-4">
       <a href="<%= fileupload.source_url.to_s%>" class="flex-box-2">
       <h3 class="flex-title"><%= fileupload.section %></h3>
       <p><%= fileupload.title %></p>
