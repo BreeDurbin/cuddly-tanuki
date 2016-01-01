@@ -8,17 +8,17 @@
 	</ul>
 	<% end %>
 
-	<%= f.label :section %><br>
+	<%= f.label :section, :class => 'text-box' %><br>
 	<%= f.text_field :section, :class => 'form-box' %><br>
-	<br>
-	<%= f.label :title %><br>
+
+	<%= f.label :title, :class => 'text-box', :class => 'text-box', :class => 'text-box' %><br>
 	<%= f.text_field :title, :class => 'form-box' %><br>
-	<br>
-	<%= f.label :description %><br>
+
+	<%= f.label :description, :class => 'text-box', :class => 'text-box' %><br>
 	<%= f.text_area :description, :class => 'form-description-box'  %><br>
-	<br>
-	<%= f.label :source %><br>
-	<%= f.file_field :source, :class => 'btn btn-warning'  %><br>
-	<br>
-	<%= f.submit, class => 'btn btn-warning'  %>
+
+	<%= f.label :source, :class => 'text-box' %><br>
+	<%= f.file_field :source %><br>
+
+	<%= f.submit 'Submit Project', class: "btn btn-warning" %>
 <% end %>

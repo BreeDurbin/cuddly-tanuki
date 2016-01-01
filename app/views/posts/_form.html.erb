@@ -7,15 +7,13 @@
 		<% end %>
 	</ul>
 	<% end %>
-		<div class="flex-boxes">
-			<a href="javascript:void(0)" class="flex-box flex-box-big">
-				<%= f.label :title, :class => 'text-box' %><br>
+
+				<%= f.label :title, :class => 'text-box center' %><br>
 				<%= f.text_field :title, :class => 'form-box' %><br>
-				<br>
-				<%= f.label :body, :class => 'text-box' %><br>
+
+				<%= f.label :body, :class => 'text-box center' %><br>
 				<%= f.text_area :body, :class => 'form-description-box'  %><br>
-				<br>
-			</a>
-		</div>
+
+
 	<%= f.submit 'Post', class: "btn btn-warning" %>
 <% end %>
