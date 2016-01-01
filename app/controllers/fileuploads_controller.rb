@@ -8,7 +8,16 @@ class FileuploadsController < ApplicationController
 
   def index
     @fileuploads=Fileupload.all.order(section: :asc, created_at: :desc).paginate(page: params[:page], per_page: 15)
+    #if @fileuploads.each.nil?
+    #  redirect_to aboutMe_path
+    #end
   end
+  
+  #def each
+  #  if @fileuploads.each.nil?
+  #    redirect_to aboutMe_path
+  #  end
+  #end
 
   def new
     @fileupload=Fileupload.new

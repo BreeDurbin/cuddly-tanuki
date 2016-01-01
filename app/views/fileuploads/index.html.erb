@@ -4,26 +4,27 @@
   <%= link_to "New File Upload", new_fileupload_path(@fileupload), class: "btn btn-warning" %>
 <% end %>
 
-<% @fileuploads.each_slice(3) do |slice| -%>
-  <div class="flex-boxes-2 row">
-    <% slice.each do |fileupload| -%>
-      <div class="col-md-4">
-      <a href="<%= fileupload.source_url.to_s%>" class="flex-box-2">
-      <h3 class="flex-title"><%= fileupload.section %></h3>
-      <p><%= fileupload.title %></p>
-      <p><%= fileupload.description %></p>
-      <br>
-      </a>
-      <% if user_signed_in? %>
-        <%= link_to "Edit file", edit_fileupload_path(fileupload), class: "btn btn-warning" %>
-        <%= link_to "Delete", fileupload_path(fileupload), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"}, class: "btn btn-warning" %>
-      <% end %>
 
-      <br>
-      </div>
-    <% end -%>
-  </div>
-<% end -%>
+  <% @fileuploads.each_slice(3) do |slice| -%>
+    <div class="flex-boxes-2 row">
+      <% slice.each do |fileupload| -%>
+        <div class="col-md-4">
+        <a href="<%= fileupload.source_url.to_s%>" class="flex-box-2">
+        <h3 class="flex-title"><%= fileupload.section %></h3>
+        <p><%= fileupload.title %></p>
+        <p><%= fileupload.description %></p>
+        <br>
+        </a>
+        <% if user_signed_in? %>
+          <%= link_to "Edit file", edit_fileupload_path(fileupload), class: "btn btn-warning" %>
+          <%= link_to "Delete", fileupload_path(fileupload), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"}, class: "btn btn-warning" %>
+        <% end %>
+
+        <br>
+        </div>
+      <% end -%>
+    </div>
+  <% end -%>
 
 <%= will_paginate @fileuploads %>
 
