@@ -26,8 +26,8 @@ body {
   text-decoration: none;
   border-radius: 0;
   //@include clearfix;
-  display: inline-block;
-  margin: 0 1em 1em 1em;
+  display: block;
+  margin: 0 auto 1em auto;
   :hover {
     color: $white;
     text-decoration: none;
@@ -50,7 +50,8 @@ body {
   padding: 5px 15px 5px 15px;
   background-color: $background;
   color: $fore;
-  margin: 5px;
+  margin: 5px auto 5px auto;
+  display: block;
 }
 
 .form-box{
@@ -58,16 +59,18 @@ body {
   align: center;
   color: $fore;
   border-color: $fore;
-  margin: 20px;
+  margin: 5px auto 5px auto;
+  display: block;
 }
 
 .form-description-box{
-  width: 50%;
-  height: 20vh;
+  width: 100%;
+  height: 40vh;
   align: center;
   color: $fore;
   border-color: $fore;
-  margin: 20px;
+  margin: 5px auto 5px auto;
+  display: block;
 }
 
 //images

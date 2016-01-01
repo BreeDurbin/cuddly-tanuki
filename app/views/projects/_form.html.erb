@@ -1,5 +1,4 @@
 <%= form_for @project, :html => {:multipart => true } do |f| %>
-	<div class="text-box">
 	<% if @project.errors.any? %>
 	<h2><%= pluralize(@project.errors.count, "error") %> Prevented file from uploading:</h2>
 	<ul>
@@ -22,5 +21,4 @@
 	<%= f.file_field :source, :class => 'btn btn-warning'  %><br>
 	<br>
 	<%= f.submit, class => 'btn btn-warning'  %>
-	</div>
 <% end %>
