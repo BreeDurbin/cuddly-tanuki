@@ -2,14 +2,13 @@
 
 <div class="row">
   <h1 class="text-box">Stuff I have made.</h1> 
-</div>
-<div class="row">
+
   <% if user_signed_in? %>
     <%= link_to "New File Upload", new_fileupload_path(@fileupload), class: "btn btn-warning" %>
   <% end %>
 </div>
 
-  <div class="row">
+
     <% @fileuploads.each_slice(3) do |slice| -%>
       <div class="flex-boxes-2 row">
         <% slice.each do |fileupload| -%>
@@ -30,7 +29,7 @@
         <% end -%>
       </div>
     <% end -%>
-  </div>
+
 </div>
 
 
