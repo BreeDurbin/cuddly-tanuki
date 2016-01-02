@@ -1,5 +1,10 @@
 
-
+<h1 class="text-box">My Projects.</h1> 
+<br>
+  
+<% if user_signed_in? %>
+	<%= link_to "New project", new_project_path(@project), class: "btn btn-warning" %>
+<% end %>
 
 
 <div class="row">
@@ -9,8 +14,6 @@
 <div class="col-lg-12">
 
 	<%= render 'displayall' %>
-
-	<%= will_paginate @posts %>
 </div>
 
 
