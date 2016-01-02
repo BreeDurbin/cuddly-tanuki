@@ -1,31 +1,29 @@
 <div class="flex-boxes">
 
-
-
-<% @projects.each do |project| %>
-	
-	<a href="javascript:void(0)" class="flex-box flex-box-big">
-    <%= project.section %>
-		<br>
-		<h2> <%= project.title %> </h2>
-		<p> <%= project.created_at.strftime('%A, %B, %d') %></p>
-		<br><br>
-		<div><%= project.description %></div>
-		<br>
-		<div><%= project.source %></div>
-		<br>
-
-	<%= link_to "View full project.", project, class: "btn btn-warning" %>
+	<% @projects.each do |project| %>
 		
-		<% if user_signed_in? %>
-		<%= link_to "Edit project", edit_project_path(project), class: "btn btn-warning" %>
-		<%= link_to "Delete", project_path(project), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"}, class: "btn btn-warning" %>
-		<% end %>
+		<a href="javascript:void(0)" class="flex-box flex-box-big">
+	    <%= project.section %>
+			<br>
+			<h2> <%= project.title %> </h2>
+			<p> <%= project.created_at.strftime('%A, %B, %d') %></p>
+			<br><br>
+			<div><%= project.description %></div>
+			<br>
+			<div><%= project.source %></div>
+			<br>
 
-	</a>
+		<%= link_to "View full project.", project, class: "btn btn-warning" %>
+			
+			<% if user_signed_in? %>
+			<%= link_to "Edit project", edit_project_path(project), class: "btn btn-warning" %>
+			<%= link_to "Delete", project_path(project), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"}, class: "btn btn-warning" %>
+			<% end %>
 
-	<br>
-<% end %>
+		</a>
+
+		<br>
+	<% end %>
 
 </div>
 
