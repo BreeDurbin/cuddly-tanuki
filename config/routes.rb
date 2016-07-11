@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :languages
   devise_for :users
 
   get 'posts/home'
@@ -8,13 +9,14 @@ Rails.application.routes.draw do
 
   get 'pages/angular'
 
-  get 'fileuploads/fileArchive'
-
   get 'fileuploads/index'
 
   get 'fileuploads/show'
 
   get 'posts/index'
+
+  # get '/fileuploads/:id', to: 'fileuploads#by_language', as: 'fileupload'
+
 
   resources :posts, :fileuploads, :projects
   

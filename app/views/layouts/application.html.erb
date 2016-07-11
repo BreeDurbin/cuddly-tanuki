@@ -1,18 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Blog</title>
-
+	<title>BrianDurbin.me</title>
 	<meta charset="utf-8">
-	<title>Non-linear Logic</title>
 	<meta name="from zero to space this website is space" content="from zero to space this website is space">
 
-	
-
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 	<!-- font awesome glyphicons -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
@@ -33,9 +25,27 @@
     <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
     <nav role="navigation">
       <ul id="js-navigation-menu" class="navigation-menu show navigation-tools">
+
+
         <li class="nav-link"><%= link_to "Home", posts_home_path %></li>
-        <li class="nav-link"><%= link_to "File Archive", fileuploads_path %></li>
+        <li class="nav-link"><%= link_to "File Uploads", fileuploads_path %></li>
         <li class="nav-link"><%= link_to "About me", pages_aboutMe_path %></li>
+
+        <li class="nav-link">
+          <% if user_signed_in? %>
+              <%= link_to 'Edit profile', edit_user_registration_path %> |
+              <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+
+              <div class="text-font">Logged in as <Strong> <%= current_user.email %> </Strong></div>
+          <% else %>
+              <%= link_to 'Sign up', new_user_registration_path %> |
+              <%= link_to 'Login', new_user_session_path %>
+          <% end %>
+        </li>
+
+
+
+
       </ul>
     </nav>
   </div>
@@ -50,10 +60,33 @@
 <!-- /.notices from "devises" gem. See readme file. -->
 <% if alert %>
 	<p class="notice"><%= notice %></p>
-<% elsif %>
+<% elsif alert %>
 	<p class="alert"><%= alert %></p>
 <% end %>
-			<%= yield %>
+
+<section>
+  <%= yield %>
+
+
+
+  <footer class="footer-2" role="contentinfo">
+
+    <div class="footer-secondary-links">
+      <ul class="footer-social">
+        <li><a href="https://www.facebook.com/brian.durbin.921">
+          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/facebook-logo-circle.png" alt="Facebook">
+        </a></li>
+        <li><a href="https://www.linkedin.com/profile/preview?vpa=pub&locale=en_US">
+          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/youtube-logo-circle.png" alt="Youtube">
+        </a></li>
+      </ul>
+    </div>
+  </footer>
+
+</section>
+
+
+
 </div>
 
 
@@ -61,24 +94,7 @@
    Uncomment this whole section for a sticky footer. The content of the page should be inside of this .wrapper-for-content-outside-of-footer
 </div>-->
 
-<footer class="footer-2" role="contentinfo">
 
-    <ul>
-      <li><%= link_to "About me", pages_aboutMe_path %></li>
-      <li><a href="mailto:kits119710@gmail.com">Contact via Email</a></li>
-    </ul>
-
-    <div class="footer-secondary-links">
-      <ul class="footer-social">
-        <li><a href="https://www.facebook.com/brian.durbin.921">
-          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/facebook-logo-circle.png" alt="Facebook">
-          </a></li>
-        <li><a href="https://www.linkedin.com/profile/preview?vpa=pub&locale=en_US">
-          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/youtube-logo-circle.png" alt="Youtube">
-        </a></li>
-      </ul>
-    </div>
-</footer>
 
 		
 	<!-- Latest compiled and minified JavaScript -->
@@ -86,7 +102,7 @@
 	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
 
 </body>
 </html>

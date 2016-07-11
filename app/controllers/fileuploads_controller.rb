@@ -1,23 +1,19 @@
 class FileuploadsController < ApplicationController
 
+  before_filter :authenticate_user!, except: [:show, :index]
   before_action :find_fileupload, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, except: [:index, :show]
 
   def edit
   end
 
   def index
-    @fileuploads=Fileupload.all.order(section: :asc, created_at: :desc).paginate(page: params[:page], per_page: 15)
-    #if @fileuploads.each.nil?
-    #  redirect_to aboutMe_path
-    #end
+    @fileuploads = Fileupload.all.order("created_at desc").paginate(page: params[:page], per_page: 15)
+    @fileuploads = Fileupload.where(language_id: params[:sort]).order("created_at desc").paginate(page: params[:page], per_page: 15) if params[:sort].present?
   end
-  
-  #def each
-  #  if @fileuploads.each.nil?
-  #    redirect_to aboutMe_path
-  #  end
-  #end
+
+  # def by_language
+  #   @fileuploads = Fileupload.where(language_id: params[:sort]).order("created_at desc").paginate(page: params[:page], per_page: 15) if params[:sort].present?
+  # end
 
   def new
     @fileupload=Fileupload.new
@@ -46,7 +42,6 @@ class FileuploadsController < ApplicationController
 
   def destroy
     @fileupload.destroy
-    redirect_to fileuploads_fileArchive_path
   end
 
   private
@@ -56,9 +51,7 @@ class FileuploadsController < ApplicationController
     end
 
     def fileupload_params
-      params.require(:fileupload).permit(:section, :title, :description, :source, :bin, :slug)
+      params.require(:fileupload).permit(:title, :description, :source, :bin, :slug, :language_id, :sort)
     end
-
-    
 
 end

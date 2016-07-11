@@ -1,15 +1,28 @@
-<div class="flex-boxes">
+<div class="cards" align="center">
 
-	<a href="javascript:void(0)" class="flex-box flex-box-big">
-	<h1><%= @post.title %></h1>
-	<p> <%= @post.created_at.strftime('%A, %B, %d') %></p>
+  <div class="card col-10" align="center">
 
-	<%= markdown @post.body %>
+    <div class="card-image">
+      <%= image_tag("backgroundpost1.png", :alt => "") %>
+      <!--<img url="background2.jpg" alt="">-->
+    </div>
+
+    <div class="card-header">
+      <%= @post.title %>
+    </div>
+
+    <div align="Right" style="margin-right:25px;">
+      <p> <%= @post.created_at.strftime('%I:%M %p, %b %d ,%Y') %></p>
+    </div>
+
+    <div class="card-copy">
+      <%= markdown @post.body %>
+    </div>
 
 	<% if user_signed_in? %>
 		<%= link_to "Edit Post", edit_post_path(@post), class: "btn btn-warning" %>
 		<%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"}, class: "btn btn-warning" %>
 	<% end %>
-	</a>
+  </div>
 
 </div>

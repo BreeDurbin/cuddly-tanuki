@@ -1,26 +1,23 @@
+<section>
 
-<div class="col-md-12">
-
-	<%= @fileupload.section, :class => "text-box" %>
-
-	<br><br>
-
-	<h1><%= @fileupload.title, :class => "text-box" %></h1>
+	<h1><%= @fileupload.title  %></h1>
 
 	<br><br>
 
-	<%= @fileupload.description, :class => "text-box" %>
+	<%= @fileupload.description %>
 
 	<br><br>
 
-	<%= link_to "View source", @fileupload.source_url.to_s, class: "btn btn-warning" %>
+  <% unless @fileupload.source_url.nil? %>
+	  <%= link_to "View source", @fileupload.source_url.to_s, class: "btn-warning" %>
+  <% end %>
+
 
 	<br><br>
-	</div>
 
 	<% if user_signed_in? %>
-		<%= link_to "Edit file", edit_fileupload_path(@fileupload), class: "btn btn-warning" %>
-		<%= link_to "Delete", fileupload_path(@fileupload), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"}, class: "btn btn-warning" %>
+		<%= link_to "Edit file", edit_fileupload_path(@fileupload), class: "btn-warning" %>
+		<%= link_to "Delete", fileupload_path(@fileupload), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"}, class: "btn-warning" %>
 	<% end %>
 	
-</div>
+</section>

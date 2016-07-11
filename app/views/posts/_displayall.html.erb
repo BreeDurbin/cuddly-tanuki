@@ -1,28 +1,46 @@
-<div class="flex-boxes">
-  
+
 <% if user_signed_in? %>
-	<%= link_to "New post", new_post_path(@post), class: "btn btn-warning" %>
+    <div align="center">
+      <%= link_to "New post", new_post_path(@post), class: "btn-warning" %>
+    </div>
 <% end %>
 
-<% @posts.each do |post| %>
-	
-	<a href="javascript:void(0)" class="flex-box flex-box-big">
-    <h2><%= post.title %></h1>
-	<p> <%= post.created_at.strftime('%A, %B, %d') %></p>
-	<br>
-	<%= markdown post.body %>
-	<br>
-	<%= link_to "View full post.", post, class: "btn btn-warning" %>
-	<br>
+<% backgrounds = ["backgroundpost1.png","backgroundpost2.png","backgroundpost3.png"] %>
 
-	<% if user_signed_in? %>
-		<%= link_to "Edit Post", edit_post_path(post), class: "btn btn-warning" %>
-		<%= link_to "Delete", post_path(post), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"}, class: "btn btn-warning" %>
-	<% end %>
 
-	</a>
+<div class="cards col-10-home">
 
-	<br>
-<% end %>
+    <% @posts.each_with_index do |post, idx| %>
+      <div class="card">
+
+        <div class="card-image">
+          <%= image_tag(backgrounds[idx % 3], :alt => "") %>
+          <!--<img url="background2.jpg" alt="">-->
+        </div>
+
+        <div class="card-header">
+          <%= post.title %>
+        </div>
+
+        <div align="Right" style="margin-right:25px;">
+        <p> <%= post.created_at.strftime('%I:%M %p, %b %d ,%Y') %></p>
+        </div>
+
+        <div class="card-copy">
+          <%= markdown post.body %>
+        </div>
+
+      </div>
+
+      <div align="center">
+        <%= link_to "View full post.", post, class: "btn-warning" %>
+        <% if user_signed_in? %>
+            <%= link_to "Edit Post", edit_post_path(post), class: "btn-warning" %>
+            <%= link_to "Delete", post_path(post), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"}, class: "btn-warning" %>
+        <% end %>
+      </div>
+    <% end %>
+
 
 </div>
+

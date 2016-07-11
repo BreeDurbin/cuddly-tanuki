@@ -1,5 +1,4 @@
-<div class="container">	
-	<div class="col-md-12">
+<section>
 		<%= form_for @fileupload, :html => {:multipart => true} do |f| %>
 
 			<% if @fileupload.errors.any? %>
@@ -10,8 +9,9 @@
 				<% end %>
 			</ul>
 			<% end %>
-			<%= f.label :section, :class => 'text-box' %><br>
-			<%= f.text_field :section, :class => 'form-box' %><br>
+
+			<%= f.label :language, :class => 'text-box' %><br>
+			<%= f.collection_select :language_id, Language.all, :id, :language_type, {}, { :multiple => false }%>
 
 			<%= f.label :title, :class => 'text-box' %><br>
 			<%= f.text_field :title, :class => 'form-box' %><br>
@@ -26,5 +26,4 @@
 			<%= f.submit 'Upload', class: "btn btn-warning" %>
 
 		<% end %>
-	</div>
-</div>
+</section>

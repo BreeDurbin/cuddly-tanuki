@@ -1,35 +1,54 @@
-<h1 class="text-box">Stuff I have made.</h1> 
 
-<div class="flex-boxes">
+  <div class="col-2">
+    <nav class="js-menu sliding-panel-content">
+      <ul class="accordion">
+        <li class="js-accordion-trigger">
+          <%= link_to "All", fileuploads_index_path  %>
+        </li>
+        <% Language.all.each do |language| %>
+        <li class="js-accordion-trigger">
+          <%= link_to language.language_type, :sort => language.id %>
+        </li>
+        <% end %>
+    </ul>
+    </nav>
+    <div class="js-menu-screen sliding-panel-fade-screen"></div>
+  </div>
 
-  
+
+<div class="col-flex-header" align="center">
+  <h1 class="text-box">Stuff I have made.</h1><br>
 
   <% if user_signed_in? %>
-    <%= link_to "New File Upload", new_fileupload_path(@fileupload), class: "btn btn-warning" %>
+      <%= link_to "New File Upload", new_fileupload_path(@fileupload), class: "btn-warning" %>
   <% end %>
+</div>
 
-    <% @fileuploads.each_slice(3) do |slice| -%>
-      <div class="flex-boxes-2 row">
-        <% slice.each do |fileupload| -%>
-          <div class="col-md-4">
-          <a href="<%= fileupload.source_url.to_s%>" class="flex-box-2">
-          <h3 class="flex-title"><%= fileupload.section %></h3>
-          <p><%= fileupload.title %></p>
-          <p><%= fileupload.description %></p>
-          <br>
-          </a>
-          <% if user_signed_in? %>
-            <%= link_to "Edit file", edit_fileupload_path(fileupload), class: "btn btn-warning" %>
-            <%= link_to "Delete", fileupload_path(fileupload), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"}, class: "btn btn-warning" %>
-          <% end %>
+<div class="flex-boxes-2 col-flex-outer">
 
-          <br>
-          </div>
-        <% end -%>
-      </div>
-    <% end -%>
+
+
+  <% @fileuploads.each do |fileupload| -%>
+    <div class="col-flex-inner">
+    <a href="<%= fileupload.source_url.to_s%>" class="flex-box-2">
+    <h3 class="flex-title"><%= fileupload.language.language_type %></h3>
+    <p><%= fileupload.title %></p>
+    <p><%= fileupload.description %></p>
+    <br>
+    </a>
+
+    <% if user_signed_in? %>
+        <%= link_to "Edit file", edit_fileupload_path(fileupload), class: "btn btn-warning" %>
+        <%= link_to "Delete", fileupload_path(fileupload), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"}, class: "btn btn-warning" %>
+    <% end %>
+
+    </div>
+
+  <% end -%>
 
 </div>
+
+
 
 
 

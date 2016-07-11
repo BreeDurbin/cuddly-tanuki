@@ -1,18 +1,18 @@
 source 'https://rubygems.org'
 
 ##Ruby version 2.2.3:p 173
-ruby '2.2.3'
+ruby '~> 2.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.4'
+gem 'rails', '~> 5.0'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier'
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -21,23 +21,27 @@ gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.0'
+gem 'jbuilder'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-gem 'pygments.rb', '~> 0.6.0'
-gem 'redcarpet', '~> 3.2.2'
-gem 'friendly_id', '~>5.1.0'
-gem 'will_paginate', '~>3.0.7'
+gem 'pygments.rb'
+gem 'redcarpet'
+gem 'nokogiri'
+gem 'albino'
+
+gem 'friendly_id'
+gem 'will_paginate'
 gem 'carrierwave'
 gem 'carrierwave-dropbox'
-gem 'mail_form', '~>1.5.1'
+gem 'mail_form'
 
-gem 'devise', '~>3.4.1'
+gem 'devise'
+
+gem 'autoprefixer-rails', '~> 6.3', '>= 6.3.6.2'
 gem 'bourbon'
 gem 'bitters'
 gem 'neat'
-gem 'jquery-rails'
 
 gem 'rails_serve_static_assets'
 
