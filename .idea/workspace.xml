@@ -2,104 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="577b117b-8816-4fce-a236-c50fb97d64ab" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/.sprockets-manifest-949e4aaaa1d1f96b3d1ccca1c52d3250.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Assignment 9_GuiExcercise_DataStructures_BrianDurbin-68ec649e4d99749aad7ddc7ddce0b5a95e4d1f45146d1fa090377b260aaa04bf.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Assignment1_ArrayFill_AssemblyProgramming_Brian_Durbin-2dac990f3407519993615166f407657793e7cec9072bbb1655eef133bd0750ce.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Assignment2_Command-LineBlackjack_CProgramming_Brian_Durbin-ad3d8c42c0ff589bcf937c95996afdf2e16f32e6ab14da27ac5a82eb65766085.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Assignment2_FileBackup_UnixProgramming_Brian_Durbin-0d4fb8e56475b1c3c330aea808da489c52140119d5d75f5557ec5b590688abf2.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Assignment2_IntroToJava_Brian_Durbin-b4e27c724eb355887051d6e6cdd0d6d8e26d7e9636a51542f726dad3bdbd2b00.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Assignment2_XOREncryptDecrypt_AssemblyProgramming_Brian_Durbin-d35826b393b3cd8aa3b943fb10047f6c7f5bbd104e69254773a4fd7f250b8c85.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Assignment3_LinkedListFunctions_DataStructures_Brian_Durbin-2c149b19b3000a0ac7c425aba1211fc4e30a16fe01b720aae5b0d3949844af5c.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Assignment3_ReadAndReverse_CProgramming_Brian_Durbin-69cd38701a8ed783eb9200aada1e10c2c46c3a91fdafa29833e30efb0f10f12c.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Assignment3_SoftLinkFinder_UnixProgramming_Brian_Durbin-45fbe2a08a6cae8413cc596deb4050d493b5024a32b300ac594795a55b0e8133.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Assignment4-5_StacksAndQueues_DataStructures_BrianDurbin-afa45a39cd11386bda7d1fe0af8f96af17a04a6f80f0a83320581014f0cbfa30.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Assignment4_StackImplementation_DataStructures_Brian_Durbin-424dbc3e652b92812f6feff3025414eb801df32da75c477bc5bfe26236e7dc0d.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Assignment5_Command-LineBlackjack3_DoublyLinkedList_CProgramming_Brian_Durbin-e2119b3a5b827874e22b669a8f7ba0d320d14dd88b9c3406e0d751e3ffa60484.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Assignment6_FileFormat_CProgramming_Brian_Durbin-d4c23972124726369c1f87c227dfb1d2ebaa7262d1c9509eac404829af695561.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Assignment8_BstImplementation_DataStructures_Brian_Durbin-62fc63f368b4f4530a6fb9dbde623a9b7bb53b4897cba3f6af7ad666f60b90fc.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/HW1_Durbin-aa6a8d6f0fddbacb7f9d4ed431911e71e421cc05e41a4d1f94f29dc568dac3aa.asm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/HW2_Durbin-a585bdeadbba32b308aec75014502835db76ccbae12d64ded76f9c393ff00f52.asm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/about_me-d23fdfb6d85cb39f4c8b18be8754b65e4ce186bb12df24f88b6df690edf5a00d.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-0ee8854b0d18d82be9278314e6095a0a2b985380c3d6372f4d24a4ccafe07139.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-3ce96c4d679c0468d91315c1b891e585180c65b70d5397c7790274e101c4d2de.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-3ff2084ba8b3eced34170e8d990997ebadf53639ba684c5d8913767c11df24cf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-4b3e2cf2290e1d6f0ba1e35c32b1d8d3c963ef2116d8a0b66a285d14e702df27.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-4b3e2cf2290e1d6f0ba1e35c32b1d8d3c963ef2116d8a0b66a285d14e702df27.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-53a60da8c0637c18eac3bdc157fb86c4e743c7ddcd0d444a44eca108fe65f001.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-53a60da8c0637c18eac3bdc157fb86c4e743c7ddcd0d444a44eca108fe65f001.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-8cd9fb582167fe98ff28631278225c7c2f3a9d4fb44e5e99da16a3a4b04a2831.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-8cd9fb582167fe98ff28631278225c7c2f3a9d4fb44e5e99da16a3a4b04a2831.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-91372df62b3a78397dfcd8747511bc0882b78c6a1286b2e6083fc52b2621d84b.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-91372df62b3a78397dfcd8747511bc0882b78c6a1286b2e6083fc52b2621d84b.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-96ed803916b5b33a83d84ea59c4b0111c28665efc9705589c286b64b9a87c4a5.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-96ed803916b5b33a83d84ea59c4b0111c28665efc9705589c286b64b9a87c4a5.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-b565bb53e84298d91f021716852506f86784fe23e3446de8215404411fc7c060.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-e28c4687f6fa57869ae650ae91b9712ed8c02c17acce6ab1d934ae91a09782e9.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/background-6c857366b6c1993bfc45334b45bbacc07324385f2f2d9671fafed060ae01ee0b.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/background-deed3ac19a8d67bc1f06f8849fa61d860bc8b3c7834a7ece51f7f700ac490709.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/background1-b93b2d0a71e26fd3a5ac2eb4b4f0f840de87f4db60cfdb3eaa184c7de17485cc.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/background2-e64654d101d6a920d1bf113ae574d5a344a8c6d233c7fd45d165a06df976c7d8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/backgroundpost1-24abd169fff46d5ae52a1be1a1f69a80da415224e0c4bc1dcc1a1eb9460f1073.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/backgroundpost2-f3b04a1e69bc67d0dc8c23159468c5821dcdec26fc51d3231222cab651632062.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/backgroundpost3-6fd82b4b489103e1d81d4cb362f1d91172708fc6e209d3f8a685da28e2b630bd.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/backup-1bd2d101abab722279446f2516b2f724418a1fe8dea88f2407a9d751961311d1.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/backup-1bd2d101abab722279446f2516b2f724418a1fe8dea88f2407a9d751961311d1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/banner-8a81bc8a635f0df0dda1e255f401be6efd08f79f4bfd7aa0f28b21b128d54e84.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/brian's pictures/IMG_0444-05233bb7b0d8109ea569ed4d48eaffaaf24bab1d62d7374936220a79bcbb4460.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/brian's pictures/IMG_0445-d98e0757ef48ea3abdd156824b38ba4208bf4ca02ea63fb277e0b0b8ddfd2de4.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/brian's pictures/IMG_0446-0ca4e9d14a77495da1d22ded7faa2262c1a825258f86607afda3a6a11f767c6d.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/brian's pictures/IMG_0447-a18157ac074f0e49172e69627570de2f0079c2b44b653dc6ad8f9fb00ae3b9ed.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/brian's pictures/IMG_0448-e8cdb36d00a5f59b7e7993653a1fcaea6a3ca6104dd9147cc24b5f5850170883.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/brian's pictures/IMG_0449-db795f2488fe41f0dab455889cc83804ebe2881e7090f798ae77f22289633df2.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/brian's pictures/IMG_0450-4d021310b591a31b07d001228961a4ec98ba280b7dd2ea45c4f507a5e164e9b9.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/brian's pictures/IMG_0451-18c4123b4edca25d503812e40a5ff7468007bf42f6c3a7e98f3b2b0aae688171.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/brian's pictures/carousel1-4d021310b591a31b07d001228961a4ec98ba280b7dd2ea45c4f507a5e164e9b9.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/brian_resume-3567e76491cb3e48e2115cb8d011d22a610a6393a376814ceb89e0d006b874c8.docx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/brian_resume-63a14744a4ee7889d2e146a6d5b01165cf82027f5f8a21d4875368a98d5a80fc.docx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/car-a83012296a618a53311edb0913c6cf5d0e77b236cd2da00c21b4224e292d61e3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/carousel0-d829abcb4c1fa9ccb43406372d4dba68d110435059d6c90cdc5756c0f8964627.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/carousel1-3c1c2e9189f87dd9c076481cdf0b0634916fd70baa430072e56e3ee00d77cd04.xcf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/carousel1-6dbbe6a884b0567006a8f5931c8c7c1e753b4e6f2bffc2f92b585c68a71fce7a.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/carousel1-ddf29abf9b2a4d0c11ca3384d4f6c65298be7b1d6b34c29d04e926f0952c9acf.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/carousel2-acb5450be9ad7e3d5c61c15f7de3b2fee92b49f7fbab294c667224d5cdea0993.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/carousel3-6b35214efc6876314f0f4db7db9415b195b8a036a5856928a03867849f076886.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/gitAvatar-c20e431f7d7a1834f248a881fa0055840eeb67cc85cc20f6fdb16764bcc1c0f7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/imagesStock/Konachan.com - 201998 sample-d1d584f5f29efc00d3482f6d979af0bf59f35011164c915d70a74ae24d532839.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/imagesStock/banner-6b9713d89e274ced6c6b908a5a80e718f04df35e25d985e52ce4b8dcbfbe2a24.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/imagesStock/banner-e863862e874e27d43b9176597c8ffde54e752e959ea79bbf1a63d58047e791a2.xcf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/imagesStock/carousel1-f1697b52ed570c6c0ef26b9820b56a2831e1c76347b19ba0b56bc3a9dca4c200.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/imagesStock/deep_space_nebula_by_hameed-a8378cff5dbb6314b97cbbc475602debe1b3811541a0db849d9813f7c847a4b0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/imagesStock/nonlinearlogic-3261c92f3269602f877d6ee49110072eac2100e2266739ed7b5579495ae90b9c.xcf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/imagesStock/nonlinearlogic-e74a28a66944a9a744c83216a1963a9c98c3014f4d0f49a1cd46f520684a12e2.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/imagesStock/nonlinearlogic-faff29697a26ca3a45ece6669e2a8a57c979557cac338f883f9a5514dc33a9ab.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/imagesStock/space age-7cf6fb8451feaac1fef8c6a5f91838e1f92317b73bc587eea55e4cea0db21b05.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/imagesStock/space age-7cf6fb8451feaac1fef8c6a5f91838e1f92317b73bc587eea55e4cea0db21b05.ttf.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/imagesStock/space age-c5c87d63fc241c6444d634da485068c60b66ca9bb43b26dc31253e5a50a09256.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/imagesStock/space age-c5c87d63fc241c6444d634da485068c60b66ca9bb43b26dc31253e5a50a09256.otf.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/imagesStock/space-662f5146cb47610a7e5e3b0bb3e4cbff911ca80753c9bdb9a494ce4b4820a8bc.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/j8eMFrM-beb7baa9209a571e1890971725b4d2f6378cb8ecb1f02dd92a646751bd0c6646.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/main-b9e8aad488a7205ede5390ba383c104e320abd12cc2b051044c39c9bded6860f.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/nonlinearlogic-d6217fc5e6faa24bc208c906e1353ec1cf69000f8dfcb1447cf631f4385423a9.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/nonlinearlogic-d6217fc5e6faa24bc208c906e1353ec1cf69000f8dfcb1447cf631f4385423a9.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/nonlinearlogic-e74a28a66944a9a744c83216a1963a9c98c3014f4d0f49a1cd46f520684a12e2.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/nonlinearlogic-faff29697a26ca3a45ece6669e2a8a57c979557cac338f883f9a5514dc33a9ab.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/softLinkFinder-9aefd8ddf5ebed318c8ea587bf5ee12d09dd04c2bf59ccda47055f3e70c1404d.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/softLinkFinder-9aefd8ddf5ebed318c8ea587bf5ee12d09dd04c2bf59ccda47055f3e70c1404d.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/space age-c5c87d63fc241c6444d634da485068c60b66ca9bb43b26dc31253e5a50a09256.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/space age-c5c87d63fc241c6444d634da485068c60b66ca9bb43b26dc31253e5a50a09256.otf.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tumblr_n78vn5Owkt1rgfa66o1_500-348162bf86eec2326f1e23836bee0b8e2ae376ad8ee1fa413b514592013a9929.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/fileupload/source/3/HW1_Durbin.asm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/fileupload/source/4/HW2_Durbin.asm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/fileupload/source/5/brian_resume.docx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/1451195465-17141-6723/PlayOnLinux.desktop" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/1451195465-17141-6869/CU_Springs_confirma_01_31_11.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/1451196069-17141-1005/CU_Springs_confirma_01_31_11.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/1451196069-17141-9917/PlayOnLinux.desktop" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/1451196489-17141-3760/CU_Springs_confirma_01_31_11.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/1451196489-17141-5014/PlayOnLinux.desktop" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/1451196604-17141-3284/PlayOnLinux.desktop" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/1451196604-17141-6647/CU_Springs_confirma_01_31_11.pdf" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
     </list>
     <ignored path="cuddly-tanuki.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -119,7 +22,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/cuddly-tanuki@Rails_console__cuddly_tanuki.coverage" NAME="Rails console: cuddly-tanuki Coverage Results" MODIFIED="1467517149176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="cuddly-tanuki" />
-    <SUITE FILE_PATH="coverage/cuddly-tanuki@Development__cuddly_tanuki.coverage" NAME="Development: cuddly-tanuki Coverage Results" MODIFIED="1468213594421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="cuddly-tanuki" />
+    <SUITE FILE_PATH="coverage/cuddly-tanuki@Development__cuddly_tanuki.coverage" NAME="Development: cuddly-tanuki Coverage Results" MODIFIED="1468214090046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="cuddly-tanuki" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -147,7 +50,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="robots.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="production.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="robots.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/robots.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -207,16 +120,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.js.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="application.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -271,12 +174,12 @@
         <option value="$PROJECT_DIR$/app/controllers/fileuploads_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/fileupload.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/pages.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss.erb" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
       </list>
     </option>
   </component>
@@ -352,7 +255,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -366,33 +269,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cuddly-tanuki" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cuddly-tanuki" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
+              <option name="myItemId" value="environments" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -750,12 +631,12 @@
       <workItem from="1468037788555" duration="19609000" />
       <workItem from="1468148318484" duration="8710000" />
       <workItem from="1468192141604" duration="9382000" />
-      <workItem from="1468207844861" duration="3923000" />
+      <workItem from="1468207844861" duration="4416000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143341000" />
+    <option name="totallyTimeSpent" value="143834000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -1048,14 +929,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/fileuploads.coffee.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1169,6 +1042,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
           <folding />
         </state>
       </provider>
