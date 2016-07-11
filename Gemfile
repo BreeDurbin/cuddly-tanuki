@@ -11,6 +11,8 @@ gem 'pg'
 gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier'
+## Fix jquery breaking turbolinks.
+gem 'jquery-turbolinks', '~> 2.1'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails'
 # See https://github.com/rails/execjs#readme for more supported runtimes
@@ -25,6 +27,8 @@ gem 'jbuilder'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+
+## for markdown highlighting of text
 gem 'pygments.rb'
 gem 'redcarpet'
 gem 'nokogiri'
@@ -38,10 +42,13 @@ gem 'mail_form'
 
 gem 'devise'
 
+
+## css libraries
 gem 'autoprefixer-rails', '~> 6.3', '>= 6.3.6.2'
 gem 'bourbon'
 gem 'bitters'
 gem 'neat'
+
 
 gem 'rails_serve_static_assets'
 
