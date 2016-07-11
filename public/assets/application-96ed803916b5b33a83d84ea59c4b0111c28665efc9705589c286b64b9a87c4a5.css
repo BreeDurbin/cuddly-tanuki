@@ -829,7 +829,7 @@ img {
 #content {
   width: 100%;
   top: 50px;
-  background-image: url("background2.jpg");
+  background-image: url("../../app/assets/background2.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
