@@ -120,6 +120,7 @@ GEM
     pg (0.18.4)
     pkg-config (1.1.7)
     posix-spawn (0.3.11)
+    puma (3.4.0)
     pygments.rb (0.6.3)
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.2.0)
@@ -221,6 +222,7 @@ DEPENDENCIES
   neat
   nokogiri
   pg
+  puma
   pygments.rb
   rails (~> 5.0)
   rails_12factor
@@ -233,9 +235,6 @@ DEPENDENCIES
   uglifier
   web-console (~> 2.0)
   will_paginate
-
-RUBY VERSION
-   ruby 2.3.1p112
 
 BUNDLED WITH
    1.12.5

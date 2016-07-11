@@ -18,13 +18,6 @@ $body-line-height: 100%;
 
 //---------------------------------------------------------------------
 
-body {
-  margin: 0;
-  padding: 0 4em 0 4em;
-}
-
-
-
 .btn-warning {
   cursor: pointer;
   padding: 8px 13px;
@@ -33,12 +26,10 @@ body {
   border: none;
   text-decoration: none;
   border-radius: 0;
-  //@include clearfix;
   display: inline-block;
   margin: 1em auto 1em auto;
   :hover {
-    color: $white;
-    text-decoration: none;
+    color: $fore;
     transition: all 0.2s ease-in-out;
     }
 }
@@ -72,8 +63,6 @@ body {
   display: inline-block;
 }
 
-
-
 //images
 img {
   float: right;
@@ -85,21 +74,6 @@ img {
   height: 70vh;
   width: 60vh;
   top: 15vh;
-}
-
-//
-
-// parralax
-
-#content {
-  width: 100%;
-  top: 50px;
-  background:{
-    image: url("background2.jpg");
-    repeat: no-repeat;
-    attachment: fixed; 
-    size: cover;
-  }
 }
 
 .wrapper-text-fields {
@@ -123,6 +97,12 @@ img {
 
 section {
   @include outer-container;
+  background:{
+    image: url("background2.jpg");
+    repeat: no-repeat;
+    attachment: fixed;
+    size: cover;
+  }
 
   aside { @include span-columns(3); }
   article {
@@ -205,72 +185,61 @@ section {
 
 }
 
-
-
-
-
-
 //REFILLS------------------------------------------------------------------------------------------------------
 
 
 //NAVBAR-------------------------------------------------------------------------------------------------------
 
-header.navigation {
-  $base-border-color: gainsboro !default;
+.centered-navigation {
   $base-border-radius: 3px !default;
-  $action-color: #477DCA !default;
   $dark-gray: #333 !default;
   $large-screen: 53.75em !default;
-  $navigation-padding: 1em;
-  $navigation-background: $background;
-  $navigation-color: $fore;                                                                //transparentize(white, 0.3);
-  $navigation-color-hover: $hover;
-  $navigation-height: 50px;
-  $navigation-nav-button-background: $background;
-  $navigation-nav-button-background-hover: $hover;                                         //lighten($navigation-background, 10%);
-  $navigation-nav-button-border: 0;                                                        // solid lighten($navigation-nav-button-background, 20%);
-  $navigation-search-background: lighten($navigation-background, 5);
-  $navigation-search-border: 1px solid darken($navigation-background, 5);
-  $navigation-active-link-color: #000000;
-  $navigation-submenu-padding: 1em;
-  $navigation-submenu-width: 12em;
+  $base-font-color: $dark-gray !default;
+  $centered-navigation-padding: 1em;
+  $centered-navigation-logo-height: 2em;
+  $centered-navigation-background: #E7F1EC;
+  $centered-navigation-color: transparentize($base-font-color, 0.3);
+  $centered-navigation-color-hover: $base-font-color;
+  $centered-navigation-height: 60px;
+  $centered-navigation-item-padding: 1em;
+  $centered-navigation-submenu-padding: 1em;
+  $centered-navigation-submenu-width: 12em;
+  $centered-navigation-item-nudge: 2.2em;
   $horizontal-bar-mode: $large-screen;
 
-  background-color: $navigation-background;
-  border-bottom: 0;
-  min-height: $navigation-height;
+  background-color: $centered-navigation-background;
+  border-bottom: 1px solid darken($centered-navigation-background, 6%);
+  min-height: $centered-navigation-height;
   width: 100%;
-  z-index: 999;
+  z-index: 9999;
 
-  .navigation-wrapper {
-    @include clearfix;
-    @include outer-container;
-    position: relative;
-    z-index: 9999;
-  }
-
-  .logo {
-    float: left;
-    max-height: $navigation-height;
-    padding-left: $navigation-padding;
-    padding-right: 2em;
-
-    img {
-      max-height: $navigation-height;
-      padding: 0.8em 0;
-    }
-  }
 
   // Mobile view
 
-  .navigation-menu-button {
-    color: $navigation-color;
+  .mobile-logo {
+    display: inline;
+    float: left;
+    max-height: $centered-navigation-height;
+    padding-left: $centered-navigation-padding;
+
+    img {
+      max-height: $centered-navigation-height;
+      opacity: 0.6;
+      padding: 0.8em 0;
+    }
+
+    @include media($horizontal-bar-mode) {
+      display: none;
+    }
+  }
+
+  .centered-navigation-mobile-menu {
+    color: $centered-navigation-color;
     display: block;
     float: right;
-    line-height: $navigation-height;
+    line-height: $centered-navigation-height;
     margin: 0;
-    padding-right: 1em;
-    padding-left: 1em;
+    padding-right: $centered-navigation-submenu-padding;
     text-decoration: none;
     text-transform: uppercase;
 
@@ -280,110 +249,124 @@ header.navigation {
 
     &:focus,
     &:hover {
-      background: $navigation-color-hover;
+      color: $centered-navigation-color-hover;
     }
   }
+
 
   // Nav menu
 
-  nav {
-    float: none;
-    min-height: $navigation-height;
-    z-index: 9999999;
-
-    @include media ($horizontal-bar-mode) {
-      float: right;
-    }
+  .centered-navigation-wrapper {
+    @include outer-container;
+    @include clearfix;
+    position: relative;
+    z-index: 999;
   }
 
-  ul.navigation-menu {
+  ul.centered-navigation-menu {
     clear: both;
     display: none;
     margin: 0 auto;
     overflow: visible;
     padding: 0;
+    -webkit-transform-style: preserve-3d;
+    // stop webkit flicker
     width: 100%;
-    z-index: 9999;
+    z-index: 99999;
 
     &.show {
       display: block;
     }
 
     @include media ($horizontal-bar-mode) {
-      display: inline;
-      margin: 0;
-      padding: 0 1em 0 1em;
+      display: block;
+      text-align: center;
     }
   }
 
+
   // The nav items
 
+  .nav-link:first-child {
+    @include media($horizontal-bar-mode) {
+      margin-left: $centered-navigation-item-nudge;
+    }
+  }
+
   ul li.nav-link {
-    background: $navigation-background;
+    background: $centered-navigation-background;
     display: block;
-    line-height: $navigation-height;
+    line-height: $centered-navigation-height;
     overflow: hidden;
-    //padding-right: 0.8em;
+    padding-right: $centered-navigation-submenu-padding;
     text-align: right;
     width: 100%;
     z-index: 9999;
 
-    @include media ($horizontal-bar-mode) {
-      background: transparent;
-      display: inline;
-      line-height: $navigation-height;
-      text-decoration: none;
-      width: auto;
-    }
-
     a {
-      color: $navigation-color;
+      color: $centered-navigation-color;
       display: inline-block;
+      outline: none;
       text-decoration: none;
-
-      @include media ($horizontal-bar-mode) {
-        padding-right: 1em;
-        padding-left: 1em;
-      }
 
       &:focus,
       &:hover {
-        background: $navigation-color-hover;
+        color: $centered-navigation-color-hover;
+      }
+    }
+
+    @include media($horizontal-bar-mode) {
+      background: transparent;
+      display: inline;
+      line-height: $centered-navigation-height;
+
+      a {
+        padding-right: $centered-navigation-item-padding;
       }
     }
   }
 
-  .active-nav-item a {
-    border-bottom: 1px solid $navigation-active-link-color;
-    padding-bottom: 3px;
+  li.logo.nav-link {
+    display: none;
+    line-height: 0;
+
+    @include media($horizontal-bar-mode) {
+      display: inline;
+    }
   }
+
+  .logo img {
+    margin-bottom: -$centered-navigation-logo-height / 3;
+    max-height: $centered-navigation-logo-height;
+    opacity: 0.6;
+  }
+
 
   // Sub menus
 
   li.more.nav-link {
     padding-right: 0;
 
-    @include media($horizontal-bar-mode) {
-      padding-right: $navigation-submenu-padding;
+    @include media($large-screen) {
+      padding-right: $centered-navigation-submenu-padding;
     }
 
     > ul > li:first-child a  {
       padding-top: 1em;
-
     }
 
     a {
-      margin-right: $navigation-submenu-padding;
+      margin-right: $centered-navigation-submenu-padding;
     }
 
     > a {
       padding-right: 0.6em;
     }
 
-    > a:after {
+    > a::after {
       @include position(absolute, auto -0.4em auto auto);
-      content: '\25BE';
-      color: $navigation-color;
+      color: $centered-navigation-color;
+      content: "\25BE";
     }
   }
 
@@ -392,22 +375,22 @@ header.navigation {
     padding-right: 0;
 
     a {
-      padding-right: 0.8em;
+      padding-right: $centered-navigation-submenu-padding;
     }
 
     > a {
       padding-right: 1.6em;
       position: relative;
 
-      @include media($horizontal-bar-mode) {
-        margin-right: $navigation-submenu-padding;
+      @include media($large-screen) {
+        margin-right: $centered-navigation-submenu-padding;
       }
 
-      &:after {
-        content: '›';
+      &::after {
+        content: "›";
         font-size: 1.2em;
         position: absolute;
-        right: $navigation-submenu-padding / 2;
+        right: $centered-navigation-submenu-padding / 2;
       }
     }
 
@@ -417,7 +400,7 @@ header.navigation {
     }
 
     @include media($horizontal-bar-mode) {
-      padding-right: 0.8em;
+      padding-right: $centered-navigation-submenu-padding;
       position: relative;
     }
   }
@@ -427,14 +410,21 @@ header.navigation {
     padding-left: 0;
 
     @include media($horizontal-bar-mode) {
-      left: -$navigation-submenu-padding;
+      left: -$centered-navigation-submenu-padding;
       position: absolute;
       top: 1.5em;
     }
 
-    .submenu {
+    .submenu.fly-out-right {
       @include media($horizontal-bar-mode) {
-        left: $navigation-submenu-width - 0.2em;
+        left: $centered-navigation-submenu-width - 0.2em;
+        top: 0;
+      }
+    }
+
+    .submenu.fly-out-left {
+      @include media($horizontal-bar-mode) {
+        left: -$centered-navigation-submenu-width + 0.2em;
         top: 0;
       }
     }
@@ -444,7 +434,7 @@ header.navigation {
       padding-right: 0;
 
       @include media($horizontal-bar-mode) {
-        line-height: $navigation-height / 1.3;
+        line-height: $centered-navigation-height / 1.3;
 
         &:first-child > a {
           border-top-left-radius: $base-border-radius;
@@ -459,33 +449,19 @@ header.navigation {
       }
 
       a {
-        background-color: darken($navigation-background, 3%);
+        background-color: darken($centered-navigation-background, 3%);
         display: inline-block;
         text-align: right;
+        text-decoration: none;
         width: 100%;
 
         @include media($horizontal-bar-mode) {
-          background-color: $navigation-background;
-          padding-left: $navigation-submenu-padding;
+          background-color: $centered-navigation-background;
+          padding-left: $centered-navigation-submenu-padding;
           text-align: left;
-          width: $navigation-submenu-width;
+          width: $centered-navigation-submenu-width;
         }
       }
-    }
-  }
-
-  // Elements on the far right
-
-  .navigation-tools {
-    background: #505050;
-    clear: both;
-    display: block;
-    height: $navigation-height;
-
-    @include media($horizontal-bar-mode) {
-      background: transparent;
-      clear: none;
-      float: right;
     }
   }
 }
@@ -713,90 +689,6 @@ header.navigation {
   }
 }
 
-//FLEX BOXES ----------------------------------------------------------------------------------------------------
-.flex-boxes {
-  $base-border-radius: 0 !default;
-  $base-background-color: $background !default;
-  $dark-gray: #333 !default;
-  $light-gray: #DDD !default;
-  $base-font-color: $fore !default;
-  $flex-box-border-color: $hover;
-  $flex-box-border: 2px solid $flex-box-border-color;
-  $flex-box-background: $background;
-  $flex-box-gutter: 1em;
-  $flex-box-width: 20em;
-  $flex-box-color: $base-font-color;
-  $flex-box-top-colors: 
-    $fore, 
-    $hover, 
-    $fore, 
-    $hover, 
-    $fore, 
-    $hover, 
-    $fore;
-
-  @include clearfix;
-  align-items: stretch;
-  clear: both;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-
-  .flex-box {
-
-    align-self: stretch;
-    background: $flex-box-background;
-    border-radius: $base-border-radius;
-    box-shadow: inset 0 0 1px $flex-box-border-color, 0 2px 4px darken($base-background-color, 10%);
-    display: block;
-    flex: 2 2 15em;
-    margin: $flex-box-gutter;
-    padding: 2em 2em 3em 2em;
-    text-decoration: none;
-    transition: all 0.2s ease-in-out;
-
-
-    @for $i from 1 to 7 { 
-// assign colors from $flex-box-top-colors list
-      &:nth-child(#{$i}) {
-        $color-from-list: nth($flex-box-top-colors, $i);
-        border-top: 6px solid $color-from-list;
-        
- //       &:focus,
- //       &:hover {
- //         background-color: transparentize($color-from-list, 0.9);
-  //      }
-      }
-    }
-
-    img {
-      display: block;
-      height: 7em;
-      margin: 0 auto 1em;
-      opacity: 0.4;
-    }
-
-    .flex-title {
-      color: $flex-box-color;
-      font-size: 1.2em;
-      margin-bottom: 0.5em;
-      text-decoration: none;
-    }
-
-    p {
-      color: $flex-box-color;
-      line-height: 1.5em;
-      margin: auto;
-    }
-  }
-
-  .flex-box-big {
-    flex: 1 1 40em;
-  }
-}
-
-//-------------------------------------------------------------------------------------------------------------
 
 
 
