@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-##Ruby version 2.2.3:p 173
-##ruby '~> 2.3.0' ## default to heroku's ruby default for production
+##Ruby version 2.3.1
+ruby '~> 2.3.1' ## default to heroku's ruby default for production
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0'
