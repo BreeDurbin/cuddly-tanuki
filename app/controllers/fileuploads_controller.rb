@@ -8,12 +8,13 @@ class FileuploadsController < ApplicationController
 
   def index
     @fileuploads = Fileupload.all.order("created_at desc").paginate(page: params[:page], per_page: 15)
-    @fileuploads = Fileupload.where(language_id: params[:sort]).order("created_at desc").paginate(page: params[:page], per_page: 15) if params[:sort].present?
+    @fileuploads = Fileupload.by_language(params[:sort]).order("created_at desc").paginate(page: params[:page], per_page: 15) if params[:sort].present?
   end
 
-  # def by_language
-  #   @fileuploads = Fileupload.where(language_id: params[:sort]).order("created_at desc").paginate(page: params[:page], per_page: 15) if params[:sort].present?
-  # end
+  def by_language
+    @fileuploads = Fileupload.by_language(params[:sort]).order("created_at desc").paginate(page: params[:page], per_page: 15) if params[:sort].present?
+    render action: index
+  end
 
   def new
     @fileupload=Fileupload.new

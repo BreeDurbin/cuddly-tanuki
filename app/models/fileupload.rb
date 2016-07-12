@@ -8,5 +8,6 @@ class Fileupload < ActiveRecord::Base
 	mount_uploader :source, CodeUploader
 	mount_uploader :bin, CodeUploader
 
+	scope  :by_language, ->(sort){ where language_id: sort }
 
 end

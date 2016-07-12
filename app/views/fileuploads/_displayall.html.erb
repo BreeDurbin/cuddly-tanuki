@@ -1,5 +1,5 @@
 
-  <div class="col-2">
+  <div class="col-2" data-turbolinks="false">
     <nav class="js-menu sliding-panel-content">
       <ul class="accordion">
         <li class="js-accordion-trigger">
@@ -7,14 +7,14 @@
         </li>
         <% Language.all.each do |language| %>
         <li class="js-accordion-trigger">
-          <%= link_to language.language_type, :sort => language.id %>
+          <%= link_to language.language_type, language.language_type ,:sort => language.id %>
         </li>
         <% end %>
     </ul>
     </nav>
     <div class="js-menu-screen sliding-panel-fade-screen"></div>
   </div>
-
+S
 
 <div class="col-flex-header" align="center">
   <h1 class="text-box">Stuff I have made.</h1><br>
@@ -38,7 +38,7 @@
     </a>
 
     <% if user_signed_in? %>
-        <%= link_to "Edit file", edit_fileupload_path(fileupload), class: "btn btn-warning" %>
+        <%= link_to "Edit file", edit_fileupload_path(fileupload), class: "btn-warning" %>
         <%= link_to "Delete", fileupload_path(fileupload), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"}, class: "btn btn-warning" %>
     <% end %>
 

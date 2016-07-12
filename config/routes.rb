@@ -9,14 +9,13 @@ Rails.application.routes.draw do
 
   get 'pages/angular'
 
+  get 'fileuploads/index', :controller => :fileuploads, :action => :by_language, as: :sort_by_language
+
   get 'fileuploads/index'
 
   get 'fileuploads/show'
 
   get 'posts/index'
-
-  # get '/fileuploads/:id', to: 'fileuploads#by_language', as: 'fileupload'
-
 
   resources :posts, :fileuploads, :projects
   

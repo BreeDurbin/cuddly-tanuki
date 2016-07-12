@@ -50,7 +50,7 @@ $body-line-height: 100%;
   background-color: $background;
   color: $fore;
   text-align: center;
-  margin: 5px auto 5px auto;
+  margin: 5px 5px 5px 5px;
   box-sizing: border-box;
   display: inline-block;
 
@@ -190,48 +190,33 @@ section {
 
 //NAVBAR-------------------------------------------------------------------------------------------------------
 
+
 .centered-navigation {
   $base-border-radius: 3px !default;
-  $dark-gray: #333 !default;
   $large-screen: 53.75em !default;
-  $base-font-color: $dark-gray !default;
-  $centered-navigation-padding: 1em;
-  $centered-navigation-logo-height: 2em;
-  $centered-navigation-background: #E7F1EC;
-  $centered-navigation-color: transparentize($base-font-color, 0.3);
-  $centered-navigation-color-hover: $base-font-color;
+  $base-font-color: $fore;
+  $centered-navigation-background: $background;
+  $centered-navigation-color: $base-font-color;
+  $centered-navigation-color-hover: $hover;
   $centered-navigation-height: 60px;
   $centered-navigation-item-padding: 1em;
   $centered-navigation-submenu-padding: 1em;
   $centered-navigation-submenu-width: 12em;
-  $centered-navigation-item-nudge: 2.2em;
   $horizontal-bar-mode: $large-screen;
 
   background-color: $centered-navigation-background;
-  border-bottom: 1px solid darken($centered-navigation-background, 6%);
+  border-bottom: 2px solid darken($centered-navigation-background, 6%);
+  border-left: 2px solid darken($centered-navigation-background, 6%);
   min-height: $centered-navigation-height;
   width: 100%;
   z-index: 9999;
 
+  @include clearfix;
+  @include span-columns(10);
+  @include shift(2);
+
 
   // Mobile view
-
-  .mobile-logo {
-    display: inline;
-    float: left;
-    max-height: $centered-navigation-height;
-    padding-left: $centered-navigation-padding;
-
-    img {
-      max-height: $centered-navigation-height;
-      opacity: 0.6;
-      padding: 0.8em 0;
-    }
-
-    @include media($horizontal-bar-mode) {
-      display: none;
-    }
-  }
 
   .centered-navigation-mobile-menu {
     color: $centered-navigation-color;
@@ -239,6 +224,7 @@ section {
     float: right;
     line-height: $centered-navigation-height;
     margin: 0;
+    padding-left: $centered-navigation-submenu-padding;
     padding-right: $centered-navigation-submenu-padding;
     text-decoration: none;
     text-transform: uppercase;
@@ -249,7 +235,7 @@ section {
 
     &:focus,
     &:hover {
-      color: $centered-navigation-color-hover;
+      background-color: $centered-navigation-color-hover;
     }
   }
 
@@ -257,8 +243,6 @@ section {
   // Nav menu
 
   .centered-navigation-wrapper {
-    @include outer-container;
-    @include clearfix;
     position: relative;
     z-index: 999;
   }
@@ -266,7 +250,7 @@ section {
   ul.centered-navigation-menu {
     clear: both;
     display: none;
-    margin: 0 auto;
+    margin: 0;
     overflow: visible;
     padding: 0;
     -webkit-transform-style: preserve-3d;
@@ -281,6 +265,8 @@ section {
     @include media ($horizontal-bar-mode) {
       display: block;
       text-align: center;
+      width: 100%;
+      float: right;
     }
   }
 
@@ -289,7 +275,6 @@ section {
 
   .nav-link:first-child {
     @include media($horizontal-bar-mode) {
-      margin-left: $centered-navigation-item-nudge;
     }
   }
 
@@ -298,7 +283,7 @@ section {
     display: block;
     line-height: $centered-navigation-height;
     overflow: hidden;
-    padding-right: $centered-navigation-submenu-padding;
+
     text-align: right;
     width: 100%;
     z-index: 9999;
@@ -311,7 +296,7 @@ section {
 
       &:focus,
       &:hover {
-        color: $centered-navigation-color-hover;
+        background-color: $centered-navigation-color-hover;
       }
     }
 
@@ -322,25 +307,10 @@ section {
 
       a {
         padding-right: $centered-navigation-item-padding;
+        padding-left: $centered-navigation-item-padding
       }
     }
   }
-
-  li.logo.nav-link {
-    display: none;
-    line-height: 0;
-
-    @include media($horizontal-bar-mode) {
-      display: inline;
-    }
-  }
-
-  .logo img {
-    margin-bottom: -$centered-navigation-logo-height / 3;
-    max-height: $centered-navigation-logo-height;
-    opacity: 0.6;
-  }
-
 
   // Sub menus
 
@@ -458,6 +428,7 @@ section {
         @include media($horizontal-bar-mode) {
           background-color: $centered-navigation-background;
           padding-left: $centered-navigation-submenu-padding;
+          padding-right: $centered-navigation-submenu-padding;
           text-align: left;
           width: $centered-navigation-submenu-width;
         }
@@ -465,8 +436,6 @@ section {
     }
   }
 }
-
-
 
 // Based on code by Diego Eis
 
@@ -597,6 +566,9 @@ section {
   padding: $base-spacing;
   width: 100%;
   display: inline-block;
+  @include clearfix;
+  @include span-columns(10);
+  @include shift(2);
 
   .footer-logo {
     margin-right: 1em;
