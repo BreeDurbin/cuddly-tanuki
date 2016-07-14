@@ -1,5 +1,7 @@
 class Fileupload < ActiveRecord::Base
-  belongs_to :language
+
+	belongs_to :language
+
 	extend FriendlyId
 	friendly_id :title, use: :slugged
 
@@ -8,6 +10,6 @@ class Fileupload < ActiveRecord::Base
 	mount_uploader :source, CodeUploader
 	mount_uploader :bin, CodeUploader
 
-	scope  :by_language, ->(sort){ where language_id: sort }
+	scope  :by_language, ->(sort){ where :language_id => sort }
 
 end

@@ -1,15 +1,10 @@
 Rails.application.routes.draw do
 
-  resources :languages
   devise_for :users
 
   get 'posts/home'
 
   get 'pages/aboutMe'
-
-  get 'pages/angular'
-
-  get 'fileuploads/index', :controller => :fileuploads, :action => :by_language, as: :sort_by_language
 
   get 'fileuploads/index'
 
@@ -17,7 +12,16 @@ Rails.application.routes.draw do
 
   get 'posts/index'
 
-  resources :posts, :fileuploads, :projects
+  resources :posts, :projects, :languages
+
+  resources :fileuploads, path: "index" do
+    collection do
+      get :by_language
+    end
+  end
+
+
+
   
   root 'posts#home'
 

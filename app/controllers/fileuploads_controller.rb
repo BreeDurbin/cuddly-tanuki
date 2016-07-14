@@ -1,6 +1,6 @@
 class FileuploadsController < ApplicationController
 
-  before_filter :authenticate_user!, except: [:show, :index]
+  before_filter :authenticate_user!, except: [:show, :index, :by_language]
   before_action :find_fileupload, only: [:show, :edit, :update, :destroy]
 
   def edit
@@ -8,12 +8,12 @@ class FileuploadsController < ApplicationController
 
   def index
     @fileuploads = Fileupload.all.order("created_at desc").paginate(page: params[:page], per_page: 15)
-    @fileuploads = Fileupload.by_language(params[:sort]).order("created_at desc").paginate(page: params[:page], per_page: 15) if params[:sort].present?
   end
 
   def by_language
+
     @fileuploads = Fileupload.by_language(params[:sort]).order("created_at desc").paginate(page: params[:page], per_page: 15) if params[:sort].present?
-    render action: index
+    render action: "index"
   end
 
   def new
