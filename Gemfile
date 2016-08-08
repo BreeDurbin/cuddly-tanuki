@@ -34,15 +34,17 @@ gem 'albino'
 
 gem 'friendly_id'
 gem 'will_paginate'
-gem 'carrierwave'
-gem 'carrierwave-dropbox'
+
 gem 'mail_form'
 
 gem 'devise'
 
+gem "paperclip"
+gem 'google-api-client', '0.8.2', require: 'google/api_client'
+gem 'paperclip-googledrive'
 
 ## css libraries
-gem 'autoprefixer-rails', '~> 6.3', '>= 6.3.6.2'
+gem 'autoprefixer-rails'
 gem 'bourbon'
 gem 'bitters'
 gem 'neat'

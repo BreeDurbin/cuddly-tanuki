@@ -12,14 +12,15 @@ Rails.application.routes.draw do
 
   get 'posts/index'
 
-  resources :posts, :projects, :languages
+
+
+  resources :posts, :projects, :languages, :fileuploads
 
   resources :fileuploads, path: "index" do
     collection do
       get :by_language
     end
   end
-
 
 
   

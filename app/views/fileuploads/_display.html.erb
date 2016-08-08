@@ -8,8 +8,8 @@
 
 	<br><br>
 
-  <% unless @fileupload.source_url.nil? %>
-	  <%= link_to "View source", @fileupload.source_url.to_s, class: "btn-warning" %>
+  <% unless @fileupload.code.url.nil? %>
+	  <%= link_to "View source", @fileupload.code.url, class: "btn-warning" %>
   <% end %>
 
 

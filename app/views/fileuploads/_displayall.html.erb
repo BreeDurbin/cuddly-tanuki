@@ -30,7 +30,7 @@ S
 
   <% @fileuploads.each do |fileupload| -%>
     <div class="col-flex-inner">
-    <a href="<%= fileupload.source_url.to_s%>" class="flex-box-2">
+    <a href="<%= fileupload.code.url.to_s %>" class="flex-box-2">
     <h3 class="flex-title"><%= fileupload.language.language_type %></h3>
     <p><%= fileupload.title %></p>
     <p><%= fileupload.description %></p>

@@ -52,7 +52,7 @@ class FileuploadsController < ApplicationController
     end
 
     def fileupload_params
-      params.require(:fileupload).permit(:title, :description, :source, :bin, :slug, :language_id, :sort)
+      params.require(:fileupload).permit(:title, :description, :code, :slug, :language_id, :sort)
     end
 
 end

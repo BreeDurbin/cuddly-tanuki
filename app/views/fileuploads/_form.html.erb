@@ -1,5 +1,5 @@
 <section>
-		<%= form_for @fileupload, :html => {:multipart => true} do |f| %>
+    <%= form_for @fileupload, html: { multipart: true } do |f| %>
 
 			<% if @fileupload.errors.any? %>
 			<h2><%= pluralize(@fileupload.errors.count, "error") %> Prevented file from uploading:</h2>
@@ -19,9 +19,9 @@
 			<%= f.label :description, :class => 'text-box' %><br>
 			<%= f.text_area :description, :class => 'form-description-box' %><br>
 
-			<%= f.label :source, :class => 'text-box' %><br>
-			<%= f.file_field :source %><br>
 
+      <%= f.label :code, :class => 'text-box' %><br>
+      <%= f.file_field :code %>
 
 			<%= f.submit 'Upload', class: "btn btn-warning" %>
 
