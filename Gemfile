@@ -38,9 +38,7 @@ gem 'will_paginate'
 gem 'mail_form'
 
 gem 'devise'
-
-gem "paperclip"
-gem 'google-api-client', '0.8.2', require: 'google/api_client'
+gem 'google-api-client', '< 0.9', require: 'google/api_client'
 gem 'paperclip-googledrive'
 
 ## css libraries
