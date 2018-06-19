@@ -1,45 +1,39 @@
 
-<% if user_signed_in? %>
-    <div align="center">
-      <%= link_to "New post", new_post_path(@post), class: "btn-warning" %>
-    </div>
-<% end %>
-
 <% backgrounds = ["backgroundpost1.png","backgroundpost2.png","backgroundpost3.png"] %>
 
-<div class="cards col-10-home">
+<% @posts.each_with_index do |post, idx| %>
 
-    <% @posts.each_with_index do |post, idx| %>
-      <div class="card">
+  <div class="ui purple fluid card">
 
-        <div class="card-image">
-          <%= image_tag(backgrounds[idx % 3], :alt => "") %>
-          <!--<img url="background2.jpg" alt="">-->
-        </div>
+    <div class="image">
+      <%= image_tag(backgrounds[idx % 3], :alt => "") %>
+      <!--<img url="background2.jpg" alt="">-->
+    </div>
 
-        <div class="card-header">
-          <%= post.title %>
-        </div>
-
-        <div align="Right" style="margin-right:25px;">
-        <p> <%= post.created_at.strftime('%I:%M %p, %b %d ,%Y') %></p>
-        </div>
-
-        <div class="card-copy">
-          <%= markdown post.body %>
-        </div>
-
+    <div class="content">
+      <div class="center aligned header"><%= post.title %></div>
+      <div class="left aligned description">
+        <%= post.body %>
       </div>
+    </div>
 
-      <div align="center">
-        <%= link_to "View full post.", post, class: "btn-warning" %>
+    <div class="extra content">
+      <div class="left floated">
+        <%= link_to "View full post.", post, class: "ui inverted violet button" %>
         <% if user_signed_in? %>
-            <%= link_to "Edit Post", edit_post_path(post), class: "btn-warning" %>
-            <%= link_to "Delete", post_path(post), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"}, class: "btn-warning" %>
+            <%= link_to "Edit Post", edit_post_path(post), class: "ui inverted violet button" %>
+            <%= link_to "Delete", post_path(post), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"}, class: "ui inverted violet button" %>
         <% end %>
       </div>
-    <% end %>
 
+      <span class="right floated">
+        <%= post.created_at.strftime('%I:%M %p, %b %d ,%Y') %>
+      </span>
+    </div>
+  </div>
 
-</div>
+  
+
+<% end %>
+
 

@@ -1,12 +1,35 @@
+<div class="ui visible inverted vertical sidebar accordion menu">
+      
+	<% if user_signed_in? %>
+	<li class="link item">
+	<%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+	<% else %>
+	<li class="link item">
+	<%= link_to 'Login', new_user_session_path %>
+	</li>
+	<% end %>
 
-<section>
 
-  <%= render 'displayall' %>
+	<li class="link item"><%= link_to "Home", posts_home_path %> </li>
+	<li class="link item"><%= link_to "About me", pages_aboutMe_path %></li>
+
+	<li class="link item"><%= link_to "All", fileuploads_index_path %></li>
+
+	<% Language.all.each do |language| %>
+        <li class="link item"> <%= link_to language.language_type, by_language_fileuploads_path(:sort => language.id)%> </li>
+    <% end %>
+    
+  	
+</div>
+  <div class="pusher">
+    <div class="ui container">
+      
+
+      <%= render 'displayall' %>
 
 
 
-<%= will_paginate @fileuploads %>
+		<%= will_paginate @fileuploads %>
+    </div>
 
-</section>
-
-
+</div>

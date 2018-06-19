@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
 
-  before_filter :authenticate_user!, except: [:home, :show, :index]
+  before_action :authenticate_user!, except: [:home, :show, :index]
 	before_action :find_post, only: [:show, :edit, :update, :destroy]
 
 

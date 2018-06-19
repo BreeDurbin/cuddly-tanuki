@@ -1,29 +1,40 @@
-<section>
-    <%= form_for @fileupload, html: { multipart: true } do |f| %>
 
-			<% if @fileupload.errors.any? %>
-			<h2><%= pluralize(@fileupload.errors.count, "error") %> Prevented file from uploading:</h2>
-			<ul>
-				<% @fileupload.errors.full_messages.each do |msg| %>
-					<li><%= msg %></li>
-				<% end %>
-			</ul>
-			<% end %>
+<%= form_for @fileupload do |f| %>
 
-			<%= f.label :language, :class => 'text-box' %><br>
+<% if @fileupload.errors.any? %>
+<h2><%= pluralize(@fileupload.errors.count, "error") %> Prevented file from uploading:</h2>
+<ul>
+	<% @fileupload.errors.full_messages.each do |msg| %>
+		<li><%= msg %></li>
+	<% end %>
+</ul>
+<% end %>
+
+<div class="ui inverted segment">
+	<div class="ui inverted form">
+		<div class="field">
+			<%= f.label :language %>
 			<%= f.collection_select :language_id, Language.all, :id, :language_type, {}, { :multiple => false }%>
+		</div>
+		<div class="field">
+			<%= f.label :title %>
+			<%= f.text_field :title %>
+		</div>
+		<div class="field">
+			<%= f.label :description %>
+			<%= f.text_area :description %>
+		</div>
+		<div class="field">
+			<%= f.label :upload%>
+			<%= f.file_field :upload, 
+				multiple: false,
+                direct_upload: true %>
+		</div>
+		<%= f.submit 'Create', class: "ui inverted violet submit button" %>
+	</div>
+</div>
 
-			<%= f.label :title, :class => 'text-box' %><br>
-			<%= f.text_field :title, :class => 'form-box' %><br>
 
-			<%= f.label :description, :class => 'text-box' %><br>
-			<%= f.text_area :description, :class => 'form-description-box' %><br>
+<% end %>
 
 
-      <%= f.label :code, :class => 'text-box' %><br>
-      <%= f.file_field :code %>
-
-			<%= f.submit 'Upload', class: "btn btn-warning" %>
-
-		<% end %>
-</section>

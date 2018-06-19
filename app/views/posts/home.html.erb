@@ -1,85 +1,63 @@
+<div class="ui visible inverted vertical sidebar accordion menu">
+      
+      <% if user_signed_in? %>
+        <li class="link item">
+      <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+      <% else %>
+      <li class="link item">
+        <%= link_to 'Login', new_user_session_path %>
+      </li>
+      <% end %>
 
+      <li class="link item"><%= link_to "File Uploads", fileuploads_path %></li>
+      <li class="link item"><%= link_to "About me", pages_aboutMe_path %></li>
 
-  <div class="col-2">
-
-    <nav class="js-menu sliding-panel-content" data-turbolinks="false">
-      <ul class="accordion">
-        <li>
-          <a href="javascript:void(0)" class="js-accordion-trigger">Webcomics</a>
-          <ul class="submenu">
-            <li>
-              <a href="http://www.giantitp.com/Comics.html">Order of the Stick</a>
-            </li>
-            <li>
-              <a href="http://www.smbc-comics.com/index.php?id=3940">Saturday Morning Breakfast Cereal</a>
-            </li>
-            <li>
-              <a href="http://xkcd.com/">XKCD</a>
-            </li>
-            <li>
-              <a href="http://abstrusegoose.com/12">Abstruse Goose</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="javascript:void(0)" class="js-accordion-trigger">Mathematics</a>
-          <ul class="submenu">
-            <li>
-              <a href="https://terrytao.wordpress.com/">Terrence Tao's Mathematics Blog</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="javascript:void(0)" class="js-accordion-trigger">Science</a>
-          <ul class="submenu">
-            <li>
-              <a href="http://arxiv.org/">arXiv</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="javascript:void(0)" class="js-accordion-trigger">News and Politics</a>
-          <ul class="submenu">
-            <li>
-              <a href="http://arstechnica.com/">Ars Technica</a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/user/TheBigPictureRT">TheBigPictureRT</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="javascript:void(0)" class="js-accordion-trigger">Social</a>
-          <ul class="submenu">
-            <li>
-              <a href="https://www.linkedin.com/profile/preview?vpa=pub&locale=en_US">Linkedin</a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/brian.durbin.921">Facebook</a>
-            </li>
-            <li>
-              <a href="https://www.pinterest.com/kits119710/">Pinterest</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-
-    <div class="js-menu-screen"></div>
+      <div class="item">
+        <div class="link dropdown title">
+          Webcomics
+        </div>
+        <div class="content link items">
+          <a class="item" href="http://www.giantitp.com/Comics.html">Order of the Stick</a>
+          <a class="item" href="http://www.smbc-comics.com/index.php?id=3940">Saturday Morning Breakfast Cereal</a>
+          <a class="item" href="http://xkcd.com/">XKCD</a>
+          <a class="item" href="http://abstrusegoose.com/12">Abstruse Goose</a>
+        </div>
+      </div>
+        
+      <div class="item">
+        <div class="link dropdown title">
+          Mathematics
+        </div>
+        <div class="content link items">
+          <a class="item" href="https://terrytao.wordpress.com/">Terrence Tao's Mathematics Blog</a>
+        </div>
+      </div>
   </div>
+  <div class="pusher">
+    <div class="ui container">
+      
+      <div class="ui inverted segment">
+        <h1 class="ui large centered inverted violet header">Programming, Mathematics, Science and other nerdery.</h1>
+        <br>
+        <h3 class="ui floated small inverted violet header" > by Bree Durbin </h3>
+        <% if user_signed_in? %>
+          <div class="floated" align="right">
+            <%= link_to "New post", new_post_path(@post), class: "ui inverted violet button" %>
+          </div>
+      <% end %>
+      </div>
+
+      
+
+      <%= render 'displayall' %>
+
+      <%= will_paginate @posts %>
+    </div>
+
+</div>
+
+    
 
 
-  <div class="col-flex-posts">
-  <h1 class="text-box" align="center">Programming, Mathematics, Science and other nerdery.</h1>
 
-  <br>
-  <h3 class="text-box" > by Brian Durbin</h3>
-
-
-
-    <%= render 'displayall' %>
-
-    <%= will_paginate @posts %>
-
-  </div>
 

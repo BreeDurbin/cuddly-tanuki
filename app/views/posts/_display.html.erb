@@ -1,28 +1,32 @@
-<div class="cards" align="center">
 
-  <div class="card col-10" align="center">
+  <div class="ui purple fluid card">
 
-    <div class="card-image">
+    <div class="image">
       <%= image_tag("backgroundpost1.png", :alt => "") %>
       <!--<img url="background2.jpg" alt="">-->
     </div>
 
-    <div class="card-header">
-      <%= @post.title %>
+    <div class="content">
+      <div class="center aligned header"><%= @post.title %></div>
+      <div class="left aligned description">
+        <%= @post.body %>
+      </div>
     </div>
 
-    <div align="Right" style="margin-right:25px;">
-      <p> <%= @post.created_at.strftime('%I:%M %p, %b %d ,%Y') %></p>
+    <div class="extra content">
+      <div class="left floated">
+        <% if user_signed_in? %>
+            <%= link_to "Edit Post", edit_post_path(@post), class: "ui inverted violet button" %>
+            <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"}, class: "ui inverted violet button" %>
+        <% end %>
+      </div>
+
+      <span class="right floated">
+        <%= @post.created_at.strftime('%I:%M %p, %b %d ,%Y') %>
+      </span>
     </div>
 
-    <div class="card-copy">
-      <%= markdown @post.body %>
-    </div>
+    
 
-	<% if user_signed_in? %>
-		<%= link_to "Edit Post", edit_post_path(@post), class: "btn btn-warning" %>
-		<%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you wish to delete this post?"}, class: "btn btn-warning" %>
-	<% end %>
   </div>
 
-</div>

@@ -14,37 +14,10 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+// Loads all Semantic javascripts
+//= require semantic-ui
+//= require activestorage
 
-
-//REFILLS-------------------------------------------------------------------------------
-
-//===========================++Accordion JS++===========================================
-
-$(document).ready( function() {
-  $('.js-accordion-trigger').bind('click', function(e){
-    jQuery(this).parent().find('.submenu').slideToggle('fast');  // apply the toggle to the ul
-    jQuery(this).parent().toggleClass('is-expanded');
-    e.preventDefault();
-  });
-});
-
-
-//==========================++NAVBAR JS++===============================================
-
-$(document).ready( function() {
-  $(window).on("load resize", function (e) {
-    var more = document.getElementById("js-centered-more");
-
-    var menuToggle = $("#js-centered-navigation-mobile-menu").unbind();
-    $("#js-centered-navigation-menu").removeClass("show");
-
-    menuToggle.on("click", function (e) {
-      e.preventDefault();
-      $("#js-centered-navigation-menu").slideToggle(function () {
-        if ($("#js-centered-navigation-menu").is(":hidden")) {
-          $("#js-centered-navigation-menu").removeAttr("style");
-        }
-      });
-    });
-  });
-});
+$(document).ready(function(){
+        $('.ui.accordion').accordion();
+     });

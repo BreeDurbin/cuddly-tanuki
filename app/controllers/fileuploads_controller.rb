@@ -1,6 +1,6 @@
 class FileuploadsController < ApplicationController
 
-  before_filter :authenticate_user!, except: [:show, :index, :by_language]
+  before_action :authenticate_user!, except: [:show, :index, :by_language]
   before_action :find_fileupload, only: [:show, :edit, :update, :destroy]
 
   def edit
@@ -24,7 +24,7 @@ class FileuploadsController < ApplicationController
     @fileupload = Fileupload.new(fileupload_params)
 
     if @fileupload.save
-      redirect_to @fileupload
+      redirect_to action: "index"
     else
       render 'new'
     end
@@ -32,7 +32,8 @@ class FileuploadsController < ApplicationController
 
   def update
     if @fileupload.update(fileupload_params)
-      redirect_to @fileupload
+      @fileupload.upload.attach(params[:fileupload][:upload])
+      redirect_to action: "index"
     else
       render 'edit'
     end
@@ -43,6 +44,7 @@ class FileuploadsController < ApplicationController
 
   def destroy
     @fileupload.destroy
+    redirect_to action: "index"
   end
 
   private
@@ -52,7 +54,7 @@ class FileuploadsController < ApplicationController
     end
 
     def fileupload_params
-      params.require(:fileupload).permit(:title, :description, :code, :slug, :language_id, :sort)
+      params.require(:fileupload).permit(:title, :description, :upload, :slug, :language_id, :sort)
     end
 
 end

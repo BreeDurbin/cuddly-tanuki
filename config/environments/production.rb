@@ -81,4 +81,8 @@ Rails.application.configure do
     config.logger = ActiveSupport::TaggedLogging.new(logger)
   end
 
+
+  # Store files on Google Drive.
+  config.active_storage.service = :amazon
+
 end

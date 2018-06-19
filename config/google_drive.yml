@@ -1,7 +1,0 @@
-application_name: "Nonlinear Logic"
-application_version: 1.0.0
-client_id: <%= ENV["CLIENT_ID"] %>
-client_secret: <%= ENV["CLIENT_SECRET"] %>
-access_token: <%= ENV["ACCESS_TOKEN"] %>
-refresh_token: <%= ENV["REFRESH_TOKEN"] %>
-

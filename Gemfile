@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 ##ruby '~> 2.3.1' ## default to heroku's ruby default for production
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0'
+gem 'rails', '~> 5.2'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
@@ -25,42 +25,30 @@ gem 'jbuilder'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-
-## for markdown highlighting of text
-gem 'pygments.rb'
-gem 'redcarpet'
-gem 'nokogiri'
-gem 'albino'
-
 gem 'friendly_id'
 gem 'will_paginate'
 
 gem 'mail_form'
 
 gem 'devise'
-gem 'google-api-client', '< 0.9', require: 'google/api_client'
-gem 'paperclip-googledrive'
+
+gem "aws-sdk-s3", require: false
+gem 'activestorage', '~> 5.2'
+
 
 ## css libraries
 gem 'autoprefixer-rails'
-gem 'bourbon'
-gem 'bitters'
-gem 'neat'
-
+gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
 
 gem 'rails_serve_static_assets'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-# Use Unicorn as the app server
-# gem 'unicorn'
 
 # Use Puma as the app server
 gem 'puma'
 
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -69,7 +57,7 @@ end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
+  gem 'web-console', '~> 3.6', '>= 3.6.2'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'

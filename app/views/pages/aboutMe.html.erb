@@ -1,44 +1,68 @@
-<div class="flex-boxes" xmlns="http://www.w3.org/1999/html">
+<div class="ui visible inverted vertical sidebar menu">
+      
+      <% if user_signed_in? %>
+        <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: "link item"  %>
+      <% else %>
+        <%= link_to 'Login', new_user_session_path, class: "link item" %>
+      <% end %>
 
-  <div class ="col-6">
-
-    <%= image_tag "carousel1.jpg", :class => "image-1 flex-box" %>
+      <li class="link item"><%= link_to "Home", posts_home_path %> </li>
+      <li class="link item"><%= link_to "File Uploads", fileuploads_path %></li>
 
   </div>
 
-  <div class="col-6">
-    <a href="javascript:void(0)" class="flex-box">
-		<p>
-		<b>About me:</b>
-    <p>
-    Hi, my name is Brian Durbin and I am a software Engineer. I am currently a computer science and mathematics
-      double major at UCCS. My favorite languages are Ruby for web dev, c# for gui and general purpose stuff and
-      c for anything mathematical.
-       When I have free time I spend it teaching myself various programming languages and reading mathematics or science papers.
-      I also enjoy anime and pen and paper roleplaying games.
-      Two of the languages I have taught myself are Ruby and C#.
-      This website is actually written in Rails with embedded Ruby.
-    </p>
-    <p><br>
-      I am currently working at Boeing as a software engineer Intern. I do c# development for them.
-      The project I am working on now uses winforms for the Gui side and protobuffs to handle data transmission
-      between the other programs I have to talk with. Before working at Boeing I was a C# developer for an ecommerce firm
-      named Engine23. I did back end development for them for an electrocardiogram app.
-    </p><br>
-    <p>
-    Programming fields of interest:
-      </p>
-      <p>Big Data, Cloud Computing, algorithms, and Full Stack Web Development.
-    </p><br>
-    <p>
-    Mathematical focus: Statistics
-    </p>
-	</a>
-	</div>
+  <div class="pusher">
+    <div class="ui container">
 
+      <div class="ui padded black inverted segment">
+        <h1 class="ui large centered inverted violet header">About me</h1>
+      </div>
 
+      <div class="ui fluid purple card">
+        <div class="content">
+
+          
+
+          <div class="description">
+
+           <p>
+            <b>About me:</b>
+            <p>
+            Hi, my name is Bree Durbin and I am a software Engineer. I recently graduated from UCCS (May 2018) with a BS: Mathematics with a concentration in computer science. My favorite languages are Ruby for simple web dev, c# for gui and general purpose stuff and Java for enterprise webservices. I also have an interest in Python and C++.
+            When I have free time I spend it teaching myself various programming languages and reading mathematics or science papers.(I am a pretty boring person, Sorry.)
+            I also enjoy anime and pen and paper roleplaying games. Two of the languages I have taught myself are Ruby and C#. This website is written in Rails with embedded Ruby.
+            </p>
+
+            <%= image_tag "about_me.jpg", :class => "right floated ui small image" %>
+
+            <p><br>
+              I am currently working at Boeing as a software engineering Intern. I did c# development for them for my first 3 months. For the next 8 I did integration and automation for our microservices backend which runs in a docker swarm I setup. I also did all of the initial scripting for deployment and much of our build scripts. Many of my deployment scripts are still used today via Jenkins. Since around Janruary 2017 I have been working backend services writing restful webservices based around Spring and Jersey.
+              
+              Before working at Boeing I was a C# developer for an ecommerce firm
+              named Engine23. I did back end development for them for an electrocardiogram app.
+            </p><br>
+            <p>
+            Programming fields of interest:
+              </p>
+              <p>Big Data, Cloud Computing, algorithms, and Full Stack Web Development.
+            </p><br>
+            <p>
+            Mathematical interests: Linear algebra, Statistics, Optimization.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
 
 </div>
+
+
+
+
+
+
+
 
 
     
