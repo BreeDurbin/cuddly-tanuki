@@ -8,7 +8,7 @@ test:
 
 amazon:
   service: S3
-  access_key_id: "AKIAJUVIDMH4QZVLAMLQ"
-  secret_access_key: "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"
-  region: "us-east-2"
-  bucket: "breedurbin"
+  access_key_id: <%= ENV['BUCKETEER_AWS_ACCESS_KEY_ID'] %>
+  secret_access_key: <%= ENV['BUCKETEER_AWS_SECRET_ACCESS_KEY'] %>
+  region: <%= ENV['BUCKETEER_AWS_REGION'] %>
+  bucket: <%= ENV['BUCKETEER_BUCKET_NAME'] %>
