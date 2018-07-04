@@ -1,14 +1,16 @@
 
 <% backgrounds = ["backgroundpost1.png","backgroundpost2.png","backgroundpost3.png"] %>
 
+
+
 <% @posts.each_with_index do |post, idx| %>
 
   <div class="ui purple fluid card">
 
     <div class="image">
       <%= image_tag(backgrounds[idx % 3], :alt => "") %>
-      <!--<img url="background2.jpg" alt="">-->
     </div>
+
 
     <div class="content">
       <div class="center aligned header"><%= post.title %></div>
