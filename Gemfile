@@ -35,10 +35,14 @@ gem 'devise'
 gem "aws-sdk-s3", require: false
 gem 'activestorage', '~> 5.2'
 
+# Markdown
+gem 'redcarpet'
+gem 'pygments.rb', '~> 0.6.3'
 
 ## css libraries
 gem 'autoprefixer-rails'
 gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
+
 
 gem 'rails_serve_static_assets'
 

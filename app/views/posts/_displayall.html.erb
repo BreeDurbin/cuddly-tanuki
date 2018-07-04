@@ -15,7 +15,7 @@
     <div class="content">
       <div class="center aligned header"><%= post.title %></div>
       <div class="left aligned description">
-        <%= post.body %>
+        <%= markdown(post.body) %>
       </div>
     </div>
 
